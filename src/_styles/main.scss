@@ -7,7 +7,10 @@
 // Import libs
 // why does `@import "bourbon"` not work here? something weird with gulp-sass paths...
 @import "node_modules/node-neat/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "base/grid-settings";
 @import "node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/_neat.scss";
+@import "base/base";
+
 
 // Box sizing partial styles:
 // Apply a natural box layout model to all elements
