@@ -31,18 +31,8 @@
   padding: 0.5em 0;
 }
 
-div.container {
-  @include outer-container;
-
-  div.parent-element {
-    @include span-columns(8);
-
-    div.element {
-      @include span-columns(6 of 8);
-    }
-  }
-}
-
-div.element {
-  @include span-columns(6);
+//temp
+section {
+  height: 300px;
+  border: 1px solid red;
 }
