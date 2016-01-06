@@ -1,10 +1,15 @@
+block vars
+  - var bodyClass = 'homepage';
+
 extends _layouts/base
 
 include _modules/link/link
 
+
 block content
-  section#welcome.container
-    h1 CZ.com
+  section#welcome.welcome.container
+    h1 Hi, my name is #[span Chris Zamierowski.]
+    h2 I'm a developer.
   section#expertise.container
     h2 Expertise
   section#examples.container

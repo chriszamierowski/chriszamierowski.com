@@ -1,15 +1,18 @@
 // Normalize Styles
 @import "node_modules/normalize.css/normalize";
 
-// Import Modules
-@import "../_modules/link/link";
-
 // Import libs
 // why does `@import "bourbon"` not work here? something weird with gulp-sass paths...
 @import "node_modules/node-neat/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
 @import "base/grid-settings";
 @import "node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/_neat.scss";
 @import "base/base";
+
+// Import Modules
+@import "../_modules/link/link";
+
+// Import pages
+@import "pages/homepage";
 
 
 // Box sizing partial styles:
