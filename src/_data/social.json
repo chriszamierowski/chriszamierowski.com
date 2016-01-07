@@ -1,0 +1,24 @@
+{
+  "links": {
+    "github": {
+      "name": "Github",
+      "class": "github",
+      "link": "https://github.com/chriszamierowski"
+    },
+    "linkedin": {
+      "name": "LinkedIn",
+      "class": "linkedin",
+      "link": "https://www.linkedin.com/in/chriszamierowski"
+    },
+    "instagram": {
+      "name": "Instagram",
+      "class": "instagram",
+      "link": "https://www.instagram.com/zamierowski/"
+    },
+    "angellist": {
+      "name": "AngelList",
+      "class": "angellist",
+      "link": "https://angel.co/chris-zamierowski"
+    }
+  }
+}

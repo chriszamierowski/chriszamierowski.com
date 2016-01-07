@@ -5,3 +5,11 @@
     color: $bright-orange;
   }
 }
+
+@mixin orange-link() {
+  color: $bright-orange;
+
+  &:hover {
+    color: $dark-blue;
+  }
+}

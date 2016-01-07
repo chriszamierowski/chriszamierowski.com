@@ -11,10 +11,10 @@ $screen-small: 480px;
 $screen-medium: 720px;
 $screen-large: 960px;
 
-$screen-small-up: new-breakpoint(min-width $screen-small 4);
-$screen-medium-up: new-breakpoint(min-width $screen-medium 4);
-$screen-large-up: new-breakpoint(min-width $screen-large 8);
+$screen-small-up: new-breakpoint(min-width $screen-small);
+$screen-medium-up: new-breakpoint(min-width $screen-medium);
+$screen-large-up: new-breakpoint(min-width $screen-large);
 
-$screen-small-down: new-breakpoint(max-width ($screen-small - 1) 4);
-$screen-medium-down: new-breakpoint(max-width ($screen-medium - 1) 4);
-$screen-large-down: new-breakpoint(max-width ($screen-large - 1) 4);
+$screen-small-down: new-breakpoint(max-width ($screen-small - 1));
+$screen-medium-down: new-breakpoint(max-width ($screen-medium - 1));
+$screen-large-down: new-breakpoint(max-width ($screen-large - 1));

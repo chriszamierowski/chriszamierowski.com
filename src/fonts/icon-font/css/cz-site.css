@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'cz-site';
-  src: url('../font/cz-site.eot?70522478');
-  src: url('../font/cz-site.eot?70522478#iefix') format('embedded-opentype'),
-       url('../font/cz-site.woff?70522478') format('woff'),
-       url('../font/cz-site.ttf?70522478') format('truetype'),
-       url('../font/cz-site.svg?70522478#cz-site') format('svg');
+  src: url('../font/cz-site.eot?67784847');
+  src: url('../font/cz-site.eot?67784847#iefix') format('embedded-opentype'),
+       url('../font/cz-site.woff?67784847') format('woff'),
+       url('../font/cz-site.ttf?67784847') format('truetype'),
+       url('../font/cz-site.svg?67784847#cz-site') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +14,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'cz-site';
-    src: url('../font/cz-site.svg?70522478#cz-site') format('svg');
+    src: url('../font/cz-site.svg?67784847#cz-site') format('svg');
   }
 }
 */
@@ -56,3 +56,9 @@
  
 .icon-menu:before { content: '\e800'; } /* '' */
 .icon-cancel:before { content: '\e801'; } /* '' */
+.icon-github:before { content: '\e802'; } /* '' */
+.icon-angellist:before { content: '\e803'; } /* '' */
+.icon-linkedin:before { content: '\e804'; } /* '' */
+.icon-twitter:before { content: '\e805'; } /* '' */
+.icon-instagram:before { content: '\e806'; } /* '' */
+.icon-dribbble:before { content: '\e807'; } /* '' */
