@@ -1,3 +1,6 @@
+$things-i-am-height: 1em;
+$things-i-am-margin: .2em;
+
 .welcome {
   text-align: center;
   @include display(flex);
@@ -27,5 +30,53 @@
 
   h2 {
     font-size: 3.5em;
+  }
+
+  .things-i-am {
+    @include display(flex);
+    @include justify-content(center);
+    line-height: $things-i-am-height;
+
+    ul {
+      overflow: hidden;
+      height: $things-i-am-height + $things-i-am-margin;
+      text-align: left;
+    }
+
+    li {
+      @include animation(showThings 20s infinite);
+      @include animation-delay(3s);
+      margin-bottom: $things-i-am-margin;
+    }
+  }
+}
+
+@include keyframes(showThings) {
+  $numThings: 4;
+  $hold: 7;
+  $switch: 3;
+  $inc: 0;
+  $amount: -($things-i-am-height + $things-i-am-margin);
+
+  @for $i from 0 through 100 {
+    @if ($inc < $numThings) {
+      @if ($i != 0 and $i % ($hold*$inc + $switch*($inc - 1 )) == 0) {
+        #{$i * 1%} {
+          @include transform(translateY(($inc - 1)*$amount));
+        }
+      }
+
+      @if ($i % ($hold + $switch)*$inc == 0) {
+        #{$i * 1%} {
+          @include transform(translateY($inc*$amount));
+        }
+
+        $inc: $inc + 1;
+      }
+    }
+  }
+
+  100% {
+    @include transform(translateY(($inc - 1)*$amount));
   }
 }
