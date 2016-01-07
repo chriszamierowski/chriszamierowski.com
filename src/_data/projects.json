@@ -1,0 +1,22 @@
+{
+  "summaries": {
+    "morsel": {
+      "name": "Morsel",
+      "url": "/projects/morsel",
+      "description": "Share the stories, inspirations and techniques that make your food your own",
+      "image": "/images/projects/morsel/morsel-summary.png"
+    },
+    "betterfly": {
+      "name": "Betterfly",
+      "url": "/projects/betterfly",
+      "description": "Share the stories, inspirations and techniques that make your food your own",
+      "image": "/images/projects/betterfly/betterfly-summary.png"
+    },
+    "Tom Pham Photography": {
+      "name": "Thomas Pham Photography",
+      "url": "/projects/tompham",
+      "description": "Share the stories, inspirations and techniques that make your food your own",
+      "image": "/images/projects/tompham/tompham-summary.jpg"
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.cards {
+  @include display(flex);
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+}
+
+.card {
+  $card-border-color: $base-border-color;
+  $card-background: $base-background-color;
+  $card-margin: 1em;
+
+  @include flex-basis(18em);
+  @include flex-grow(1);
+  @include transition (all 0.2s ease-in-out);
+  background-color: $card-background;
+  border-radius: 2px;
+  @include shadow();
+  cursor: pointer;
+  margin: 0 $card-margin $base-spacing $card-margin;
+  position: relative;
+  color: $dark-gray;
+
+  .card-image {
+    overflow: hidden;
+    height: 150px;
+    max-height: 150px;
+    border-top-left-radius: $base-border-radius;
+    border-top-right-radius: $base-border-radius;
+
+    img {
+      border-top-left-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      width: 100%;
+    }
+  }
+
+  .card-header {
+    border-radius: $base-border-radius $base-border-radius 0 0;
+    font-weight: bold;
+    line-height: 1.5em;
+    padding: ($base-spacing / 3) ($base-spacing / 2) 0;
+  }
+
+  .card-copy {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    padding: ($base-spacing / 2) ($base-spacing / 2);
+    color: $medium-gray;
+
+    p {
+      margin: 0 0 ($base-spacing / 2);
+    }
+  }
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    @include transform(translate(-2px, -2px));
+  }
+}
