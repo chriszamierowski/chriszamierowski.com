@@ -1,5 +1,18 @@
 .welcome {
   text-align: center;
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(center);
+  height: 80vh;
+  font-size: .6em;
+
+  @include media($screen-small-up) {
+    font-size: .8em;
+  }
+
+  @include media($screen-medium-up) {
+    font-size: 1em;
+  }
 
   h1 {
     font-weight: $ultrabold;

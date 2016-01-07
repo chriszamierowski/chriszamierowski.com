@@ -4,7 +4,7 @@
   width: 100%;
   top: 0;
   
-  @include media($medium-screen-down) {
+  @include media($screen-medium-down) {
     .mobile-menu {
       height: $header-mobile-height;
       @include display(flex);
@@ -16,6 +16,7 @@
     li a {
       padding: 1.5em 0;
       text-align: center;
+      font-size: 1.3em;
     }
   }
 
@@ -52,7 +53,7 @@
     font-size: $cz-logo-mobile-height;
   }
 
-  @include media($medium-screen-up) {
+  @include media($screen-medium-up) {
     height: $header-height;
     //border-bottom: 1px solid $white;
 

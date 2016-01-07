@@ -22,7 +22,7 @@ body {
   background-color: $bright-blue;
   padding-top: $header-mobile-height;
 
-  @include media($medium-screen-up) {
+  @include media($screen-medium-up) {
     padding-top: $header-height;
   }
 }
