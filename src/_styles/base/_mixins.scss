@@ -1,0 +1,7 @@
+@mixin white-link() {
+  color: $white;
+
+  &:hover {
+    color: $bright-orange;
+  }
+}

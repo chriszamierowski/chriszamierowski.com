@@ -5,7 +5,7 @@ $white: #fff;
 $dark-gray: #616161;
 $medium-gray: #78909C;
 $light-gray: #ddd;
-$bright-orange: #E64A19;
+$bright-orange: #FF5722;
 
 // Font weights
 $normal: 400;
@@ -45,3 +45,9 @@ $secondary-background-color: tint($base-border-color, 75%);
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+// Header
+$header-height: 80px;
+$header-mobile-height: 40px;
+$cz-logo-height: 60px;
+$cz-logo-mobile-height: 30px;

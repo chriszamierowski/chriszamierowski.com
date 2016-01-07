@@ -1,7 +1,14 @@
-nav#main-nav: .container
-  .icon-menu
-  ul
-    li #[+link({text: 'Expertise'})(href='/#expertise')]
-    li #[+link({text: 'Examples'})(href='/#examples')]
-    li #[+link({text: 'Resume'})(href='/#resume')]
-    li #[+link({text: 'Contact'})(href='#contact')]
+header.main-nav: nav: .container
+  .mobile-menu
+    a.cz-logo-mobile(href='/')
+      img(src='/images/logos/chriszamierowski_logo.svg')
+    a#menu-toggle.icon-menu(href='#')
+  .main-menu
+    ul
+      li #[+link({text: 'Expertise'})(href='/#expertise')]
+      li #[+link({text: 'Examples'})(href='/#examples')]
+      li.cz-logo
+        a(href='/')
+          img(src='/images/logos/chriszamierowski_logo.svg')
+      li #[+link({text: 'Resume'})(href='/#resume')]
+      li #[+link({text: 'Contact'})(href='#contact')]
