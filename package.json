@@ -29,6 +29,7 @@
     "gulp-newer": "~1.0.0",
     "gulp-plumber": "~1.0.1",
     "gulp-postcss": "~6.0.1",
+    "gulp-print": "^2.0.1",
     "gulp-rename": "~1.2.2",
     "gulp-sass": "~2.0.4",
     "gulp-sourcemaps": "~1.6.0",
@@ -47,6 +48,8 @@
     "node-neat": "^1.7.2",
     "phantomjs": "~1.9.0",
     "rimraf": "~2.4.3",
+    "sprity": "^1.0.8",
+    "sprity-sass": "^1.0.4",
     "vinyl-buffer": "~1.0.0",
     "vinyl-source-stream": "~1.1.0",
     "watchify": "~3.5.0 ",
@@ -74,11 +77,13 @@
       "images": "_images",
       "styles": "_styles",
       "scripts": "_scripts",
+      "sprites": "_sprites",
       "data": "_data"
     },
     "entries": {
       "js": "main**.js",
-      "css": "main**.{sass,scss}"
+      "css": "main**.{sass,scss}",
+      "sprites": "**/*.{png,jpg}"
     }
   },
   "browserify": {
