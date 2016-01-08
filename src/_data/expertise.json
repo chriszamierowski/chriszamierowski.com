@@ -1,0 +1,20 @@
+{
+  "popovers": [
+    {
+      "title": "Front End Development",
+      "content": "Some stuff about front end, with a ' and a \" in it",
+      "position": {
+        "top": "50%",
+        "left": "50%"
+      }
+    },
+    {
+      "title": "UX",
+      "content": "Some stuff about UX with a <a href=\"/#examples\">link</a> in it",
+      "position": {
+        "top": "5%",
+        "left": "10%"
+      }
+    }
+  ]
+}

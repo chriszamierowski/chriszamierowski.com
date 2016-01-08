@@ -1,0 +1,6 @@
+mixin popover(spec)
+  - spec = spec || {}
+
+  .cz-popover
+    span.popover-trigger.popover-pulse(data-title='#{spec.title}', style='top:#{spec.position.top};left:#{spec.position.left}')
+    .popover-content-seed !{spec.content}

@@ -14,7 +14,7 @@
   @include transition (all 0.2s ease-in-out);
   background-color: $card-background;
   border-radius: 2px;
-  @include shadow();
+  @include shadow(true);
   cursor: pointer;
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;

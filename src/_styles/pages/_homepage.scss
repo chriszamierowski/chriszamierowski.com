@@ -80,3 +80,16 @@ $things-i-am-margin: .2em;
     @include transform(translateY(($inc - 1)*$amount));
   }
 }
+
+.expertise {
+  text-align: center;
+}
+
+.t-bone-shaped-skills {
+  display: inline-block;
+  position: relative;
+
+  img {
+    max-height: 80vh;
+  }
+}

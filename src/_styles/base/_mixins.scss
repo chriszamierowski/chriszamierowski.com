@@ -14,10 +14,12 @@
   }
 }
 
-@mixin shadow() {
+@mixin shadow($hover: false) {
   box-shadow: 4px 4px 0 2px rgba($dark-gray, .5);
 
-  &:focus, &:hover {
-    box-shadow: 6px 6px 0 2px rgba($dark-gray, .5);
+  @if($hover) {
+    &:focus, &:hover {
+      box-shadow: 6px 6px 0 2px rgba($dark-gray, .5);
+    }
   }
 }

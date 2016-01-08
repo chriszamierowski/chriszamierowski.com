@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "~2.1.4",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "webui-popover": "^1.2.5"
   },
   "devDependencies": {
     "autoprefixer": "~6.0.3",
     "browser-sync": "~2.9.11",
     "browserify": "~12.0.0",
+    "browserify-shim": "^3.8.11",
     "del": "~2.0.2",
     "envify": "~3.4.0",
     "foldero": "~0.1.1",
@@ -77,6 +79,20 @@
     "entries": {
       "js": "main**.js",
       "css": "main**.{sass,scss}"
+    }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "webui-popover": "./node_modules/webui-popover/dist/jquery.webui-popover.js"
+  },
+  "browserify-shim": {
+    "webui-popover": {
+      "exports": null,
+      "depends": "jquery:jQuery"
     }
   }
 }
