@@ -1,0 +1,16 @@
+extends ../_layouts/base
+
+block config
+  //- Correct base url pathing for this page
+  - var baseUrl = '../'
+
+block header
+  header.main-nav.resume-nav: nav: .container
+    ul
+      li #[+link({text: 'Back'})(href='#')]
+      li #[+link({text: 'Download'})(href='#')]
+      li #[+link({text: 'Print'})(href='#')]
+
+block content
+  p resume page
+  

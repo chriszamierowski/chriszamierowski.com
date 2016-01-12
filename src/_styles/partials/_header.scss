@@ -4,34 +4,17 @@
   width: 100%;
   top: 0;
   z-index: 10;
-  
-  @include media($screen-medium-down) {
-    .mobile-menu {
-      height: $header-mobile-height;
-      @include display(flex);
-      @include flex-direction(row);
-      @include justify-content(space-between);
-      @include align-items(center);
-    }
 
-    li a {
-      padding: 1.5em 0;
-      text-align: center;
-      font-size: 1.3em;
-    }
-  }
-
-  li a {
+  a {
+    @include white-link();
     text-transform: uppercase;
     font-weight: $ultrabold;
     letter-spacing: .5px;
     display: block;
   }
+}
 
-  a {
-    @include white-link();
-  }
-
+.default-nav {
   .cz-logo-mobile {
     height: $cz-logo-mobile-height;
     display: inline-block;
@@ -52,6 +35,22 @@
   .icon-menu {
     line-height: $cz-logo-mobile-height;
     font-size: $cz-logo-mobile-height;
+  }
+
+  @include media($screen-medium-down) {
+    .mobile-menu {
+      height: $header-mobile-height;
+      @include display(flex);
+      @include flex-direction(row);
+      @include justify-content(space-between);
+      @include align-items(center);
+    }
+
+    li a {
+      padding: 1.5em 0;
+      text-align: center;
+      font-size: 1.3em;
+    }
   }
 
   @include media($screen-medium-up) {
@@ -86,5 +85,24 @@
         height: $cz-logo-height;
       }
     }
+  }
+}
+
+.resume-nav {
+  ul {
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(space-between);
+    @include align-items(flex-end);
+
+    li:first-child {
+      margin-right: auto;
+    }
+  }
+
+  a {
+    line-height: $header-mobile-height;
+    padding: 0 .5em;
+    margin: 0 .5em;
   }
 }
