@@ -29,8 +29,13 @@ block content
     .cards
       each c in site.data.projects.summaries 
         +card(c)
-  section#resume.container
-    h2 Resume
-    h5 Northwestern Grad, I’ve worked for agencies, startups and as a freelancer.
-    h6 Here are some tools I like to use:
-    p Check out my #[+link({text: 'full resume'})(href = '/resume')] for a more detailed list of tools and experience
+  section#resume.resume.container-sm
+    h2= site.data.resume.summary.title
+    h5= site.data.resume.summary.blurb
+    p= site.data.resume.summary.blurb_tools
+    ul
+      each t in site.data.resume.summary.tools
+        li
+          +link({text: t.name})(href = t.link, target = '_blank')
+            i(class='sprite sprite-#{t.class}')
+    p !{site.data.resume.summary.more}

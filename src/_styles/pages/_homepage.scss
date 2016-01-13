@@ -93,3 +93,33 @@ $things-i-am-margin: .2em;
     max-height: 80vh;
   }
 }
+
+.resume {
+  @include pad();
+  text-align: center;
+
+  h5 {
+    font-size: 1.2em;
+    font-weight: $normal;
+  }
+
+  .sprite {
+    display: block;
+  }
+
+  ul {
+    @include display(flex);
+    @include justify-content(space-around);
+    @include flex-wrap(wrap);
+    margin-bottom: 2.5em;
+  }
+
+  li {
+    text-align: center;
+
+    a {
+      display: block;
+      padding: 1em;
+    }
+  }
+}

@@ -1,13 +1,28 @@
 .sprite {
-  background-image: url(../images/sprite.png);
-}
-.sprite-bourbon {
-  background-position: -0px -0px;
-  width: 314px;
-  height: 66px;
+  background-image: url(../images/sprites/sprite.png);
 }
 .sprite-angularjs {
-  background-position: -0px -66px;
-  width: 391px;
-  height: 116px;
+  background-position: -0px -0px;
+  width: 108px;
+  height: 108px;
+}
+.sprite-bourbon {
+  background-position: -0px -108px;
+  width: 108px;
+  height: 108px;
+}
+.sprite-gulp {
+  background-position: -0px -216px;
+  width: 108px;
+  height: 108px;
+}
+.sprite-sass {
+  background-position: -0px -324px;
+  width: 108px;
+  height: 108px;
+}
+.sprite-sketch {
+  background-position: -0px -432px;
+  width: 108px;
+  height: 108px;
 }

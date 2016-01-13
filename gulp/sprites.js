@@ -15,7 +15,8 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
     return sprity.src({
       src: path.join(dirs.source, dirs.sprites, entries.sprites),
       style: '_sprites.scss',
-      prefix: 'sprite'
+      prefix: 'sprite',
+      cssPath: '../images/sprites'
       // processor isn't too useful right now if it doesn't automatically generate classes. just output CSS for now
       // , processor: 'sass'
     })
