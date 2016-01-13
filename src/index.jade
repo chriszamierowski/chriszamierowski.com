@@ -29,13 +29,14 @@ block content
     .cards
       each c in site.data.projects.summaries 
         +card(c)
-  section#resume.resume.container-sm
-    h2= site.data.resume.summary.title
-    h5= site.data.resume.summary.blurb
-    p= site.data.resume.summary.blurb_tools
-    ul
-      each t in site.data.resume.summary.tools
-        li
-          +link({text: t.name})(href = t.link, target = '_blank')
-            i(class='sprite sprite-#{t.class}')
-    p !{site.data.resume.summary.more}
+  section#resume.resume
+    .container-sm
+      h2= site.data.resume.summary.title
+      h5= site.data.resume.summary.blurb
+      p= site.data.resume.summary.blurb_tools
+      ul
+        each t in site.data.resume.summary.tools
+          li
+            +link({text: t.name})(href = t.link, target = '_blank')
+              i(class='sprite sprite-#{t.class}')
+      p !{site.data.resume.summary.more}

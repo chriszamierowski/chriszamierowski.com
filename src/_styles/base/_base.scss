@@ -34,5 +34,17 @@ body {
 }
 
 section {
-  padding: 3em 0;
+  padding: $header-mobile-height 0 1em;
+
+  &:last-of-type {
+    padding-bottom: 3em;
+  }
+
+  @include media($screen-medium-up) {
+    padding-top: $header-height;
+  }
+}
+
+@include selection {
+  background-color: $bright-orange;
 }
