@@ -78,12 +78,16 @@
       "styles": "_styles",
       "scripts": "_scripts",
       "sprites": "_sprites",
-      "data": "_data"
+      "data": "_data",
+      "downloads": "downloads"
     },
     "entries": {
       "js": "main**.js",
       "css": "main**.{sass,scss}",
       "sprites": "**/*.{png,jpg}"
+    },
+    "downloads": {
+      "resume": "ChrisZamierowski_resume.pdf"
     }
   },
   "browserify": {
