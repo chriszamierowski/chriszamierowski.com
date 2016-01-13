@@ -3,31 +3,23 @@
 
   .main {
     padding-bottom: 3em;
-    text-align: center;
 
-    @include media($screen-medium-up) {
-      text-align: left;
+    @include media($screen-medium-down) {
+      text-align: center;
     }
 
     header {
-      @include pad();
-
       section {
         @include display(flex);
         @include align-items(top);
-        @include flex-direction(column);
-        text-align: center;
+        @include flex-direction(row);
+        @include justify-content(space-between);
 
-        @include media($screen-medium-up) {
-          @include flex-direction(row);
-          @include justify-content(space-between);
+        @include media($screen-medium-down) {
+          @include flex-direction(column);
 
-          div {
-            text-align: left;
-
-            &:last-child {
-              text-align: right;
-            }
+          div{
+            text-align: center !important;
           }
         }
       }
@@ -38,22 +30,27 @@
 
       h1 {
         color: $dark-gray;
-        font-weight: $ultrabold
+        font-weight: $ultrabold;
       }
 
       h2 {
         font-size: 1.8em;
       }
 
-      div:last-child {
-        text-transform: uppercase;
-        font-weight: $bold;
-        @include display(flex);
-        @include justify-content(space-around);
-        @include flex-direction(column);
+      div{
+        text-align: left;
 
-        p {
-          color: $medium-gray;
+        &:last-child {
+          text-align: right;
+          text-transform: uppercase;
+          font-weight: $bold;
+          @include display(flex);
+          @include justify-content(space-around);
+          @include flex-direction(column);
+
+          p {
+            color: $medium-gray;
+          }
         }
       }
     }
@@ -73,6 +70,40 @@
 
     a {
       text-transform: uppercase;
+    }
+  }
+
+  @media print {
+    font-size: 12px;
+    padding-top: 0;
+
+    .main section {
+      &:not(.lead) {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+      }
+
+      h1 {
+        font-size: 2.4em;
+      }
+
+      h2 {
+        font-size: 1.6em;
+      }
+
+      h3 {
+        font-size: 1.6em;
+      }
+
+      .lead {
+        font-size: 1.2em;
+        line-height: 1.5em;
+      }
+    }
+
+    .main-nav, .contact {
+      display: none;
     }
   }
 }

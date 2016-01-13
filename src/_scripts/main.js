@@ -20,4 +20,9 @@ $(function() {
     e.preventDefault();
     menuToggle.toggleClass('show-menu').parent().next().slideToggle();
   });
+
+  $('#resume-print').on('click', function(e) {
+    e.preventDefault();
+    window.print();
+  });
 });

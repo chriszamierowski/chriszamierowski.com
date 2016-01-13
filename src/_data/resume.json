@@ -66,11 +66,6 @@
       ]
     },
     {
-      "title": "Some Things I Use",
-      "subtitle": "Software, tools, languages, libraries, etc.",
-      "description": "AngularJS, Node.js, jQuery, Underscore, SASS, Compass, Yeoman, Express, Grunt, Handlebars, Karma, Jasmine, Bootstrap, Bourbon/Bitters/Neat/Refills, gulp, Node.js, Ruby on Rails, PHP, Sublime Text 2, Sketch, PhotoShop, Git (CLI), Terminal, Heroku, AWS, GA, Mixpanel, Rollbar, Loggly, npm, Bower, Asana, Pivotal Tracker, Balsamiq, pen & paper"
-    },
-    {
       "title": "Education",
       "description": [
         "Master of Science in Computer Science. Northwestern University, Robert R. McCormick School of Engineering and Applied Science. 2011.",
