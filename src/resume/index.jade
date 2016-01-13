@@ -1,16 +1,44 @@
 extends ../_layouts/base
 
-block config
-  //- Correct base url pathing for this page
+block vars
   - var baseUrl = '../'
+  - var bodyClass = 'resume-page';
 
 block header
   header.main-nav.resume-nav: nav: .container
     ul
-      li #[+link({text: 'Back'})(href='#')]
+      li #[+link({text: 'Back'})(href='/#resume')]
       li #[+link({text: 'Download'})(href='#')]
       li #[+link({text: 'Print'})(href='#')]
 
 block content
-  p resume page
-  
+  .container-sm.light-scheme
+    header
+      section
+        div
+          h1= site.data.resume.header.name
+          h2= site.data.resume.header.tagline
+        div
+          +link({text: site.data.resume.header.site.name})(href=site.data.resume.header.site.link, target='_blank')
+          +link({text: site.data.resume.header.email.name})(href=site.data.resume.header.email.link)
+          p= site.data.resume.header.location
+      section
+        h3.lead= site.data.resume.header.blurb
+    each s in site.data.resume.sections
+      section
+        h3= s.title
+        if s.subtitle
+          h5= s.subtitle
+        if (typeof(s.description) === 'object')
+          ul
+            each d in s.description
+              li
+                p= d
+        else
+          p= s.description
+        if s.jobs
+          each j in s.jobs
+            ul: li
+              p #{j.jobtitle}!{j.company ? ' - <a href=\"'+j.company.link+'\" target=\"_blank\">'+j.company.name+'</a>' : ''}. #{j.dates}. !{j.description}
+
+

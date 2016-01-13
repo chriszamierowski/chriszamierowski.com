@@ -1,0 +1,78 @@
+.resume-page {
+  background-color: $white;
+
+  .main {
+    padding-bottom: 3em;
+    text-align: center;
+
+    @include media($screen-medium-up) {
+      text-align: left;
+    }
+
+    header {
+      @include pad();
+
+      section {
+        @include display(flex);
+        @include align-items(top);
+        @include flex-direction(column);
+        text-align: center;
+
+        @include media($screen-medium-up) {
+          @include flex-direction(row);
+          @include justify-content(space-between);
+
+          div {
+            text-align: left;
+
+            &:last-child {
+              text-align: right;
+            }
+          }
+        }
+      }
+
+      a {
+        display: block;
+      }
+
+      h1 {
+        color: $dark-gray;
+        font-weight: $ultrabold
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+
+      div:last-child {
+        text-transform: uppercase;
+        font-weight: $bold;
+        @include display(flex);
+        @include justify-content(space-around);
+        @include flex-direction(column);
+
+        p {
+          color: $medium-gray;
+        }
+      }
+    }
+
+    section {
+      @include pad();
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: $small-spacing/2;
+    }
+
+    a {
+      text-transform: uppercase;
+    }
+  }
+}

@@ -24,6 +24,12 @@ h6 {
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
   font-weight: $heading-font-weight;
+
+  .light-scheme & {
+    color: $medium-gray;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
 }
 
 h1 {
@@ -40,6 +46,21 @@ h3 {
 
 p {
   margin: 0 0 $small-spacing;
+
+  .light-scheme & {
+    color: $dark-gray;
+  }
+}
+
+.lead {
+  color: $medium-gray;
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.2em;
+  text-transform: none !important;
+  font-weight: $normal;
+  @include span-columns(10);
+  @include shift(1);
 }
 
 a {
@@ -50,7 +71,15 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: shade($action-color, 25%);
+    color: $bright-orange;
+  }
+
+  a:visited {
+    color: $dark-gray;
+  }
+
+  .light-scheme & {
+    @include light-scheme-link();
   }
 }
 

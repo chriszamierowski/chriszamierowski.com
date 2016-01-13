@@ -1,0 +1,89 @@
+{
+  "header": {
+    "name": "Chris Zamierowski",
+    "tagline": "Web Developer, Carnivore",
+    "site": {
+      "name": "chriszamierowski.com",
+      "link": "http://chriszamierowski.com"
+    },
+    "email": {
+      "name": "cz@chriszamierowski.com",
+      "link": "mailto:cz@chriszamierowski.com"
+    },
+    "location": "Based in Chicago, IL",
+    "blurb": "I’m a web developer producing (mostly) front-end solutions that are clean and well-coded. I'm interested in how design and web technologies can be used to enhance user experience. Also, food."
+  },
+  "sections": [
+    {
+      "title": "Some Things I Use",
+      "subtitle": "Software, tools, languages, libraries, etc.",
+      "description": "AngularJS, SASS, Yeoman, Express, Grunt, Jade, Bootstrap, jQuery, Compass, Underscore, Bourbon, Bitters, Neat, gulp, Node.js, Ruby on Rails, Handlebars, Karma, Jasmine, PHP, Sublime Text 2, Sketch, PhotoShop, Git (CLI),  Heroku, AWS, GA, Mixpanel, Rollbar, Loggly, npm, Bower, Terminal, Asana, Pivotal Tracker, Balsamiq, pen & paper"
+    },
+    {
+      "title": "Work Experience",
+      "jobs": [
+        {
+          "jobtitle": "Front-end Engineer",
+          "company": {
+            "name": "Leo Burnett Interactive",
+            "link": "http://www.leoburnettinteractive.com/"
+          },
+          "dates": "March 2015 - July 2015",
+          "description": "Contract work, worked with team to build single-page online dashboard and on-device webapp for an electronics client."
+        },
+        {
+          "jobtitle": "Front-end Engineer",
+          "company": {
+            "name": "Morsel",
+            "link": "https://www.eatmorsel.com/"
+          },
+          "dates": "Nov 2013 - Feb 2015",
+          "description": "First hire, responsible for full UI, design and development of web stack of <a href=\"https://www.eatmorsel.com/\">eatmorsel.com</a>."
+        },
+        {
+          "jobtitle": "Software Engineer",
+          "company": {
+            "name": "Betterfly",
+            "link": "http://betterfly.com/"
+          },
+          "dates": "Feb 2013 - Oct 2013",
+          "description": "Built and managed front-end of <a href=\"http://betterfly.com/\">betterfly.com</a> (acquired 2013), including custom online video chat tool."
+        },
+        {
+          "jobtitle": "Web Developer",
+          "company": {
+            "name": "Magnani Caruso Dutton",
+            "link": "http://mcdpartners.com/"
+          },
+          "dates": "Jun 2011 - Feb 2013",
+          "description": "Worked together with Design, IA, UX teams to build and deliver sites for clients including Discover Financial Services and E*TRADE."
+        },
+        {
+          "jobtitle": "Freelance Web Design & Development",
+          "dates": "Jan 2009 - Present",
+          "description": "Provided full design and development of sites for multiple small clients, ranging from portfolio to e-commerce sites."
+        }
+      ]
+    },
+    {
+      "title": "Some Things I Use",
+      "subtitle": "Software, tools, languages, libraries, etc.",
+      "description": "AngularJS, Node.js, jQuery, Underscore, SASS, Compass, Yeoman, Express, Grunt, Handlebars, Karma, Jasmine, Bootstrap, Bourbon/Bitters/Neat/Refills, gulp, Node.js, Ruby on Rails, PHP, Sublime Text 2, Sketch, PhotoShop, Git (CLI), Terminal, Heroku, AWS, GA, Mixpanel, Rollbar, Loggly, npm, Bower, Asana, Pivotal Tracker, Balsamiq, pen & paper"
+    },
+    {
+      "title": "Education",
+      "description": [
+        "Master of Science in Computer Science. Northwestern University, Robert R. McCormick School of Engineering and Applied Science. 2011.",
+        "Bachelor of Science in Computer Science. Animate Arts (Adjunct Major). Northwestern University, Robert R. McCormick School of Engineering and Applied Science. 2010."
+      ]
+    },
+    {
+      "title": "Tidbits",
+      "description": [
+        "I sometimes stand while I work",
+        "I eat kiwis with the skin on",
+        "I appreciate a good oatmeal stout"
+      ]
+    }
+  ]
+}

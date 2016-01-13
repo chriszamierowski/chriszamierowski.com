@@ -1,7 +1,7 @@
 mixin card(spec)
   - spec = spec || {}
 
-  a.card(href='#{spec.url}')
+  a.card.light-scheme(href='#{spec.url}')
     .card-image
       img(src='#{spec.image}', alt='#{spec.name}')
     .card-header= spec.name

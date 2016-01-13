@@ -1,6 +1,8 @@
 @mixin white-link() {
   color: $white;
 
+  &:active,
+  &:focus,
   &:hover {
     color: $bright-orange;
   }
@@ -9,8 +11,20 @@
 @mixin orange-link() {
   color: $bright-orange;
 
+  &:active,
+  &:focus,
   &:hover {
     color: $dark-blue;
+  }
+}
+
+@mixin light-scheme-link() {
+  color: $bright-blue;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $bright-orange;
   }
 }
 
