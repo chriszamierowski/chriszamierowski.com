@@ -14,9 +14,47 @@
     },
     "Tom Pham Photography": {
       "name": "Thomas Pham Photography",
-      "url": "/projects/tompham",
+      "url": "/projects/thomas-pham-photography",
       "description": "Share the stories, inspirations and techniques that make your food your own",
-      "image": "/images/projects/tompham/tompham-summary.jpg"
+      "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-summary.jpg"
+    }
+  },
+  "detailed": {
+    "tompham": {
+      "title": "Thomas Pham Photography",
+      "class": "tompham",
+      "url": "",
+      "header_image": "/images/projects/thomas-pham-photography/thomas-pham-photography-splash.jpg",
+      "badges": [
+        "Visual Design",
+        "Front End Development",
+        "Back End Development"
+      ],
+      "intro_copy": [
+        "Tom contacted me to work with him to give his small photography business an online home. He wanted a place to show potential clients some of his existing work and for clients to browse their shoots before selecting their final collection.",
+        "He wanted the site to be simple and elegant, with a focus on big photos as much as possible."
+      ],
+      "architecture": {
+        "video": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover.mp4",
+        "video_poster": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover-poster.jpg",
+        "copy": [
+          "Since Tom's two main areas of focus are weddings and senior portraits, we decided to organize the site using a splash page and two identical sub-sites.",
+          "This allowed potential clients to browse info and photos only related to their interest."
+        ]
+      },
+      "contact": {
+        "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-contact.jpg",
+        "copy": "I used only black and white in the design, which kept it clean and unobtrusive, which let his photos shine through on each page."
+      },
+      "final": {
+        "copy": [
+          "To minimize Tom's effort needed for client and photo management, I set up a client portal managed using Google Docs, which meant no new software to learn or fancy URLs to remember.",
+          "The site was built using PHP, CSS and JavaScript. Check it out at <a href=\"http://thomasphamphotography.com\" target=\"_blank\">thomasphamphotography.com</a>"
+        ]
+      },
+      "reception": {
+        "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-reception.jpg"
+      }
     }
   }
 }

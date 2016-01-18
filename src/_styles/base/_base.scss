@@ -24,8 +24,10 @@ body {
   background-color: $bright-blue;
   padding-top: $header-mobile-height;
 
-  @include media($screen-medium-up) {
-    padding-top: $header-height;
+  &.homepage {
+    @include media($screen-medium-up) {
+      padding-top: $header-height;
+    }
   }
 }
 
@@ -41,7 +43,9 @@ section {
   }
 
   @include media($screen-medium-up) {
-    padding-top: $header-height;
+    .homepage & {
+      padding-top: $header-height;
+    }
   }
 }
 

@@ -4,6 +4,7 @@
   width: 100%;
   top: 0;
   z-index: 10;
+  height: $header-mobile-height;
 
   a {
     @include white-link();

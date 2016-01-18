@@ -96,3 +96,17 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+.badge{
+  $badge-font-size: .8em;
+  $badge-bg-color: $light-gray;//$dark-blue;
+  $badge-color: $medium-gray;
+
+  background-color: $badge-bg-color;
+  border-radius: $badge-font-size * 5;
+  color: $badge-color;
+  display: inline-block;
+  font-size: $badge-font-size;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}

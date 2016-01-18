@@ -1,0 +1,61 @@
+extends ../../_layouts/base
+
+block vars
+  - var baseUrl = '../../'
+  - var pageData = site.data.projects.detailed.tompham
+  - var bodyClass = 'project-page project-'+ pageData.class
+
+
+block header
+  header.main-nav.resume-nav: nav: .container
+    ul
+      li #[+link({text: 'Back'})(href='/#examples')]
+
+block content
+  .intro-image
+    img(src=pageData.header_image)
+  section
+    .container.light-scheme
+      h1= pageData.title
+    .container-sm.light-scheme
+      .badges
+        each b in pageData.badges
+          .badge= b
+      .copy-wrapper
+        each c in pageData.intro_copy
+          p= c
+  .side-video
+    .container
+      .video-wrapper
+        video(src='#{pageData.architecture.video}', type='video/mp4', autoplay='autoplay', loop='loop', poster='#{pageData.architecture.video_poster}', preload='auto')
+      .side-video-content
+        each c in pageData.architecture.copy
+          p= c
+  section
+    .container-sm.light-scheme
+      .copy
+        p= pageData.contact.copy
+  .container.wide-image
+    img(src=pageData.contact.image)
+  section
+    .container-sm.light-scheme
+      .copy
+        each c in pageData.final.copy
+          p !{c}
+  .container.wide-image
+    img(src=pageData.reception.image)
+  //- .device-background
+    .device-text
+      h4 Text about App or Device
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, recusandae? Deserunt repellendus.
+    .device
+      .screen
+  //- .side-image
+    .images-wrapper
+    .side-image-content
+      h4 Topic Name
+      h1 Message with a gradient image
+      p
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
+        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda nihil suscipit obcaecati sit, cum quod corporis adipisci ipsam, fugiat, quae error. Eaque commodi, dicta quidem explicabo mollitia inventore quibusdam.
