@@ -10,7 +10,7 @@
       "name": "Betterfly",
       "url": "/projects/betterfly",
       "description": "Share the stories, inspirations and techniques that make your food your own",
-      "image": "/images/projects/betterfly/betterfly-summary.png"
+      "image": "/images/projects/betterfly/betterfly-summary.jpg"
     },
     "Tom Pham Photography": {
       "name": "Thomas Pham Photography",
@@ -90,6 +90,33 @@
         "image": "/images/projects/morsel/morsel-big-star.jpg",
         "copy": [
           "Morsel still lives on, but my involvement in the product has ceased. Check it out at <a href=\"https://eatmorsel.com\" target=\"_blank\">eatmorsel.com</a>"
+        ]
+      }
+    },
+    "betterfly": {
+      "title": "Betterfly",
+      "class": "betterfly",
+      "header_image": "/images/projects/betterfly/betterfly-homepage.jpg",
+      "badges": [
+        "Front End Development",
+        "UI Design"
+      ],
+      "intro_copy": [
+        "Betterfly was a community for connecting personal service providers (guitar teachers, life coaches, Spanish tutors, etc) to students looking to learn online.",
+        "As the lone front-end developer, I was responsible for full UI design and development, including building a custom online video chat tool."
+      ],
+      "search": {
+        "image": "/images/projects/betterfly/betterfly-search.jpg"
+      },
+      "video_chat": {
+        "image": "/images/projects/betterfly/betterfly-video-chat.jpg",
+        "copy": "Betterfly students and teachers were all over the country, so we needed an integrated video tool that was easy to use and fit Betterfly’s existing design. I built Betterfly’s custom video chat using WebRTC and text chat using WebSockets, as well as a diagnostic tool for testing microphone and video connections and internet speed."
+      },
+      "final": {
+        "image": "/images/projects/betterfly/betterfly-guarantee.jpg",
+        "copy": [
+          "I worked mostly in the View layer of our PHP application, using jQuery and Sass on the front-end to build custom interfaces and page layouts.",
+          "Betterfly was acquired by <a href=\"http://takelessons.com\" target=\"_blank\">TakeLessons</a> in late 2013."
         ]
       }
     }
