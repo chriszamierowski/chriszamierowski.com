@@ -24,11 +24,11 @@ block content
       .copy-wrapper
         each c in pageData.intro_copy
           p= c
-  .side-video
+  .side-content
     .container
       .video-wrapper
         video(src='#{pageData.architecture.video}', type='video/mp4', autoplay='autoplay', loop='loop', poster='#{pageData.architecture.video_poster}', preload='auto')
-      .side-video-content
+      .side-content-copy
         each c in pageData.architecture.copy
           p= c
   section

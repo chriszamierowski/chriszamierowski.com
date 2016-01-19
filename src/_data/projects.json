@@ -4,7 +4,7 @@
       "name": "Morsel",
       "url": "/projects/morsel",
       "description": "Share the stories, inspirations and techniques that make your food your own",
-      "image": "/images/projects/morsel/morsel-summary.png"
+      "image": "/images/projects/morsel/morsel-summary.jpg"
     },
     "betterfly": {
       "name": "Betterfly",
@@ -23,7 +23,6 @@
     "tompham": {
       "title": "Thomas Pham Photography",
       "class": "tompham",
-      "url": "",
       "header_image": "/images/projects/thomas-pham-photography/thomas-pham-photography-splash.jpg",
       "badges": [
         "Visual Design",
@@ -54,6 +53,44 @@
       },
       "reception": {
         "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-reception.jpg"
+      }
+    },
+    "morsel": {
+      "title": "Morsel",
+      "class": "morsel",
+      "header_image": "/images/projects/morsel/morsel-kevin.jpg",
+      "badges": [
+        "Front End Development",
+        "User Research",
+        "Wireframes",
+        "UI Design"
+      ],
+      "intro_copy": [
+        "Morsel is a storytelling platform for people who love food. Built around a community of people passionate about food and drink with a curiosity of what inspires others, Morsel allows you understand the chef's vision, the mixologist's creativity, the sommelier's understanding of what makes a great pairing and the home-cook's creative meals all in one place.",
+        "As the first hire and lone front-end developer, I was responsible for full UI design and development of the site. This included working with the full web stack, interfacing with our API, prototyping and user research."
+      ],
+      "single_page": {
+        "background": "/images/projects/morsel/morsel-troost.jpg",
+        "image": "/images/projects/morsel/morsel-mobile.jpg",
+        "title": "Morsel on Mobile",
+        "copy": [
+          "Full functionality (without sacrificing speed) on mobile was a priority for us, so I built the site as a fully responsive single-page app, written in AngularJS on top of a simple Express (Node.js) web server. This allowed functionality updates to be in one codebase, cutting down development time, as well as keeping UI elements consistent across all device sizes.",
+          "To grow quickly and consistently across platforms, my teammate built a RESTful API in Ruby on Rails that would interface with both an iOS app and my web app, which further improved perceived loading times on mobile web by only needing to load front-end assets once per user session."
+        ]
+      },
+      "workflow": {
+        "image": "/images/projects/morsel/morsel-add.jpg",
+        "copy": "Some of the things I implemented in the Angular app were file uploads, routing, inline form validations (with client and server side errors) and plenty of responsive, interactive layouts. The front-end development workflow used Grunt with Handlebars templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and deployed to Heroku."
+      },
+      "users": {
+        "image": "/images/projects/morsel/morsel-storyboards.jpg",
+        "copy": "I had the opportunity to conduct both formative and summative user research (think interviewing a chef in their restaurant) and developing user personas. We used our findings to refine Morsel creation process, among other user flows."
+      },
+      "final": {
+        "image": "/images/projects/morsel/morsel-big-star.jpg",
+        "copy": [
+          "Morsel still lives on, but my involvement in the product has ceased. Check it out at <a href=\"https://eatmorsel.com\" target=\"_blank\">eatmorsel.com</a>"
+        ]
       }
     }
   }

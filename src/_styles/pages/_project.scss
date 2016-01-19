@@ -26,25 +26,26 @@
     $device-background: darken(gray, 40%);
     $device-backside-background: darken($device-background, 10%);
     $device-text-color: white;
-    $device-background-top: #162C4C; 
-    $device-background-bottom: #0A120D;
-    $gradient-angle: 10deg;
-    $device-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
-    $device-screen-image: 'https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/cosmin_capitanu_screen.jpg';
 
-    @include background(url($device-image), linear-gradient($gradient-angle, $device-background-bottom, $device-background-top), no-repeat $device-background-top scroll);
+    @include outer-container;
+
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 20em;
     width: 100%;
+    position: relative;
 
     .device-text {
       padding: 2em;
 
-      @include media($large-screen) {
+      @include media($screen-medium-up) {
         float: left;
         max-width: 50%;
         padding: 4em;
+      }
+
+      @include media($screen-large-up) {
+        max-width: 65%;
       }
 
       h4 {
@@ -63,19 +64,31 @@
     }
 
     .device {
-      display: none;
       position: relative;
+      text-align: center;
+      max-height: 60vh;
+      overflow: hidden;
+      padding: 1em;
+      background-color: $white;
+      $device-medium-translate-y: 3em;
+      $device-large-translate-y: -4em;
 
-      @include media($large-screen) {
+      .screen {
+        display: none;
+      }
+
+      @include media($screen-medium-up) {
+        overflow: auto;
+        max-height: none;
         @include transform(
           perspective(800px) 
           translateX(0px) 
-          translateY(-100px) 
+          translateY($device-medium-translate-y) 
           translateZ(50px) 
           rotateX(0deg) 
           rotateY(-20deg) 
           rotateZ(-0deg));
-        background: $device-background;
+        background-color: $device-background;
         border-radius: 2em;
         box-shadow: 
           1px 0px lighten($device-backside-background, 20%), 
@@ -91,88 +104,53 @@
         width: $device-screen-width + (2 * $device-padding-horizontal);
         z-index: 99999;
 
+        img {
+          display: none;
+        }
+
         .screen {
+          display: block;
           @include size($device-screen-width $device-screen-height);
-          background-image: url($device-screen-image);
           background-size: cover;
           border-radius: 0.2em;
           box-shadow: inset 0 1px 8px transparentize(black, 0.5);
           margin: auto;
         }
       }
+
+      @include media($screen-large-up) {
+        @include transform(
+          perspective(800px) 
+          translateX(0px) 
+          translateY($device-large-translate-y) 
+          translateZ(50px) 
+          rotateX(0deg) 
+          rotateY(-20deg) 
+          rotateZ(-0deg));
+      }
     }
   }
 
-  .side-image {  
-    $base-line-height: 1.5em !default;
-    $action-color: #477DCA !default;
-    $dark-gray: #333 !default;
-    $large-screen: em(860) !default;
-    $base-font-color: $dark-gray !default;
-    $side-image-background-top: #B5EBEB;
-    $side-image-background-bottom: #5DAC5D;
-    $side-image-content-background: #F9F9F9;
-    $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
-
-    background: $side-image-content-background;
-
-    @include media($large-screen) {
-      @include row(table);
+  .side-content {
+    .container {
+      background: $light-gray;
     }
 
     .images-wrapper {
-      @include background(url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
-      background-color: $side-image-background-top;
+      // @include background(url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+      // background-color: $side-image-background-top;
       background-size: cover;
-      border-bottom: $side-image-border;
+      border-bottom: $medium-gray;
       display: block;
       min-height: 12em;
       padding: 3em;
 
-      @include media($large-screen) {
+      @include media($screen-medium-up) {
         @include span-columns(4);
         background-position: bottom;
         background-size: cover;
-        border-right: $side-image-border;
+        border-right: $medium-gray;
       }
-    }
-
-    .side-image-content {
-      @include span-columns(12);
-      padding: 1em 1em 4em 1em;
-
-      @include media($large-screen) {
-        @include span-columns(8);
-        padding: 4em 4em 8em 4em;
-      }
-
-      h1 {
-        margin-bottom: 0.9em;
-      }
-
-      h4 {
-        background: #BBB;
-        color: white;
-        display: inline-block;
-        font-size: 0.75em;
-        margin-bottom: 1.3em;
-        padding: 3px 8px;
-        text-transform: uppercase;
-      }
-
-      p {
-        color: $base-font-color;
-        line-height: $base-line-height;
-        margin-bottom: 3em;
-      }
-    }
-
-    @include reset-display();
-  }
-
-  .side-video {
-    .container {
-      background: $light-gray;
     }
 
     .video-wrapper {
@@ -187,7 +165,7 @@
       }
     }
 
-    .side-video-content {
+    .side-content-copy {
       @include span-columns(12);
       color: $dark-gray;
       padding: 3em 1em 4em 1em;
@@ -199,6 +177,20 @@
 
       p {
         color: $dark-gray;
+      }
+
+      h1 {
+        margin-bottom: 0.9em;
+      }
+
+      h4 {
+        background: #BBB;
+        color: white;
+        display: inline-block;
+        font-size: 0.75em;
+        margin-bottom: 1.3em;
+        padding: 3px 8px;
+        text-transform: uppercase;
       }
     }
   }
@@ -221,6 +213,10 @@
 
   &.project-tompham .intro-image {
     background-color: black;
+  }
+
+  &.project-morsel .device-background {
+    background: #e96144;
   }
 
   .badges {
