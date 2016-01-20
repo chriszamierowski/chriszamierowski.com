@@ -43,6 +43,7 @@
   },
   "sections": [
     {
+      "id": "things-i-use",
       "title": "Some Things I Use",
       "subtitle": "Software, tools, languages, libraries, etc.",
       "description": "AngularJS, SASS, Yeoman, Express, Grunt, Jade, Bootstrap, jQuery, Compass, Underscore, Bourbon, Bitters, Neat, gulp, Node.js, Ruby on Rails, Handlebars, Karma, Jasmine, PHP, Sublime Text 2, Sketch, PhotoShop, Git (CLI),  Heroku, AWS, GA, Mixpanel, Rollbar, Loggly, npm, Bower, Terminal, Asana, Pivotal Tracker, Balsamiq, pen & paper"

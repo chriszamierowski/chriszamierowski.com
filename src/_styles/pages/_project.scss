@@ -102,7 +102,6 @@
         margin-right: 5em;
         padding: $device-padding-vertical 0;
         width: $device-screen-width + (2 * $device-padding-horizontal);
-        z-index: 99999;
 
         img {
           display: none;
@@ -197,13 +196,34 @@
 
   .intro-image {
     text-align: center;
-    max-height: 40vh;
-    background-size: cover;
-    overflow: hidden;
-    transition: max-height .6s $base-timing;
 
-    &:hover {
-      max-height: 200vh;
+    .intro-image-wrap {
+      display: inline-block;
+      position: relative;
+      max-height: 40vh;
+      overflow: hidden;
+      transition: max-height .6s $base-timing;
+
+      &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        content: '';
+        @include background(linear-gradient(rgba($dark-gray, 0) 0%, rgba($dark-gray, 0) 55%, rgba($dark-gray, .2) 90%, rgba($dark-gray, .8) 100%), no-repeat);
+        opacity: 1;
+        transition: opacity .6s $base-timing;
+      }
+
+      &:hover {
+        max-height: 200vh;
+
+        &:after {
+          opacity: 0;
+        }
+      }
     }
 
     & + section {
@@ -232,7 +252,8 @@
   }
 
   .copy-wrapper {
-    line-height: 1.8em;
+    font-size: 1.05em;
+    line-height: 2em;
 
     @include media($screen-medium-up) {
       @include span-columns(8);
@@ -242,7 +263,8 @@
   .copy {
     @include span-columns(10);
     @include shift(1);
-    line-height: 1.8em;
+    font-size: 1.05em;
+    line-height: 2em;
 
     @include media($screen-medium-up) {
       @include span-columns(8);
@@ -254,6 +276,7 @@
     img {
       display: block;
       margin: 0 auto;
+      border: 1px solid $light-gray;
     }
   }
 

@@ -2,18 +2,76 @@
   "popovers": [
     {
       "title": "Front End Development",
-      "content": "Some stuff about front end, with a ' and a \" in it",
+      "content": "I write clean, durable code to build responsive interfaces. I use the latest technologies to build and test optimized experiences across platforms and browsers.",
+      "tools": [
+        "Sass",
+        "Angular",
+        "HTML5"
+      ],
       "position": {
-        "top": "50%",
-        "left": "50%"
+        "top": "60%",
+        "left": "48%"
       }
     },
     {
-      "title": "UX",
-      "content": "Some stuff about UX with a <a href=\"/#examples\">link</a> in it",
+      "title": "UX Design",
+      "content": "<i>How can I make a user’s interaction as simple as possible?</i> Wireframes and rapid prototyping (I like to use HTML and very basic CSS - it’s easy, quick and I know it well, but most importantly it feels “real” to a user) are great tools for understanding behavior and validating designs.",
+      "tools": [
+        "HTML",
+        "Balsamiq",
+        "Pen & Paper"
+      ],
       "position": {
-        "top": "5%",
-        "left": "10%"
+        "top": "4%",
+        "left": "5%"
+      }
+    },
+    {
+      "title": "UI Design",
+      "content": "I’m a believer in style guides and atomic design. I have some experience as a visual designer, but I’m building my design chops and I tend to leave things like iconography to others.",
+      "tools": [
+        "Sketch",
+        "Photoshop",
+        "Sass",
+        "Compass",
+        "Bourbon",
+        "Bootstrap"
+      ],
+      "position": {
+        "top": "1%",
+        "left": "25%"
+      }
+    },
+    {
+      "title": "Product Design",
+      "content": "Developers are often only concerned with coding; I enjoy being a part of the full product development process. While maintaining an attention to detail, I always value seeing the big picture. I create mockups and iterate on solutions to make sure what I’m building makes sense.",
+      "tools": [
+        "Asana"
+      ],
+      "position": {
+        "top": "2%",
+        "left": "75%"
+      }
+    },
+    {
+      "title": "Back End Developer",
+      "content": "While I don’t consider myself a full-stack developer (yet), I do have experience working with several backend languages/frameworks. I’m most comfortable in the View layer but am familiar enough to touch other parts of an application when needed.",
+      "tools": [
+        "Node.js",
+        "Ruby on Rails",
+        "PHP"
+      ],
+      "position": {
+        "top": "4%",
+        "left": "90%"
+      }
+    },
+    {
+      "title": "Team Player",
+      "content": "I value communication over pretty much everything else.",
+      "position": {
+        "top": "40%",
+        "left": "53%"
       }
     }
   ]

@@ -29,9 +29,15 @@
         "Front End Development",
         "Back End Development"
       ],
+      "prev_project": {
+        "url": "/projects/betterfly"
+      },
+      "next_project": {
+        "url": ""
+      },
       "intro_copy": [
-        "Tom contacted me to work with him to give his small photography business an online home. He wanted a place to show potential clients some of his existing work and for clients to browse their shoots before selecting their final collection.",
-        "He wanted the site to be simple and elegant, with a focus on big photos as much as possible."
+        "Tom contacted me to work with him to give his small photography business an online home. He wanted a place to show potential clients some of his existing work and for clients to browse their photos before selecting their final album.",
+        "Tom wanted the site to be simple and elegant, with a focus on big photos."
       ],
       "architecture": {
         "video": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover.mp4",
@@ -43,11 +49,11 @@
       },
       "contact": {
         "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-contact.jpg",
-        "copy": "I used only black and white in the design, which kept it clean and unobtrusive, which let his photos shine through on each page."
+        "copy": "I used a clean, unobtrusive, black and white design that let Tom's photos shine through on each page."
       },
       "final": {
         "copy": [
-          "To minimize Tom's effort needed for client and photo management, I set up a client portal managed using Google Docs, which meant no new software to learn or fancy URLs to remember.",
+          "To minimize Tom's effort needed for client and photo management, I set up a client portal he could manage using Google Docs, which meant no new software to learn or fancy URLs to remember.",
           "The site was built using PHP, CSS and JavaScript. Check it out at <a href=\"http://thomasphamphotography.com\" target=\"_blank\">thomasphamphotography.com</a>"
         ]
       },
@@ -59,14 +65,23 @@
       "title": "Morsel",
       "class": "morsel",
       "header_image": "/images/projects/morsel/morsel-kevin.jpg",
+      "prev_project": {
+        "url": ""
+      },
+      "next_project": {
+        "url": "/projects/betterfly"
+      },
       "badges": [
         "Front End Development",
         "User Research",
         "Wireframes",
-        "UI Design"
+        "UI Design",
+        "Responsive Web Design",
+        "A/B Testing",
+        "User Analytics"
       ],
       "intro_copy": [
-        "Morsel is a storytelling platform for people who love food. Built around a community of people passionate about food and drink with a curiosity of what inspires others, Morsel allows you understand the chef's vision, the mixologist's creativity, the sommelier's understanding of what makes a great pairing and the home-cook's creative meals all in one place.",
+        "Morsel is a storytelling platform for people who love food. Built around a community of people passionate about food and drink with a curiosity about what inspires others, Morsel allows you to understand the chef's vision, the mixologist's creativity, the sommelier's understanding of what makes a great pairing and the home-cook's creative meals all in one place.",
         "As the first hire and lone front-end developer, I was responsible for full UI design and development of the site. This included working with the full web stack, interfacing with our API, prototyping and user research."
       ],
       "single_page": {
@@ -84,11 +99,12 @@
       },
       "users": {
         "image": "/images/projects/morsel/morsel-storyboards.jpg",
-        "copy": "I had the opportunity to conduct both formative and summative user research (think interviewing a chef in their restaurant) and developing user personas. We used our findings to refine Morsel creation process, among other user flows."
+        "copy": "I had the opportunity to conduct both formative and summative user research (think interviewing a chef in their restaurant) and develop user personas. We used our findings to refine the <i>morsel</i> creation process, among other user flows."
       },
       "final": {
         "image": "/images/projects/morsel/morsel-big-star.jpg",
         "copy": [
+          "To see what our users were up to on the site we used Mixpanel and Google Analytics and integrated Rollbar for error reporting.",
           "Morsel still lives on, but my involvement in the product has ceased. Check it out at <a href=\"https://eatmorsel.com\" target=\"_blank\">eatmorsel.com</a>"
         ]
       }
@@ -97,9 +113,17 @@
       "title": "Betterfly",
       "class": "betterfly",
       "header_image": "/images/projects/betterfly/betterfly-homepage.jpg",
+      "prev_project": {
+        "url": "/projects/morsel"
+      },
+      "next_project": {
+        "url": "/projects/thomas-pham-photography"
+      },
       "badges": [
         "Front End Development",
-        "UI Design"
+        "UI Design",
+        "A/B Testing",
+        "User Analytics"
       ],
       "intro_copy": [
         "Betterfly was a community for connecting personal service providers (guitar teachers, life coaches, Spanish tutors, etc) to students looking to learn online.",
@@ -116,6 +140,7 @@
         "image": "/images/projects/betterfly/betterfly-guarantee.jpg",
         "copy": [
           "I worked mostly in the View layer of our PHP application, using jQuery and Sass on the front-end to build custom interfaces and page layouts.",
+          "I also kept tabs on user behavior on the site and implemented A/B tests and user flows using Google Analytics and a suite of other analytics tools.",
           "Betterfly was acquired by <a href=\"http://takelessons.com\" target=\"_blank\">TakeLessons</a> in late 2013."
         ]
       }

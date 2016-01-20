@@ -1,8 +1,24 @@
 $things-i-am-height: 1em;
 $things-i-am-margin: .2em;
 
-.homepage .main {
-  text-align: center;
+.homepage {
+  .main {
+    text-align: center;
+
+    section {
+      h2 {
+        margin-top: 5vh;
+      }
+    }
+  }
+
+  .contact {
+    min-height: 100vh;
+
+    h2 {
+      margin-top: 10vh;
+    }
+  }
 }
 
 .welcome {
@@ -86,7 +102,7 @@ $things-i-am-margin: .2em;
   }
 }
 
-.expertise {
+.skills {
 }
 
 .t-bone-shaped-skills {

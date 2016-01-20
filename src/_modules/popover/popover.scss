@@ -35,4 +35,24 @@ $popover-trigger-size: 30px;
 .webui-popover {
   color: $dark-gray;
   @include shadow();
+  z-index: 1000;
+}
+
+.webui-popover-content {
+  max-width: 20em;
+
+  h5 {
+    color: $medium-gray;
+    display: inline-block;
+    margin: 0 5px 0 0;
+  }
+
+  @include media($screen-medium-up) {
+    max-width: 30em;
+  }
+}
+
+.webui-popover-title {
+  font-size: 1.3em;
+  line-height: 1;
 }

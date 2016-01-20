@@ -5,19 +5,21 @@ block vars
   - var pageData = site.data.projects.detailed.tompham
   - var bodyClass = 'project-page project-'+ pageData.class
 
+include ../../_modules/project-header/project-header
 
 block header
-  header.main-nav.resume-nav: nav: .container
-    ul
-      li #[+link({text: 'Back'})(href='/#examples')]
+  +project-header({
+    prev: pageData.prev_project,
+    next: pageData.next_project
+  })
 
 block content
   .intro-image
-    img(src=pageData.header_image)
+    .intro-image-wrap
+      img(src=pageData.header_image)
   section
-    .container.light-scheme
-      h1= pageData.title
     .container-sm.light-scheme
+      h1= pageData.title
       .badges
         each b in pageData.badges
           .badge= b

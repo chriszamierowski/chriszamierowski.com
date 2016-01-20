@@ -25,7 +25,7 @@ block content
       section
         h3.lead= site.data.resume.header.blurb
     each s in site.data.resume.sections
-      section
+      section(id=s.id ? s.id : '')
         h3= s.title
         if s.subtitle
           h5= s.subtitle
