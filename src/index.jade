@@ -19,19 +19,25 @@ block content
           li thinker
           li carnivore
   section#skills.skills.container
-    h2 Skills
+    h2
+      span T-Bone Shaped
+      | Skills
     .t-bone-shaped-skills
       img(src='/images/graphics/t-bone.svg')
       each p in site.data.expertise.popovers
         +popover(p)
   section#examples.examples.container
-    h2 Examples
+    h2
+      span A Few
+      | Examples
     .cards
       each c in site.data.projects.summaries 
         +card(c)
   section#resume.resume
     .container-sm
-      h2= site.data.resume.summary.title
+      h2
+        span= site.data.resume.summary.subtitle
+        = site.data.resume.summary.title
       h5= site.data.resume.summary.blurb
       p= site.data.resume.summary.blurb_tools
       ul
