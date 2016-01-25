@@ -4,6 +4,7 @@ block config
 block vars
 
 include ../_modules/link/link
+include ../_modules/metadata/metadata
 
 doctype html
 
@@ -22,6 +23,9 @@ head
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
   block stylesheets
     link(rel='stylesheet', href= baseUrl + 'styles/main.css')
+
+  block metadata
+    +metadata()
 
 body(class='#{bodyClass}')
   <!--[if lt IE 9]>
