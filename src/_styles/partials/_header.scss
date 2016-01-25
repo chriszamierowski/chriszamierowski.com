@@ -5,6 +5,7 @@
   top: 0;
   z-index: 9000;
   height: $header-mobile-height;
+  transition: box-shadow .6s $base-timing;
 
   a {
     @include white-link();
@@ -16,6 +17,16 @@
 
   nav {
     width: 100%;
+  }
+
+  &#{$scrollWindowTop} {
+    @include shadow(false, 2px);
+  }
+
+  @include media($screen-medium-up) {
+    &#{$scrollWindowTop} {
+      @include shadow();
+    }
   }
 }
 

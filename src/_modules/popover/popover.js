@@ -7,8 +7,9 @@ var popover = function() {
   var $popoverTriggers = $('.popover-trigger');
 
   $popoverTriggers.webuiPopover({
-    trigger: 'click',
+    trigger: 'hover',
     placement: 'auto',
+    animation:'pop',
     content: function(){
       return $(this).next('.popover-content-seed').html();
     }

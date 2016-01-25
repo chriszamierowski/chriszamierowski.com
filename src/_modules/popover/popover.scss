@@ -1,13 +1,18 @@
 $popover-trigger-size: 30px;
+$popover-trigger-start-size: 2px;
 
 .popover-trigger {
-  @include size($popover-trigger-size);
+  @include size($popover-trigger-start-size);
   background-color: rgba($dark-blue, .65);
   //box-shadow: 0 0 0 6px $white, 0 0 0 8px $dark-blue, 2px 2px 0 9px rgba($dark-gray, .3);
   box-shadow: 0 0 0 3px $white, 0 0 0 5px $dark-blue, 2px 2px 0 6px rgba($dark-gray, .3);
   border-radius: 50%;
-  display: block;
   position: absolute;
+  transition: all .5s ease-in;
+  margin-top: ($popover-trigger-size - $popover-trigger-start-size)/2;
+  margin-left: ($popover-trigger-size - $popover-trigger-start-size)/2;
+  display: block;
+  opacity: 0;
 
   &:hover {
     cursor: pointer;
@@ -15,6 +20,13 @@ $popover-trigger-size: 30px;
 
   &.popover-pulse {
     @include animation(popoverPulse 3s infinite);
+  }
+
+  &.scroll-window-bottom {
+    @include size($popover-trigger-size);
+    margin-left: 0;
+    margin-top: 0;
+    opacity: 1;
   }
 }
 

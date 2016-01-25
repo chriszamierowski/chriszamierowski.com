@@ -2,7 +2,7 @@ mixin popover(spec)
   - spec = spec || {}
 
   .cz-popover
-    span.popover-trigger.popover-pulse(data-title='#{spec.title}', style='top:#{spec.position.top};left:#{spec.position.left}')
+    span.popover-trigger.popover-pulse.scroll-dependent(data-title='#{spec.title}', data-distance-from-bottom='75', style='top:#{spec.position.top};left:#{spec.position.left}')
     .popover-content-seed
       p !{spec.content}
       if spec.tools

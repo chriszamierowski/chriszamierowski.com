@@ -28,8 +28,8 @@
   }
 }
 
-@mixin shadow($hover: false) {
-  box-shadow: 4px 4px 0 2px rgba($dark-gray, .5);
+@mixin shadow($hover: false, $y: 4px) {
+  box-shadow: 4px $y 0 2px rgba($dark-gray, .5);
 
   @if($hover) {
     &:focus, &:hover {

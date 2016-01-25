@@ -1,15 +1,16 @@
 block header
-  header.main-nav.default-nav: nav: .container
+  header.main-nav.default-nav.scroll-dependent(data-scroll-window-top='120')
+    nav: .container
     .mobile-menu
       a.cz-logo-mobile(href='/')
         img(src='/images/logos/chriszamierowski_logo.svg')
       a#menu-toggle.icon-menu(href='#')
     .main-menu
       ul
-        li #[+link({text: 'Skills'})(href='/#skills')]
-        li #[+link({text: 'Examples'})(href='/#examples')]
+        li #[+link({text: 'Skills'})(href='/#skills', class='header-link')]
+        li #[+link({text: 'Examples'})(href='/#examples', class='header-link')]
         li.cz-logo
-          a(href='/')
+          a(href='/', class='header-link')
             img(src='/images/logos/chriszamierowski_logo.svg')
-        li #[+link({text: 'Resume'})(href='/#resume')]
-        li #[+link({text: 'Contact'})(href='#contact')]
+        li #[+link({text: 'Resume'})(href='/#resume', class='header-link')]
+        li #[+link({text: 'Contact'})(href='#contact', class='header-link')]

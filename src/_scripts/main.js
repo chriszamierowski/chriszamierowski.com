@@ -40,12 +40,13 @@ var Popover = require('../_modules/popover/popover');
 })(jQuery);
 
 $(function() {
+  var $window = $(window),
+      menuToggle = $('#menu-toggle');
+
   new Link(); // Activate Link modules logic
   new Popover(); // Activate Popover modules logic
 
-  $.mark.jump('.homepage .main-nav li:not(.cz-logo) a'); // Run Bitters code for scrolling smoothly on homepage
-
-  var menuToggle = $('#menu-toggle');
+  $.mark.jump('.homepage .header-link'); // Run Bitters code for scrolling smoothly on homepage
 
   menuToggle.on('click', function(e) {
     e.preventDefault();
@@ -55,5 +56,40 @@ $(function() {
   $('#resume-print').on('click', function(e) {
     e.preventDefault();
     window.print();
+  });
+
+  var scrollElements = $('.scroll-dependent');
+
+  $(window).scroll(function() {
+    $.each(scrollElements, function() {
+      var $el = $(this),
+          elementTopToPageTop = $el.offset().top,
+          windowTopToPageTop = $window.scrollTop(),
+          windowInnerHeight = window.innerHeight,
+          elementTopToWindowTop = elementTopToPageTop - windowTopToPageTop,
+          elementTopToWindowBottom = windowInnerHeight - elementTopToWindowTop,
+          scrollWindowTop = $el.data('scroll-window-top'),
+          distanceFromBottomToAppear = $el.data('distance-from-bottom');
+
+      // console.log('elementTopToPageTop',elementTopToPageTop);
+      // console.log('windowTopToPageTop',windowTopToPageTop);
+      // console.log('elementTopToWindowTop',elementTopToWindowTop);
+      // console.log('elementTopToWindowBottom',elementTopToWindowBottom);
+
+      if(scrollWindowTop && (+scrollWindowTop < windowTopToPageTop)) {
+        $el.addClass('scroll-window-top');
+      } else {
+        $el.removeClass('scroll-window-top');
+      }
+
+      if(distanceFromBottomToAppear && (elementTopToWindowBottom > +distanceFromBottomToAppear)) {
+        $el.addClass('scroll-window-bottom');
+      } else {
+        $el.removeClass('scroll-window-bottom');
+      }
+      // else if(distanceFromBottomToAppear && (elementTopToWindowBottom < 0)) {
+      //   $el.removeClass('scroll-window-bottom');
+      // }
+    });
   });
 });
