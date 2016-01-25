@@ -10,26 +10,25 @@ include _modules/popover/popover
 block content
   section#welcome.welcome.container
     .welcome-blurb
-      h1 Hi, my name is #[span Chris Zamierowski]
+      h1= site.data.homepage.welcome.blurb.intro
+        span= site.data.homepage.welcome.blurb.name
       h2.things-i-am
-        span I'm a&nbsp;
+        span!= site.data.homepage.welcome.things_i_am.copy
         ul
-          li developer
-          li designer
-          li thinker
-          li carnivore
+          each l in site.data.homepage.welcome.things_i_am.list
+            li= l
   section#skills.skills.container
     h2
-      span T-Bone Shaped
-      | Skills
+      span= site.data.homepage.skills.subtitle
+      = site.data.homepage.skills.title
     .t-bone-shaped-skills
       img(src='/images/graphics/t-bone.svg')
       each p in site.data.expertise.popovers
         +popover(p)
   section#examples.examples.container
     h2
-      span A Few
-      | Examples
+      span= site.data.homepage.examples.subtitle
+      = site.data.homepage.examples.title
     .cards
       each c in site.data.projects.summaries 
         +card(c)
