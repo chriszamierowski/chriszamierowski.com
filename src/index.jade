@@ -17,6 +17,8 @@ block content
         ul
           each l in site.data.homepage.welcome.things_i_am.list
             li= l
+      .scroll-down
+        a(href='#skills')= site.data.homepage.welcome.scroll
   section#skills.skills.container
     h2
       span= site.data.homepage.skills.subtitle

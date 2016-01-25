@@ -71,8 +71,33 @@ $things-i-am-margin: .2em;
 
     li {
       @include animation(showThings 20s infinite);
-      @include animation-delay(3s);
+      @include animation-delay(2s);
       margin-bottom: $things-i-am-margin;
+    }
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+
+    &.fade-in {
+      @include animation(scrollDown 2s 1);
+      opacity: 1;
+    }
+
+    a {
+      @include white-link();
+      line-height: 1;
+      display: inline-block;
+      font-size: .8em;
+
+      &:after {
+        content: '\25BE';
+        display: block;
+      }
     }
   }
 }
@@ -107,7 +132,20 @@ $things-i-am-margin: .2em;
   }
 }
 
-.skills {
+@include keyframes(scrollDown) {
+  0% {
+    bottom: -10px;
+    opacity: 0;
+  }
+
+  50% {
+    bottom: 15px;
+    opacity: 1;
+  }
+
+  70% {
+    bottom: 10px;
+  }
 }
 
 .t-bone-shaped-skills {

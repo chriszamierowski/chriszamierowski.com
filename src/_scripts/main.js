@@ -41,12 +41,13 @@ var Popover = require('../_modules/popover/popover');
 
 $(function() {
   var $window = $(window),
-      menuToggle = $('#menu-toggle');
+      menuToggle = $('#menu-toggle'),
+      scrollDownDelay = 10000;
 
   new Link(); // Activate Link modules logic
   new Popover(); // Activate Popover modules logic
 
-  $.mark.jump('.homepage .header-link'); // Run Bitters code for scrolling smoothly on homepage
+  $.mark.jump('.homepage .header-link, .homepage .scroll-down a'); // Run Bitters code for scrolling smoothly on homepage
 
   menuToggle.on('click', function(e) {
     e.preventDefault();
@@ -92,4 +93,8 @@ $(function() {
       // }
     });
   });
+
+  setTimeout(function(){
+    $('.homepage .scroll-down').addClass('fade-in');
+  }, scrollDownDelay);
 });
