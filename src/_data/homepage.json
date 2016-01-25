@@ -1,0 +1,25 @@
+{
+  "welcome": {
+    "blurb": {
+      "intro": "Hi, my name is",
+      "name": "Chris Zamierowski"
+    },
+    "things_i_am": {
+      "copy": "I'm a &nbsp;",
+      "list": [
+        "developer",
+        "designer",
+        "thinker",
+        "carnivore"
+      ]
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "T-Bone Shaped"
+  },
+  "examples": {
+    "title": "Examples",
+    "subtitle": "A Few"
+  }
+}

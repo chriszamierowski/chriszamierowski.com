@@ -54,6 +54,11 @@
   }
 
   @include media($screen-medium-down) {
+    .main-menu {
+      background-color: $bright-blue;
+      @include shadow(false, 2px);
+    }
+
     .mobile-menu {
       height: $header-mobile-height;
       @include display(flex);
