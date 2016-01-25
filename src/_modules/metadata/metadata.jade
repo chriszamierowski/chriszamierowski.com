@@ -2,9 +2,10 @@ mixin metadata(spec)
   -
     spec = spec || site.data.metadata.defaults
 
+  title= spec.title
   each val, key in spec
     if typeof val === 'object'
       each v, k in val
-        metadata(name=key+':'+k, content=v)
+        meta(name=key+':'+k, content=v)
     else
-      metadata(name=key, content=val)
+      meta(name=key, content=val)
