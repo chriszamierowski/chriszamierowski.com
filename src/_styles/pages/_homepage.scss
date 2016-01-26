@@ -70,9 +70,15 @@ $things-i-am-margin: .2em;
     }
 
     li {
-      @include animation(showThings 20s infinite);
-      @include animation-delay(2s);
-      margin-bottom: $things-i-am-margin;
+      @include transform(translateY(0));
+    }
+
+    &.rotating {
+      li {
+        @include animation(showThings 20s infinite);
+        @include animation-delay(2s);
+        margin-bottom: $things-i-am-margin;
+      }
     }
   }
 
@@ -92,7 +98,11 @@ $things-i-am-margin: .2em;
       @include white-link();
       line-height: 1;
       display: inline-block;
-      font-size: .8em;
+      font-size: 1.3em;
+
+      @include media($screen-medium-up) {
+        font-size: .8em;
+      }
 
       &:after {
         content: '\25BE';

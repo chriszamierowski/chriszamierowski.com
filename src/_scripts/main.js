@@ -1,9 +1,7 @@
-// Main javascript entry point
-// Should handle bootstrapping/starting application
-
 'use strict';
 
 var $ = require('jquery');
+var _ = require('lodash');
 
 require('webui-popover');
 
@@ -41,8 +39,10 @@ var Popover = require('../_modules/popover/popover');
 
 $(function() {
   var $window = $(window),
+      $body = $('body'),
       menuToggle = $('#menu-toggle'),
-      scrollDownDelay = 10000;
+      scrollDownDelay = 10000,
+      $thingsIAm = $('.homepage .things-i-am');
 
   new Link(); // Activate Link modules logic
   new Popover(); // Activate Popover modules logic
@@ -72,11 +72,6 @@ $(function() {
           scrollWindowTop = $el.data('scroll-window-top'),
           distanceFromBottomToAppear = $el.data('distance-from-bottom');
 
-      // console.log('elementTopToPageTop',elementTopToPageTop);
-      // console.log('windowTopToPageTop',windowTopToPageTop);
-      // console.log('elementTopToWindowTop',elementTopToWindowTop);
-      // console.log('elementTopToWindowBottom',elementTopToWindowBottom);
-
       if(scrollWindowTop && (+scrollWindowTop < windowTopToPageTop)) {
         $el.addClass('scroll-window-top');
       } else {
@@ -88,13 +83,22 @@ $(function() {
       } else {
         $el.removeClass('scroll-window-bottom');
       }
-      // else if(distanceFromBottomToAppear && (elementTopToWindowBottom < 0)) {
-      //   $el.removeClass('scroll-window-bottom');
-      // }
     });
   });
 
-  setTimeout(function(){
-    $('.homepage .scroll-down').addClass('fade-in');
-  }, scrollDownDelay);
+  if($body.hasClass('homepage')) {
+    // don't show scroll down button right away
+    setTimeout(function(){
+      $('.homepage .scroll-down').addClass('fade-in');
+    }, scrollDownDelay);
+
+    // refresh the .rotating class on the homepage so resizing the window doesn't break it
+    $window.resize(_.debounce(function(){
+      $thingsIAm.removeClass('rotating');
+
+      setTimeout(function(){
+        $thingsIAm.addClass('rotating');
+      }, 0);
+    }, 100));
+  }
 });
