@@ -2,7 +2,7 @@
   "popovers": [
     {
       "title": "Front End Development",
-      "content": "I write clean, durable code to build responsive interfaces. I use the latest technologies to build and test optimized experiences across platforms and browsers.",
+      "content": "My bread and butter; I write clean, durable code to build responsive interfaces. I use the latest technologies to build and test optimized experiences across platforms and browsers.",
       "tools": [
         "Sass",
         "Angular",
@@ -68,7 +68,12 @@
     },
     {
       "title": "Team Player",
-      "content": "I value communication over pretty much everything else.",
+      "content": "I value communication over pretty much everything else. I enjoy collaboration and thrive as a group leader.",
+      "tools": [
+        "Pivotal Tracker",
+        "Asana",
+        "Slack"
+      ],
       "position": {
         "top": "40%",
         "left": "53%"

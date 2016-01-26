@@ -1,4 +1,12 @@
 .contact {
   text-align: center;
   background-color: $bright-blue;
+  position: relative;
+
+  h2 {
+    span {
+      display: block;
+      font-size: .3em;
+    }
+  }
 }

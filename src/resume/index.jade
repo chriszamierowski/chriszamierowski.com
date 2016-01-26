@@ -18,6 +18,8 @@ block content
         div
           h1= site.data.resume.header.name
           h2= site.data.resume.header.tagline
+          if site.data.resume.header.availability.status
+            p= site.data.resume.header.availability.copy
         div
           +link({text: site.data.resume.header.site.name})(href=site.data.resume.header.site.link, target='_blank')
           +link({text: site.data.resume.header.email.name})(href=site.data.resume.header.email.link)
