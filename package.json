@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "dependencies": {
     "jquery": "~2.1.4",
-    "normalize.css": "~3.0.3"
+    "normalize.css": "~3.0.3",
+    "webui-popover": "^1.2.5"
   },
   "devDependencies": {
     "autoprefixer": "~6.0.3",
     "browser-sync": "~2.9.11",
     "browserify": "~12.0.0",
+    "browserify-shim": "^3.8.11",
     "del": "~2.0.2",
     "envify": "~3.4.0",
     "foldero": "~0.1.1",
@@ -27,6 +29,8 @@
     "gulp-newer": "~1.0.0",
     "gulp-plumber": "~1.0.1",
     "gulp-postcss": "~6.0.1",
+    "gulp-print": "^2.0.1",
+    "gulp-real-favicon": "^0.1.0",
     "gulp-rename": "~1.2.2",
     "gulp-sass": "~2.0.4",
     "gulp-sourcemaps": "~1.6.0",
@@ -42,8 +46,11 @@
     "karma-phantomjs-launcher": "~0.2.1",
     "lodash": "~3.10.1",
     "minimist": "~1.2.0",
+    "node-neat": "^1.7.2",
     "phantomjs": "~1.9.0",
     "rimraf": "~2.4.3",
+    "sprity": "^1.0.8",
+    "sprity-sass": "^1.0.4",
     "vinyl-buffer": "~1.0.0",
     "vinyl-source-stream": "~1.1.0",
     "watchify": "~3.5.0 ",
@@ -71,11 +78,32 @@
       "images": "_images",
       "styles": "_styles",
       "scripts": "_scripts",
-      "data": "_data"
+      "sprites": "_sprites",
+      "data": "_data",
+      "downloads": "downloads",
+      "favicons": "favicons"
     },
     "entries": {
       "js": "main**.js",
-      "css": "main**.{sass,scss}"
+      "css": "main**.{sass,scss}",
+      "sprites": "**/*.{png,jpg}"
+    },
+    "downloads": {
+      "resume": "ChrisZamierowski_resume.pdf"
+    }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browser": {
+    "webui-popover": "./node_modules/webui-popover/dist/jquery.webui-popover.js"
+  },
+  "browserify-shim": {
+    "webui-popover": {
+      "exports": null,
+      "depends": "jquery:jQuery"
     }
   }
 }

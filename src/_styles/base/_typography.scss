@@ -1,0 +1,112 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900,700);
+
+html {
+  @include media($screen-medium-down) {
+    font-size: $mobile-font-size;
+  }
+}
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
+  font-weight: $heading-font-weight;
+
+  .light-scheme & {
+    color: $medium-gray;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+  }
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+
+  .light-scheme & {
+    color: $dark-gray;
+  }
+}
+
+.lead {
+  color: $medium-gray;
+  text-align: center;
+  line-height: 2em;
+  font-size: 1.2em;
+  text-transform: none !important;
+  font-weight: $normal;
+  @include span-columns(10);
+  @include shift(1);
+}
+
+a {
+  color: $action-color;
+  text-decoration: none;
+  transition: color $base-duration $base-timing;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $bright-orange;
+  }
+
+  a:visited {
+    color: $dark-gray;
+  }
+
+  .light-scheme & {
+    @include light-scheme-link();
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+.badge{
+  $badge-font-size: .8em;
+  $badge-bg-color: $light-gray;//$dark-blue;
+  $badge-color: $medium-gray;
+
+  background-color: $badge-bg-color;
+  border-radius: $badge-font-size * 5;
+  color: $badge-color;
+  display: inline-block;
+  font-size: $badge-font-size;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}

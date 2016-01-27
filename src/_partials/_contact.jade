@@ -1,0 +1,14 @@
+section#contact.contact
+  .container
+    h2
+      if site.data.contact.availability.status
+        span= site.data.contact.availability.copy
+      = site.data.contact.title
+    h3: a(href='mailto:#{site.data.contact.email}')= site.data.contact.email
+    
+    .social-links: ul
+      each s in site.data.social.links
+        li
+          a(class='social-#{s.class}', href=s.link, target='_blank')
+            i(class='icon-#{s.class}')
+            span.sr-only= s.name

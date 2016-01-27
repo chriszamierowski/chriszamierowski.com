@@ -1,0 +1,70 @@
+$popover-trigger-size: 30px;
+$popover-trigger-start-size: 2px;
+
+.popover-trigger {
+  @include size($popover-trigger-start-size);
+  background-color: rgba($dark-blue, .65);
+  //box-shadow: 0 0 0 6px $white, 0 0 0 8px $dark-blue, 2px 2px 0 9px rgba($dark-gray, .3);
+  box-shadow: 0 0 0 3px $white, 0 0 0 5px $dark-blue, 2px 2px 0 6px rgba($dark-gray, .3);
+  border-radius: 50%;
+  position: absolute;
+  transition: all .5s ease-in;
+  margin-top: ($popover-trigger-size - $popover-trigger-start-size)/2;
+  margin-left: ($popover-trigger-size - $popover-trigger-start-size)/2;
+  display: block;
+  opacity: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.popover-pulse {
+    @include animation(popoverPulse 3s infinite);
+  }
+
+  &.scroll-window-bottom {
+    @include size($popover-trigger-size);
+    margin-left: 0;
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+
+@include keyframes(popoverPulse) {
+  0% {
+    box-shadow: 0 0 0 3px $white, 0 0 0 5px $dark-blue, 2px 2px 0 6px rgba($dark-gray, .3);
+  }
+
+  50% {
+    box-shadow: 0 0 0 1px $white, 0 0 0 2px $dark-blue, 1px 1px 0 4px rgba($dark-gray, .3);
+  }
+}
+
+.popover-content-seed {
+  display: none;
+}
+
+.webui-popover {
+  color: $dark-gray;
+  @include shadow();
+  z-index: 1000;
+}
+
+.webui-popover-content {
+  max-width: 20em;
+
+  h5 {
+    color: $medium-gray;
+    display: inline-block;
+    margin: 0 5px 0 0;
+  }
+
+  @include media($screen-medium-up) {
+    max-width: 30em;
+  }
+}
+
+.webui-popover-title {
+  font-size: 1.3em;
+  line-height: 1;
+}

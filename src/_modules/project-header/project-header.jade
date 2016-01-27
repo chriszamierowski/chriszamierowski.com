@@ -1,0 +1,13 @@
+mixin project-header(spec)
+  - spec = spec || {}
+
+  header.main-nav.resume-nav: nav: .container
+    ul
+      li
+        +link()(href='/#examples') Back to Examples
+      if spec.prev && spec.prev.url
+        li
+          +link()(href=spec.prev.url) Prev
+      if spec.next && spec.next.url
+        li
+          +link()(href=spec.next.url) Next

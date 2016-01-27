@@ -1,18 +1,35 @@
 // Normalize Styles
-@import 'node_modules/normalize.css/normalize';
+@import "node_modules/normalize.css/normalize";
+
+// Import libs
+// why does `@import "bourbon"` not work here? something weird with gulp-sass paths...
+@import "node_modules/node-neat/node_modules/node-bourbon/node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import "base/grid-settings";
+@import "node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/_neat.scss";
+@import "base/base";
+
+// Import icon font
+@import "../fonts/icon-font/css/cz-site.css";
+
+// Import sprites
+@import "sprites";
+
+// Import vendor CSS
+@import "node_modules/webui-popover/dist/jquery.webui-popover.min";
 
 // Import Modules
-@import '../_modules/link/link';
+@import "../_modules/card/card";
+@import "../_modules/popover/popover";
 
-// Box sizing partial styles:
-// Apply a natural box layout model to all elements
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+// Import pages
+@import "pages/homepage";
+@import "pages/project";
+@import "pages/resume";
+
+// Import partials
+@import "partials/header";
+@import "partials/contact";
+
 
 // Styling on warning for users on IE7 or below
 .browsehappy {

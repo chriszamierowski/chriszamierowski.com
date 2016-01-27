@@ -1,0 +1,43 @@
+extends ../../_layouts/base
+
+block vars
+  - var baseUrl = '../../'
+  - var pageData = site.data.projects.detailed.betterfly
+  - var bodyClass = 'project-page project-'+ pageData.class
+
+include ../../_modules/project-header/project-header
+
+block header
+  +project-header({
+    prev: pageData.prev_project,
+    next: pageData.next_project
+  })
+
+block content
+  .intro-image
+    .intro-image-wrap
+      img(src=pageData.header_image)
+  section
+    .container-sm.light-scheme
+      h1= pageData.title
+      .badges
+        each b in pageData.badges
+          .badge= b
+      .copy-wrapper
+        each c in pageData.intro_copy
+          p= c
+  .container.wide-image
+    img(src=pageData.video_chat.image)
+  section
+    .container-sm.light-scheme
+      .copy
+        p= pageData.video_chat.copy
+  .container.wide-image
+    img(src=pageData.search.image)
+  section
+    .container-sm.light-scheme
+      .copy
+        each c in pageData.final.copy
+          p !{c}
+  .container.wide-image
+    img(src=pageData.final.image)

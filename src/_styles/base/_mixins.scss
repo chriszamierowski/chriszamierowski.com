@@ -1,0 +1,39 @@
+@mixin white-link() {
+  color: $white;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $bright-orange;
+  }
+}
+
+@mixin orange-link() {
+  color: $bright-orange;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $dark-blue;
+  }
+}
+
+@mixin light-scheme-link() {
+  color: $bright-blue;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $bright-orange;
+  }
+}
+
+@mixin shadow($hover: false, $y: 4px) {
+  box-shadow: 4px $y 0 2px rgba($dark-gray, .5);
+
+  @if($hover) {
+    &:focus, &:hover {
+      box-shadow: 6px 6px 0 2px rgba($dark-gray, .5);
+    }
+  }
+}

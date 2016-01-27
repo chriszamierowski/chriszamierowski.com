@@ -1,0 +1,199 @@
+$things-i-am-height: 1em;
+$things-i-am-margin: .2em;
+
+.homepage {
+  .main {
+    text-align: center;
+
+    section:not(.welcome) {
+      h2 {
+        margin-top: 5vh;
+
+        span {
+          display: block;
+          font-size: .3em;
+        }
+      }
+    }
+  }
+
+  .contact {
+    min-height: 100vh;
+
+    h2 {
+      margin-top: 10vh;
+    }
+  }
+}
+
+.welcome {
+  @include display(flex);
+  @include justify-content(center);
+  @include align-items(center);
+  height: 100vh;
+  font-size: .6em;
+  margin-top: -$header-mobile-height;
+
+  @include media($screen-small-up) {
+    font-size: .8em;
+  }
+
+  @include media($screen-medium-up) {
+    font-size: 1em;
+    margin-top: -$header-height;
+  }
+
+  h1 {
+    font-weight: $ultrabold;
+
+    span {
+      display: block;
+      text-transform: uppercase;
+      font-size: 1.2em;
+      margin-top: $base-spacing/4;
+    }
+  }
+
+  h2 {
+    font-size: 3.5em;
+  }
+
+  .things-i-am {
+    @include display(flex);
+    @include justify-content(center);
+    line-height: $things-i-am-height;
+
+    ul {
+      overflow: hidden;
+      height: $things-i-am-height + $things-i-am-margin;
+      text-align: left;
+    }
+
+    li {
+      @include transform(translateY(0));
+    }
+
+    &.rotating {
+      li {
+        @include animation(showThings 20s infinite);
+        @include animation-delay(2s);
+        margin-bottom: $things-i-am-margin;
+      }
+    }
+  }
+
+  .scroll-down {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+
+    &.fade-in {
+      @include animation(scrollDown 2s 1);
+      opacity: 1;
+    }
+
+    a {
+      @include white-link();
+      line-height: 1;
+      display: inline-block;
+      font-size: 1.3em;
+
+      @include media($screen-medium-up) {
+        font-size: .8em;
+      }
+
+      &:after {
+        content: '\25BE';
+        display: block;
+      }
+    }
+  }
+}
+
+@include keyframes(showThings) {
+  $numThings: 4;
+  $hold: 7;
+  $switch: 3;
+  $inc: 0;
+  $amount: -($things-i-am-height + $things-i-am-margin);
+
+  @for $i from 0 through 100 {
+    @if ($inc < $numThings) {
+      @if ($i != 0 and $i % ($hold*$inc + $switch*($inc - 1 )) == 0) {
+        #{$i * 1%} {
+          @include transform(translateY(($inc - 1)*$amount));
+        }
+      }
+
+      @if ($i % ($hold + $switch)*$inc == 0) {
+        #{$i * 1%} {
+          @include transform(translateY($inc*$amount));
+        }
+
+        $inc: $inc + 1;
+      }
+    }
+  }
+
+  100% {
+    @include transform(translateY(($inc - 1)*$amount));
+  }
+}
+
+@include keyframes(scrollDown) {
+  0% {
+    bottom: -10px;
+    opacity: 0;
+  }
+
+  50% {
+    bottom: 15px;
+    opacity: 1;
+  }
+
+  70% {
+    bottom: 10px;
+  }
+}
+
+.t-bone-shaped-skills {
+  display: inline-block;
+  position: relative;
+
+  img {
+    max-height: 80vh;
+  }
+}
+
+.resume {
+  .container-sm {
+    @include pad();
+  }
+
+  h5 {
+    font-size: 1.2em;
+    font-weight: $normal;
+  }
+
+  .sprite {
+    display: block;
+  }
+
+  ul {
+    @include display(flex);
+    @include justify-content(space-around);
+    @include flex-wrap(wrap);
+    margin-bottom: 2.5em;
+  }
+
+  li {
+    text-align: center;
+
+    a {
+      display: block;
+      padding: 1em;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+mixin popover(spec)
+  - spec = spec || {}
+
+  .cz-popover
+    span.popover-trigger.popover-pulse.scroll-dependent(data-title='#{spec.title}', data-distance-from-bottom='75', style='top:#{spec.position.top};left:#{spec.position.left}')
+    .popover-content-seed
+      p !{spec.content}
+      if spec.tools
+        .toolset
+          h5 Toolset:
+          each t, i in spec.tools
+            span= t + (i < spec.tools.length - 1 ? ', ' : ' ')
+          span
+            +link()(href="/resume#things-i-use") See more

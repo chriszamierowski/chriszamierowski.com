@@ -42,6 +42,7 @@ gulp.task('build', [
   'imagemin',
   'jade',
   'sass',
+  'inject-favicon-markups',
   'browserify'
 ]);
 
@@ -51,6 +52,7 @@ gulp.task('serve', [
   'copy',
   'jade',
   'sass',
+  'inject-favicon-markups',
   'browserify',
   'browserSync',
   'watch'
