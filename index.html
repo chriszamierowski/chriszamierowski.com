@@ -5,19 +5,176 @@
 <html class="no-js" lang="en">
 <!--<![endif]-->
 <head>
+  <!--
+  Oh, hey! You probably know by now that this site was built by Chris Zamierowski. If you're here, you're probably also wondering what's going on under the hood. This site uses: Jade, SCSS (Bourbon, Neat, Autoprefixer), jQuery and Gulp, amongst others. Check out the repository at https://github.com/chriszamierowski/chriszamierowski.com. Happy snooping!
+  
+  -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Chris Zamierowski's Portfolio</title>
-  <meta name="description" content="A new Yeogurt application">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chris Zamierowski | Web Developer, Carnivore</title>
+  <meta name="title" content="Chris Zamierowski | Web Developer, Carnivore">
+  <meta name="description" content="Portfolio and stomping grounds of Chris Zamierowski | Web Developer, Carnivore. Chicago, IL.">
+  <meta name="keywords" content="Chris Zamierowski, web developer, front end, user experience design, product design, web design">
+  <meta name="author" content="Chris Zamierowski">
+  <meta name="og:title" content="Chris Zamierowski">
+  <meta name="og:type" content="website">
+  <meta name="og:url" content="http://chriszamierowski.com">
+  <meta name="og:image" content="http://chriszamierowski.com/images/logos/chriszamierowski_logo.svg">
+  <meta name="og:description" content="Portfolio and stomping grounds of Chris Zamierowski | Web Developer, Carnivore. Chicago, IL.">
+  <meta name="og:site_name" content="Chris Zamierowski">
+  <meta name="og:locale" content="en_us">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@zamierowski">
   <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body>
+<body class="homepage">
   <!--[if lt IE 9]>
   <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div class="container">
-    <h1>CZ.com</h1>
+  <header data-scroll-window-top="120" class="main-nav default-nav scroll-dependent">
+    <nav>
+      <div class="container"></div>
+    </nav>
+    <div class="mobile-menu"><a href="/" class="cz-logo-mobile"><img src="/images/logos/chriszamierowski_logo.svg"></a><a id="menu-toggle" href="#" class="icon-menu"></a></div>
+    <div class="main-menu">
+      <ul>
+        <li><a class="link header-link" href="/#skills">Skills</a>
+        </li>
+        <li><a class="link header-link" href="/#examples">Examples</a>
+        </li>
+        <li class="cz-logo"><a href="/" class="header-link"><img src="/images/logos/chriszamierowski_logo.svg"></a></li>
+        <li><a class="link header-link" href="/#resume">Resume</a>
+        </li>
+        <li><a class="link header-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <div class="main">
+    <section id="welcome" class="welcome container">
+      <div class="welcome-blurb">
+        <h1>Hi, my name is<span>Chris Zamierowski</span></h1>
+        <h2 class="things-i-am rotating"><span>I'm a &nbsp;</span>
+          <ul>
+            <li>developer</li>
+            <li>designer</li>
+            <li>thinker</li>
+            <li>carnivore</li>
+          </ul>
+        </h2>
+        <div class="scroll-down"><a href="#skills">Scroll down for more</a></div>
+      </div>
+    </section>
+    <section id="skills" class="skills container">
+      <h2><span>T-Bone Shaped</span>Skills
+      </h2>
+      <div class="t-bone-shaped-skills"><img src="/images/graphics/t-bone.svg">
+        <div class="cz-popover"><span data-title="Front End Development" data-distance-from-bottom="75" style="top:60%;left:48%" class="popover-trigger popover-pulse scroll-dependent"></span>
+          <div class="popover-content-seed">
+            <p>My bread and butter; I write clean, durable code to build responsive interfaces. I use the latest technologies to build and test optimized experiences across platforms and browsers.</p>
+            <div class="toolset">
+              <h5>Toolset:</h5><span>Sass, </span><span>Angular, </span><span>HTML5 </span><span><a class="link" href="/resume#things-i-use">See more</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="cz-popover"><span data-title="UX Design" data-distance-from-bottom="75" style="top:4%;left:5%" class="popover-trigger popover-pulse scroll-dependent"></span>
+          <div class="popover-content-seed">
+            <p><i>How can I make a user’s interaction as simple as possible?</i> Wireframes and rapid prototyping (I like to use HTML and very basic CSS - it’s easy, quick and I know it well, but most importantly it feels “real” to a user) are great tools for understanding behavior and validating designs.</p>
+            <div class="toolset">
+              <h5>Toolset:</h5><span>HTML, </span><span>Balsamiq, </span><span>Pen &amp; Paper </span><span><a class="link" href="/resume#things-i-use">See more</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="cz-popover"><span data-title="UI Design" data-distance-from-bottom="75" style="top:1%;left:25%" class="popover-trigger popover-pulse scroll-dependent"></span>
+          <div class="popover-content-seed">
+            <p>I’m a believer in style guides and atomic design. I have some experience as a visual designer, but I’m building my design chops and I tend to leave things like iconography to others.</p>
+            <div class="toolset">
+              <h5>Toolset:</h5><span>Sketch, </span><span>Photoshop, </span><span>Sass, </span><span>Compass, </span><span>Bourbon, </span><span>Bootstrap </span><span><a class="link" href="/resume#things-i-use">See more</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="cz-popover"><span data-title="Product Design" data-distance-from-bottom="75" style="top:2%;left:75%" class="popover-trigger popover-pulse scroll-dependent"></span>
+          <div class="popover-content-seed">
+            <p>Developers are often only concerned with coding; I enjoy being a part of the full product development process. While maintaining attention to detail, I always value seeing the big picture. I create mockups and iterate on solutions to make sure what I’m building makes sense.</p>
+            <div class="toolset">
+              <h5>Toolset:</h5><span>Asana </span><span><a class="link" href="/resume#things-i-use">See more</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="cz-popover"><span data-title="Back End Developer" data-distance-from-bottom="75" style="top:4%;left:90%" class="popover-trigger popover-pulse scroll-dependent"></span>
+          <div class="popover-content-seed">
+            <p>While I don’t consider myself a full-stack developer (yet), I do have experience working with several backend languages/frameworks. I’m most comfortable in the View layer but am familiar enough to touch other parts of an application when needed.</p>
+            <div class="toolset">
+              <h5>Toolset:</h5><span>Node.js, </span><span>Ruby on Rails, </span><span>PHP </span><span><a class="link" href="/resume#things-i-use">See more</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="cz-popover"><span data-title="Team Player" data-distance-from-bottom="75" style="top:40%;left:53%" class="popover-trigger popover-pulse scroll-dependent"></span>
+          <div class="popover-content-seed">
+            <p>I value communication over pretty much everything else. I enjoy collaboration and thrive as a group leader.</p>
+            <div class="toolset">
+              <h5>Toolset:</h5><span>Pivotal Tracker, </span><span>Asana, </span><span>Slack </span><span><a class="link" href="/resume#things-i-use">See more</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="examples" class="examples container">
+      <h2><span>A Few</span>Examples
+      </h2>
+      <div class="cards"><a href="/projects/morsel" class="card light-scheme">
+          <div class="card-image"><img src="/images/projects/morsel/morsel-summary.jpg" alt="Morsel"></div>
+          <div class="card-header">Morsel</div>
+          <div class="card-copy">
+            <p>Share the stories, inspirations and techniques that make your food your own</p>
+          </div></a><a href="/projects/betterfly" class="card light-scheme">
+          <div class="card-image"><img src="/images/projects/betterfly/betterfly-summary.jpg" alt="Betterfly"></div>
+          <div class="card-header">Betterfly</div>
+          <div class="card-copy">
+            <p>Connecting consumers with personal service providers for online lessons</p>
+          </div></a><a href="/projects/thomas-pham-photography" class="card light-scheme">
+          <div class="card-image"><img src="/images/projects/thomas-pham-photography/thomas-pham-photography-summary.jpg" alt="Thomas Pham Photography"></div>
+          <div class="card-header">Thomas Pham Photography</div>
+          <div class="card-copy">
+            <p>Portfolio site of a Chicago photographer</p>
+          </div></a>
+      </div>
+    </section>
+    <section id="resume" class="resume">
+      <div class="container-sm">
+        <h2><span>A Brief</span>Resume
+        </h2>
+        <h5>Northwestern grad, I’ve worked for agencies, startups and as a freelancer</h5>
+        <p>Here are some tools I like to use:</p>
+        <ul>
+          <li><a class="link" href="https://angularjs.org/" target="_blank"><i class="sprite sprite-angularjs"></i></a>
+          </li>
+          <li><a class="link" href="http://sass-lang.com/" target="_blank"><i class="sprite sprite-sass"></i></a>
+          </li>
+          <li><a class="link" href="http://gulpjs.com/" target="_blank"><i class="sprite sprite-gulp"></i></a>
+          </li>
+          <li><a class="link" href="https://www.sketchapp.com/" target="_blank"><i class="sprite sprite-sketch"></i></a>
+          </li>
+        </ul>
+        <p>Check out my <a href="/resume">full resume</a> for a more detailed list of tools and experience</p>
+      </div>
+    </section>
   </div>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2><span>Available for contract or freelance</span>Let's work together
+      </h2>
+      <h3><a href="mailto:cz@chriszamierowski.com">cz@chriszamierowski.com</a></h3>
+      <div class="social-links">
+        <ul>
+          <li><a href="https://github.com/chriszamierowski" target="_blank" class="social-github"><i class="icon-github"></i><span class="sr-only">Github</span></a></li>
+          <li><a href="https://www.linkedin.com/in/chriszamierowski" target="_blank" class="social-linkedin"><i class="icon-linkedin"></i><span class="sr-only">LinkedIn</span></a></li>
+          <li><a href="https://www.instagram.com/zamierowski/" target="_blank" class="social-instagram"><i class="icon-instagram"></i><span class="sr-only">Instagram</span></a></li>
+          <li><a href="https://angel.co/chris-zamierowski" target="_blank" class="social-angellist"><i class="icon-angellist"></i><span class="sr-only">AngelList</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
   <script src="./scripts/main.js"></script>
 </body></html>
