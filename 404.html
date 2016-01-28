@@ -28,65 +28,37 @@
   <meta name="og:locale" content="en_us">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:creator" content="@zamierowski">
-  <link rel="stylesheet" href="../../fonts/icon-font/css/cz-site.css">
-  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="stylesheet" href="./fonts/icon-font/css/cz-site.css">
+  <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body class="project-page project-betterfly">
+<body class="lost">
   <!--[if lt IE 9]>
   <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <header class="main-nav resume-nav">
+  <header data-scroll-window-top="120" class="main-nav default-nav scroll-dependent">
     <nav>
-      <div class="container">
-        <ul>
-          <li><a class="link" href="/#examples">Back to Examples</a>
-          </li>
-          <li><a class="link" href="/projects/morsel">Prev</a>
-          </li>
-          <li><a class="link" href="/projects/thomas-pham-photography">Next</a>
-          </li>
-        </ul>
-      </div>
+      <div class="container"></div>
     </nav>
+    <div class="mobile-menu"><a href="/" class="cz-logo-mobile"><img src="/images/logos/chriszamierowski_logo.svg"></a><a id="menu-toggle" href="#" class="icon-menu"></a></div>
+    <div class="main-menu">
+      <ul>
+        <li><a class="link header-link" href="/#skills">Skills</a>
+        </li>
+        <li><a class="link header-link" href="/#examples">Examples</a>
+        </li>
+        <li class="cz-logo"><a href="/" class="header-link"><img src="/images/logos/chriszamierowski_logo.svg"></a></li>
+        <li><a class="link header-link" href="/#resume">Resume</a>
+        </li>
+        <li><a class="link header-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
   </header>
   <div class="main">
-    <div class="intro-image">
-      <div class="intro-image-wrap"><img src="/images/projects/betterfly/betterfly-homepage.jpg"></div>
-    </div>
-    <section>
-      <div class="container-sm light-scheme">
-        <h1>Betterfly</h1>
-        <div class="badges">
-          <div class="badge">Front End Development</div>
-          <div class="badge">UI Design</div>
-          <div class="badge">A/B Testing</div>
-          <div class="badge">User Analytics</div>
-        </div>
-        <div class="copy-wrapper">
-          <p>Betterfly was a community for connecting personal service providers (guitar teachers, life coaches, Spanish tutors, etc) to students looking to learn online.</p>
-          <p>As the lone front-end developer, I was responsible for full UI design and development, including building a custom online video chat tool.</p>
-        </div>
-      </div>
+    <section class="container-sm">
+      <h1>Oh no! There's been some kind&nbsp;of&nbsp;misteak!</h1>
+      <p>Sorry, but whatever you were looking for isn't here (also sorry for the pun). Try the <a href="/">homepage</a> instead.</p><img src="/images/graphics/misteak.svg">
     </section>
-    <div class="container wide-image"><img src="/images/projects/betterfly/betterfly-video-chat.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
-        <div class="copy">
-          <p>Betterfly students and teachers were all over the country, so we needed an integrated video tool that was easy to use and fit Betterfly’s existing design. I built Betterfly’s custom video chat using WebRTC and text chat using WebSockets, as well as a diagnostic tool for testing microphone and video connections and internet speed.</p>
-        </div>
-      </div>
-    </section>
-    <div class="container wide-image"><img src="/images/projects/betterfly/betterfly-search.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
-        <div class="copy">
-          <p>I worked mostly in the View layer of our PHP application, using jQuery and Sass on the front-end to build custom interfaces and page layouts.</p>
-          <p>I also kept tabs on user behavior on the site and implemented A/B tests and user flows using Google Analytics and a suite of other analytics tools.</p>
-          <p>Betterfly was acquired by <a href="http://takelessons.com" target="_blank">TakeLessons</a> in late 2013.</p>
-        </div>
-      </div>
-    </section>
-    <div class="container wide-image"><img src="/images/projects/betterfly/betterfly-guarantee.jpg"></div>
   </div>
   <section id="contact" class="contact">
     <div class="container">
@@ -103,5 +75,5 @@
       </div>
     </div>
   </section>
-  <script src="../../scripts/main.js"></script>
+  <script src="./scripts/main.js"></script>
 </body></html>
