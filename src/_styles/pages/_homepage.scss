@@ -158,6 +158,12 @@ $things-i-am-margin: .2em;
   }
 }
 
+.skills {
+  .container {
+    @include pad();
+  }
+}
+
 .t-bone-shaped-skills {
   display: inline-block;
   position: relative;

@@ -19,14 +19,15 @@ block content
             li= l
       .scroll-down
         a(href='#skills')= site.data.homepage.welcome.scroll
-  section#skills.skills.container
-    h2
-      span= site.data.homepage.skills.subtitle
-      = site.data.homepage.skills.title
-    .t-bone-shaped-skills
-      img(src='/images/graphics/t-bone.svg')
-      each p in site.data.expertise.popovers
-        +popover(p)
+  section#skills.skills
+    .container
+      h2
+        span= site.data.homepage.skills.subtitle
+        = site.data.homepage.skills.title
+      .t-bone-shaped-skills
+        img(src='/images/graphics/t-bone.svg')
+        each p in site.data.expertise.popovers
+          +popover(p)
   section#examples.examples.container
     h2
       span= site.data.homepage.examples.subtitle
