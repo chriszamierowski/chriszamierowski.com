@@ -1,0 +1,11 @@
+block vars
+  - var bodyClass = 'lost';
+
+extends _layouts/base
+
+block content
+  section.container-sm
+    h1!= site.data.lost.headline
+    p!= site.data.lost.copy
+    img(src='/images/graphics/misteak.svg')
+  
