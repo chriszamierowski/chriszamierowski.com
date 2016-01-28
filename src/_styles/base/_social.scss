@@ -2,7 +2,7 @@
   margin-top: 5em;
   
   ul {
-    @include display(flex);
+    display: flex;
     @include justify-content(space-around);
     @include align-items(center);
   }

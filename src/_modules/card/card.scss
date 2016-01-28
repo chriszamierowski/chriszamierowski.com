@@ -1,5 +1,5 @@
 .cards {
-  @include display(flex);
+  display: flex;
   @include flex-wrap(wrap);
   @include justify-content(space-between);
 }

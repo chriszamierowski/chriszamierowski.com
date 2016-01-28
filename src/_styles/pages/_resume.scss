@@ -10,7 +10,7 @@
 
     header {
       section {
-        @include display(flex);
+        display: flex;
         @include align-items(top);
         @include flex-direction(row);
         @include justify-content(space-between);
@@ -52,7 +52,7 @@
           text-align: right;
           text-transform: uppercase;
           font-weight: $bold;
-          @include display(flex);
+          display: flex;
           @include justify-content(space-around);
           @include flex-direction(column);
 

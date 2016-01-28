@@ -1,15 +1,17 @@
 {
   "defaults": { 
     "title": "Chris Zamierowski | Web Developer, Carnivore",
-    "description": "Portfolio and stomping grounds of Chris Zamierowski | Web Developer, Carnivore. Chicago, IL.",
+    "description": "Portfolio and stomping grounds of Chris Zamierowski | Web Developer, Carnivore. Remote / Chicago, IL.",
     "keywords": "Chris Zamierowski, web developer, front end, user experience design, product design, web design",
     "author": "Chris Zamierowski",
     "og": {
       "title":    "Chris Zamierowski | Web Developer, Carnivore",
       "type":     "website",
       "url":      "http://chriszamierowski.com",
-      "image": "http://chriszamierowski.com/images/logos/chriszamierowski_logo.svg",
-      "description": "Portfolio and stomping grounds of Chris Zamierowski | Web Developer, Carnivore. Chicago, IL.",
+      "image": "http://chriszamierowski.com/images/logos/chriszamierowski.jpg",
+      "image:width": "1200",
+      "image:height": "1156",
+      "description": "Portfolio and stomping grounds of Chris Zamierowski | Web Developer, Carnivore. Remote / Chicago, IL.",
       "site_name": "Chris Zamierowski",
       "locale": "en_us"
     },

@@ -61,7 +61,7 @@
 
     .mobile-menu {
       height: $header-mobile-height;
-      @include display(flex);
+      display: flex;
       @include flex-direction(row);
       @include justify-content(space-between);
       @include align-items(center);
@@ -87,10 +87,11 @@
     }
 
     ul {
-      @include display(flex);
+      display: flex;
       @include flex-direction(row);
       @include justify-content(space-around);
       @include align-items(center);
+      height: $header-height;
     }
 
     li a {
@@ -111,7 +112,7 @@
 
 .resume-nav {
   ul {
-    @include display(flex);
+    display: flex;
     @include flex-direction(row);
     @include justify-content(space-between);
     @include align-items(flex-end);

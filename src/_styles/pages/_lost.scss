@@ -1,0 +1,33 @@
+.lost {
+  header {
+    .mobile-menu {
+      @include justify-content(center);
+
+      .icon-menu {
+        display: none;
+      }
+    }
+
+    .main-menu {
+      li:not(.cz-logo) {
+        display: none;
+      }
+    }
+  }
+  .main {
+    
+    section {
+      min-height: 100vh;
+      display: flex;
+      text-align: center;
+      @include flex-direction(column);
+      @include justify-content(center);
+      @include align-items(center);
+    }
+
+    img {
+      margin-top: 2em;
+      width: 250px;
+    }
+  }
+}

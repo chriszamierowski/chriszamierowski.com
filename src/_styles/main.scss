@@ -8,9 +8,6 @@
 @import "node_modules/node-neat/node_modules/bourbon-neat/app/assets/stylesheets/_neat.scss";
 @import "base/base";
 
-// Import icon font
-@import "../fonts/icon-font/css/cz-site.css";
-
 // Import sprites
 @import "sprites";
 
@@ -23,6 +20,7 @@
 
 // Import pages
 @import "pages/homepage";
+@import "pages/lost";
 @import "pages/project";
 @import "pages/resume";
 
