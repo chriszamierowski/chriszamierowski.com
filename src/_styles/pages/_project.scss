@@ -153,13 +153,13 @@
     }
 
     .video-wrapper {
-      @include display(flex);
+      display: flex;
       @include justify-content(center);
       overflow: hidden;
 
       @include media($screen-medium-up) {
         @include span-columns(5);
-        @include display(flex);
+        display: flex;
         @include justify-content(flex-end);
       }
     }

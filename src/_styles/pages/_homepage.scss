@@ -27,7 +27,7 @@ $things-i-am-margin: .2em;
 }
 
 .welcome {
-  @include display(flex);
+  display: flex;
   @include justify-content(center);
   @include align-items(center);
   height: 100vh;
@@ -59,7 +59,7 @@ $things-i-am-margin: .2em;
   }
 
   .things-i-am {
-    @include display(flex);
+    display: flex;
     @include justify-content(center);
     line-height: $things-i-am-height;
 
@@ -182,7 +182,7 @@ $things-i-am-margin: .2em;
   }
 
   ul {
-    @include display(flex);
+    display: flex;
     @include justify-content(space-around);
     @include flex-wrap(wrap);
     margin-bottom: 2.5em;
