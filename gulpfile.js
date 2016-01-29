@@ -41,10 +41,12 @@ gulp.task('build', [
   'copy',
   'imagemin',
   'jade',
-  'sass',
-  'inject-favicon-markups',
-  'browserify'
-]);
+  'sass'
+  // ,
+  // 'browserify'
+], function () {
+  gulp.start('inject-favicon-markups');
+});
 
 // Server tasks with watch
 gulp.task('serve', [
