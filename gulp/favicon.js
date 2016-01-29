@@ -71,7 +71,12 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
   // as is or refactor your existing HTML pipeline.
   gulp.task('inject-favicon-markups', function() {
     gulp.src([ path.join(taskTarget, '**/*.html') ])
-      .pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code))
+      .pipe(realFavicon.injectFaviconMarkups(
+        JSON.parse(fs.readFileSync(FAVICON_DATA_FILE)).favicon.html_code,
+        {
+          keep: 'meta[property="og:image"]'
+        })
+      )
       .pipe(gulp.dest(path.join(taskTarget)));
   });
 
