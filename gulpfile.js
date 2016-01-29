@@ -41,9 +41,8 @@ gulp.task('build', [
   'copy',
   'imagemin',
   'jade',
-  'sass'
-  // ,
-  // 'browserify'
+  'sass',
+  'browserify'
 ], function () {
   gulp.start('inject-favicon-markups');
 });
