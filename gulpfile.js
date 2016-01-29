@@ -8,6 +8,7 @@ var pjson = require('./package.json');
 var minimist = require('minimist');
 var wrench = require('wrench');
 var ghPages = require('gulp-gh-pages');
+var runSequence = require('run-sequence');
 
 // Load all gulp plugins based on their names
 // EX: gulp-copy -> copy
@@ -36,15 +37,14 @@ gulp.task('default', ['clean'], function() {
   gulp.start('build');
 });
 
-// Build production-ready code
-gulp.task('build', [
-  'copy',
-  'imagemin',
-  'jade',
-  'sass',
-  'browserify'
-], function () {
-  gulp.start('inject-favicon-markups');
+gulp.task('build', function(callback) {
+  runSequence(['copy',
+    'imagemin',
+    'jade',
+    'sass'],
+    'inject-favicon-markups',
+    'browserify',
+    callback);
 });
 
 // Server tasks with watch
