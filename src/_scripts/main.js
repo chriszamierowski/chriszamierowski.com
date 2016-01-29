@@ -41,6 +41,8 @@ $(function() {
   var $window = $(window),
       $body = $('body'),
       menuToggle = $('#menu-toggle'),
+      $mainMenu = $('header .main-menu'),
+      $mobileMenu = $('header .mobile-menu'),
       scrollDownDelay = 10000,
       $thingsIAm = $('.homepage .things-i-am');
 
@@ -51,7 +53,19 @@ $(function() {
 
   menuToggle.on('click', function(e) {
     e.preventDefault();
-    menuToggle.toggleClass('show-menu').parent().next().slideToggle();
+
+    toggleMenu();
+  });
+
+  function toggleMenu() {
+    $mainMenu.slideToggle();
+  }
+
+  // hide menu on mobile once you click
+  $mainMenu.find('a').on('click', function(){
+    if($mobileMenu.is(':visible')) {
+      toggleMenu();
+    }
   });
 
   $('#resume-print').on('click', function(e) {
