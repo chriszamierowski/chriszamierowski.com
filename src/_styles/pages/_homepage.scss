@@ -33,9 +33,11 @@ $things-i-am-margin: .2em;
   height: 100vh;
   font-size: .6em;
   margin-top: -$header-mobile-height;
+  max-height: 100em;
 
   @include media($screen-small-up) {
     font-size: .8em;
+    max-height: 60em;
   }
 
   @include media($screen-medium-up) {
