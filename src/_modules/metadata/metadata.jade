@@ -5,7 +5,11 @@ mixin metadata(spec)
   title= spec.title
   each val, key in spec
     if typeof val === 'object'
-      each v, k in val
-        meta(name=key+':'+k, content=v)
+      if key === 'og'
+        each v, k in val
+          meta(property=key+':'+k, content=v)
+      else
+        each v, k in val
+          meta(name=key+':'+k, content=v)
     else
       meta(name=key, content=val)
