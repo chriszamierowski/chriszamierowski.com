@@ -172,6 +172,8 @@ $things-i-am-margin: .2em;
 
   img {
     max-height: 80vh;
+    // older IE doesn't maintain aspect ratio. fix it with some math
+    max-width: 67vh;
   }
 }
 
