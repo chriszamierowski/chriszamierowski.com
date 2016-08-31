@@ -1,10 +1,10 @@
 {
   "summaries": {
-    "morsel": {
-      "name": "Morsel",
-      "url": "/projects/morsel",
-      "description": "Share the stories, inspirations and techniques that make your food your own",
-      "image": "/images/projects/morsel/morsel-summary.jpg"
+    "tastingcollective": {
+      "name": "Tasting Collective",
+      "url": "/projects/tasting-collective",
+      "description": "NYC members-only chef-led restaurant experiences and exclusive perks",
+      "image": "/images/projects/tasting-collective/tasting-collective-summary.jpg"
     },
     "betterfly": {
       "name": "Betterfly",
@@ -17,6 +17,12 @@
       "url": "/projects/thomas-pham-photography",
       "description": "Portfolio site of a Chicago photographer",
       "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-summary.jpg"
+    },
+    "morsel": {
+      "name": "Morsel",
+      "url": "/projects/morsel",
+      "description": "Share the stories, inspirations and techniques that make your food your own",
+      "image": "/images/projects/morsel/morsel-summary.jpg"
     }
   },
   "detailed": {
@@ -33,7 +39,7 @@
         "url": "/projects/betterfly"
       },
       "next_project": {
-        "url": ""
+        "url": "/projects/morsel"
       },
       "intro_copy": [
         "Tom contacted me to work with him to give his small photography business an online home. He wanted a place to show potential clients some of his existing work and for clients to browse their photos before selecting their final album.",
@@ -66,10 +72,10 @@
       "class": "morsel",
       "header_image": "/images/projects/morsel/morsel-kevin.jpg",
       "prev_project": {
-        "url": ""
+        "url": "/projects/thomas-pham-photography"
       },
       "next_project": {
-        "url": "/projects/betterfly"
+        "url": ""
       },
       "badges": [
         "Front End Development",
@@ -114,7 +120,7 @@
       "class": "betterfly",
       "header_image": "/images/projects/betterfly/betterfly-homepage.jpg",
       "prev_project": {
-        "url": "/projects/morsel"
+        "url": "/projects/tasting-collective"
       },
       "next_project": {
         "url": "/projects/thomas-pham-photography"
@@ -142,6 +148,50 @@
           "I worked mostly in the View layer of our PHP application, using jQuery and Sass on the front-end to build custom interfaces and page layouts.",
           "I also kept tabs on user behavior on the site and implemented A/B tests and user flows using Google Analytics and a suite of other analytics tools.",
           "Betterfly was acquired by <a href=\"http://takelessons.com\" target=\"_blank\">TakeLessons</a> in late 2013."
+        ]
+      }
+    },
+    "tastingcollective": {
+      "title": "Tasting Collective",
+      "class": "tasting-collective",
+      "header_image": "/images/projects/tasting-collective/tasting-collective-perks.jpg",
+      "prev_project": {
+        "url": ""
+      },
+      "next_project": {
+        "url": "/projects/betterfly"
+      },
+      "badges": [
+        "Front End Development",
+        "Responsive Web Design",
+        "Ruby on Rails"
+      ],
+      "intro_copy": [
+        "Tasting Collective members enjoy access to private chef-led dining events at top restaurants, as well as exclusive perks from leading food-related brands.",
+        "Working on a small team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer, a designer and the CEO."
+      ],
+      "stack": {
+        "image": "/images/projects/tasting-collective/tasting-collective-events.jpg",
+        "copy": "The site is built with Ruby on Rails, using Haml templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and jQuery. I was responsible for manipulating designs in Sketch and full front-end development, including working in the V&C layers of Rails. I utilized Fontello for icons and we deployed to Heroku."
+      },
+      "single_page": {
+        "image": "/images/projects/tasting-collective/tasting-collective-checkout.jpg",
+        "title": "Fully Responsive",
+        "copy": [
+          "The site was designed and built to look great on all viewports and devices.",
+          "My development included interfacing with a REST API, form validation (both client and server-side), custom photo carousels, navigation and Google Maps integration. We also utilized and modified several JavaScript Bootstrap components like modals and dropdowns.",
+          "We also leveraged several third-party libraries and APIs to enhance the user's experience."
+        ]
+      },
+      "event_detail": {
+        "image": "/images/projects/tasting-collective/tasting-collective-event-detail.jpg",
+        "copy": "We wanted to keep the focus on the food and all the awesome perks and events, so the site features lots of (delicious) imagery while still being informative for the user."
+      },
+      "final": {
+        "image": "/images/projects/tasting-collective/tasting-collective-experience-restaurants.jpg",
+        "copy": [
+          "The site also includes Google Analytics as well as several campaign tracking and analytics libraries.",
+          "Check it out at <a href=\"https://tastingcollective.com\" target=\"_blank\">tastingcollective.com</a>."
         ]
       }
     }
