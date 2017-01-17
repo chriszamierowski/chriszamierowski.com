@@ -54,7 +54,7 @@
       }
     },
     {
-      "title": "Back End Developer",
+      "title": "Back End Development",
       "content": "While I don’t consider myself a full-stack developer (yet), I do have experience working with several backend languages/frameworks. I’m most comfortable in the View layer but am familiar enough to touch other parts of an application when needed.",
       "tools": [
         "Node.js",
@@ -67,8 +67,8 @@
       }
     },
     {
-      "title": "Team Player",
-      "content": "I value communication over pretty much everything else. I enjoy collaboration and thrive as a group leader.",
+      "title": "Collaboration",
+      "content": "I value communication over pretty much everything else. I'm a team player and thrive as a group leader.",
       "tools": [
         "Pivotal Tracker",
         "Asana",
