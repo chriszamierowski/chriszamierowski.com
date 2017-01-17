@@ -49,15 +49,15 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
           })
           .pipe(vsource(entry))
           .pipe(buffer())
-          .pipe(plugins.sourcemaps.init({loadMaps: true}))
-            .pipe(gulpif(args.production, plugins.uglify()))
-            .on('error', plugins.util.log)
+          .pipe(gulpif(!args.production, plugins.sourcemaps.init({loadMaps: true})))
+          .pipe(gulpif(args.production, plugins.uglify()))
+          .on('error', plugins.util.log)
           .pipe(plugins.rename(function(filepath) {
             // Remove 'source' directory as well as prefixed folder underscores
             // Ex: 'src/_scripts' --> '/scripts'
             filepath.dirname = filepath.dirname.replace(dirs.source, '').replace('_', '');
           }))
-          .pipe(plugins.sourcemaps.write('./'))
+          .pipe(gulpif(!args.production, plugins.sourcemaps.write('./')))
           .pipe(gulp.dest(dest))
           // Show which file was bundled and how long it took
           .on('end', function() {
