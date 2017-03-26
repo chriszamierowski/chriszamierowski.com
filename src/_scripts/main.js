@@ -115,4 +115,8 @@ $(function() {
       }, 0);
     }, 100));
   }
+
+  $body.find('.intro-image-wrap').on('click', function(){
+    $(this).toggleClass('expand');
+  });
 });

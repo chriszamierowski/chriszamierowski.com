@@ -233,6 +233,7 @@
       max-height: 40vh;
       overflow: hidden;
       transition: max-height .6s $base-timing;
+      cursor: pointer;
 
       &:after {
         position: absolute;
@@ -247,7 +248,7 @@
         transition: opacity .6s $base-timing;
       }
 
-      &:hover {
+      &.expand {
         max-height: 200vh;
 
         &:after {
