@@ -1,9 +1,12 @@
 .project-page {
+  $copy-size: 1.15em;
+  $copy-line-height: 2em;
+
   .main {
     background-color: $white;
 
     section {
-      padding: 6em 0;
+      padding: 3em 0;
 
       .container, .container-sm {
         @include pad();
@@ -133,6 +136,12 @@
   .side-content {
     .container {
       background: $light-gray;
+      display: flex;
+      flex-direction: column;
+
+      @include media($screen-medium-up) {
+        flex-direction: row;
+      }
     }
 
     .images-wrapper {
@@ -155,23 +164,44 @@
     .video-wrapper {
       display: flex;
       @include justify-content(center);
+      @include align-items(flex-start);
       overflow: hidden;
 
       @include media($screen-medium-up) {
         @include span-columns(5);
         display: flex;
         @include justify-content(flex-end);
+        @include align-items(center);
+      }
+    }
+
+    .image-wrapper {
+      overflow: hidden;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+      }
+
+      @include media($screen-medium-up) {
+        @include span-columns(5);
+        background: $white;
+
+        img {
+          display: block;
+        }
       }
     }
 
     .side-content-copy {
-      @include span-columns(12);
       color: $dark-gray;
-      padding: 3em 1em 4em 1em;
+      font-size: $copy-size;
+      line-height: $copy-line-height;
+      @include pad();
 
       @include media($screen-medium-up) {
         @include span-columns(7);
-        padding: 4em 4em 8em 4em;
+        // padding: 4em 4em 8em 4em;
       }
 
       p {
@@ -231,6 +261,35 @@
     }
   }
 
+  .dual-images {
+    background: $light-gray;
+
+    .middle-column {
+      padding: 2em;
+      color: $dark-gray;
+      text-align: justify;
+      font-size: $copy-size;
+      line-height: $copy-line-height;
+    }
+
+    @include media($screen-medium-up) {
+      display: flex;
+      @include justify-content(top);
+
+      img {
+        display: block;
+      }
+
+      .img-wrapper {
+        @include flex-basis(300px);
+      }
+
+      .middle-column {
+        flex: 1;
+      }
+    }
+  }
+
   &.project-tompham .intro-image {
     background-color: black;
   }
@@ -252,12 +311,13 @@
 
     .badge {
       margin: .4em;
+      font-size: 1em;
     }
   }
 
   .copy-wrapper {
-    font-size: 1.05em;
-    line-height: 2em;
+    font-size: $copy-size;
+    line-height: $copy-line-height;
 
     @include media($screen-medium-up) {
       @include span-columns(8);
@@ -265,10 +325,8 @@
   }
 
   .copy {
-    @include span-columns(10);
-    @include shift(1);
-    font-size: 1.05em;
-    line-height: 2em;
+    font-size: $copy-size;
+    line-height: $copy-line-height;
 
     @include media($screen-medium-up) {
       @include span-columns(8);
@@ -286,5 +344,11 @@
 
   .contact {
     padding-top: 6em;
+  }
+
+  video {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }

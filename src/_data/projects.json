@@ -6,6 +6,12 @@
       "description": "NYC members-only chef-led restaurant experiences and exclusive perks",
       "image": "/images/projects/tasting-collective/tasting-collective-summary.jpg"
     },
+    "funerals360": {
+      "name": "Funerals360",
+      "url": "/projects/funerals360",
+      "description": "Online tools and resources for planning a funeral",
+      "image": "/images/projects/funerals360/funerals360-summary.jpg"
+    },
     "betterfly": {
       "name": "Betterfly",
       "url": "/projects/betterfly",
@@ -110,8 +116,7 @@
       "final": {
         "image": "/images/projects/morsel/morsel-big-star.jpg",
         "copy": [
-          "To see what our users were up to on the site we used Mixpanel and Google Analytics and integrated Rollbar for error reporting.",
-          "Morsel still lives on, but my involvement in the product has ceased. Check it out at <a href=\"https://eatmorsel.com\" target=\"_blank\">eatmorsel.com</a>"
+          "To see what our users were up to on the site we used Mixpanel and Google Analytics and integrated Rollbar for error reporting."
         ]
       }
     },
@@ -168,7 +173,7 @@
       ],
       "intro_copy": [
         "Tasting Collective members enjoy access to private chef-led dining events at top restaurants, as well as exclusive perks from leading food-related brands.",
-        "Working on a small team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer, a designer and the CEO."
+        "Working on a small remote team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer, a designer and the CEO."
       ],
       "stack": {
         "image": "/images/projects/tasting-collective/tasting-collective-events.jpg",
@@ -192,6 +197,44 @@
         "copy": [
           "The site also includes Google Analytics as well as several campaign tracking and analytics libraries.",
           "Check it out at <a href=\"https://tastingcollective.com\" target=\"_blank\">tastingcollective.com</a>."
+        ]
+      }
+    },
+    "funerals360": {
+      "title": "Funerals360",
+      "class": "funerals360",
+      "header_image": "/images/projects/funerals360/funerals360-resources.jpg",
+      "prev_project": {
+        "url": ""
+      },
+      "next_project": {
+        "url": "/projects/betterfly"
+      },
+      "badges": [
+        "Front End Development",
+        "Responsive Web Design",
+        "Remote Work"
+      ],
+      "intro_copy": [
+        "Funerals360 was built to help navigate planning a funeral as well as finding and evaluating local funeral homes and the other funeral-related products and services. It's a consumer-friendly, easy-to-navigate and comprehensive website to help guide you along the funeral planning journey including helping find the local businesses you need. Unbiased, transparent information and consumer reviews makes it easier to plan, reduces research time and helps you confidently make funeral decisions.",
+        "Working on a small, remote team, I was responsible for the front-end architecture and implementing a responsive interface for Funerals360's site."
+      ],
+      "search": {
+        "video": "/images/projects/funerals360/funerals360-search-from-homepage.mp4",
+        "video_poster": "/images/projects/funerals360/funerals360-search-from-homepage-poster.jpg",
+        "copy": "A large part of Funerals360 is connecting people to the local businesses they need when planning for a funeral. To facilitate this process I built fully custom, interactive search functionality using Angular and interfacing with a RESTful API. The search page is fully responsive, utilizes several Google Maps API components and includes filtering, advanced search by additional fields, custom saved searches (for logged-in users), loading states, query string search and pagination."
+      },
+      "tech": {
+        "image": "/images/projects/funerals360/funerals360-vendor.jpg",
+        "copy": [
+          "The front-end styling uses a custom Bootstrap Sass configuration along with a custom Fontello icon set. I used jQuery for most simple page interactions like photo galleries, dynamic form elements, dropdowns and tooltips and AngularJS for several more complicated components.",
+          "The site is built on top of Django, including Django CMS, allowing site content to be updated without code deployments. I worked mainly in the View and Template layers, where one challenge was accounting for differing states of the data across vendor pages. We deployed to several Heroku environments."
+        ]
+      },
+      "final": {
+        "copy": [
+          "Communication was a key aspect of working as part of a remote team across multiple US states and continents. I advised communication strategies and we utilized Slack, Asana, Google Hangouts and Pivotal Tracker to make sure everybody was on the same page with tasks, deliverables and expectations.",
+          "My time on the project has ended, but the site is still under active development. Check it out at <a href=\"https://funerals360.com\" target=\"_blank\">funerals360.com</a>."
         ]
       }
     }

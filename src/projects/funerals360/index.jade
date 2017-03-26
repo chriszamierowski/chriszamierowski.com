@@ -1,0 +1,55 @@
+extends ../../_layouts/base
+
+block vars
+  - var baseUrl = '../../'
+  - var pageData = site.data.projects.detailed.funerals360
+  - var bodyClass = 'project-page project-'+ pageData.class
+
+include ../../_modules/project-header/project-header
+
+block header
+  +project-header({
+    prev: pageData.prev_project,
+    next: pageData.next_project
+  })
+
+block content
+  .intro-image
+    .intro-image-wrap
+      img(src=pageData.header_image)
+  section
+    .container-sm.light-scheme
+      h1= pageData.title
+      .badges
+        each b in pageData.badges
+          .badge= b
+      .copy-wrapper
+        each c in pageData.intro_copy
+          p= c
+  section
+    .video-wrapper
+      video(src='#{pageData.search.video}', type='video/mp4', autoplay='autoplay', loop='loop', poster='#{pageData.search.video_poster}', preload='auto')
+  section
+    .container-sm.light-scheme
+      .copy
+        p= pageData.search.copy
+  .side-content
+    .container
+      .image-wrapper
+        img(src=pageData.tech.image)
+      .side-content-copy
+        each c in pageData.tech.copy
+          p= c
+  //- .container.dual-images
+  //-   .img-wrapper
+  //-     img(src=pageData.tech.images[0])
+  //-   .middle-column
+  //-     each c in pageData.tech.copy
+  //-       p= c
+  //-   .img-wrapper
+  //-     img(src=pageData.tech.images[1])
+  section
+    .container-sm.light-scheme
+      .copy
+        each c in pageData.final.copy
+          p !{c}
