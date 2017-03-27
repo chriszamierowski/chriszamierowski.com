@@ -45,7 +45,7 @@
 <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png?v=vMMqAM29Wa">
 <meta name="msapplication-config" content="/favicons/browserconfig.xml?v=vMMqAM29Wa">
 <meta name="theme-color" content="#29b6f6"></head>
-<body class="project-page project-morsel">
+<body class="project-page project-funerals360">
   <!--[if lt IE 9]>
   <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/' target='_blank'>upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
@@ -55,7 +55,9 @@
         <ul>
           <li><a class="link" href="/#examples">Back to Examples</a>
           </li>
-          <li><a class="link" href="/projects/betterfly">Prev</a>
+          <li><a class="link" href="/projects/tasting-collective">Prev</a>
+          </li>
+          <li><a class="link" href="/projects/thomas-pham-photography">Next</a>
           </li>
         </ul>
       </div>
@@ -63,60 +65,52 @@
   </header>
   <div class="main">
     <div class="intro-image">
-      <div class="intro-image-wrap"><img src="/images/projects/morsel/morsel-kevin.jpg"></div>
+      <div class="intro-image-wrap"><img src="/images/projects/funerals360/funerals360-resources.jpg"></div>
     </div>
     <section>
       <div class="container-sm light-scheme">
-        <h1>Morsel</h1>
+        <h1>Funerals360</h1>
         <div class="badges">
           <div class="badge">Front End Development</div>
-          <div class="badge">User Research</div>
-          <div class="badge">Wireframes</div>
-          <div class="badge">UI Design</div>
           <div class="badge">Responsive Web Design</div>
-          <div class="badge">A/B Testing</div>
-          <div class="badge">User Analytics</div>
+          <div class="badge">Remote Work</div>
+          <div class="badge">Contract</div>
         </div>
         <div class="copy-wrapper">
-          <p>Morsel is a storytelling platform for people who love food. Built around a community of people passionate about food and drink with a curiosity about what inspires others, Morsel allows you to understand the chef's vision, the mixologist's creativity, the sommelier's understanding of what makes a great pairing and the home-cook's creative meals all in one place.</p>
-          <p>As the first hire and lone front-end developer, I was responsible for full UI design and development of the site. This included working with the full web stack, interfacing with our API, prototyping and user research.</p>
+          <p>Funerals360 was built to help navigate planning a funeral as well as finding and evaluating local funeral homes and the other funeral-related products and services. It's a consumer-friendly, easy-to-navigate and comprehensive website to help guide you along the funeral planning journey including helping find the local businesses you need. Unbiased, transparent information and consumer reviews makes it easier to plan, reduces research time and helps you confidently make funeral decisions.</p>
+          <p>Working on a small, remote team, I was responsible for the front-end architecture and implementing a responsive interface for Funerals360's site.</p>
         </div>
       </div>
     </section>
-    <div class="device-background">
-      <div class="device">
-        <div style="background-image:url(/images/projects/morsel/morsel-mobile.jpg)" class="screen"></div><img src="/images/projects/morsel/morsel-mobile.jpg">
+    <section>
+      <div class="video-wrapper">
+        <video src="/images/projects/funerals360/funerals360-search-from-homepage.mp4" type="video/mp4" autoplay loop poster="/images/projects/funerals360/funerals360-search-from-homepage-poster.jpg" preload="auto"></video>
       </div>
-      <div class="device-text">
-        <h4>Morsel on Mobile</h4>
-        <p>Full functionality (without sacrificing speed) on mobile was a priority for us, so I built the site as a fully responsive single-page app, written in AngularJS on top of a simple Express (Node.js) web server. This allowed functionality updates to be in one codebase, cutting down development time, as well as keeping UI elements consistent across all device sizes.</p>
-        <p>To grow quickly and consistently across platforms, my teammate built a RESTful API in Ruby on Rails that would interface with both an iOS app and my web app, which further improved perceived loading times on mobile web by only needing to load front-end assets once per user session.</p>
+    </section>
+    <section>
+      <div class="container-sm light-scheme">
+        <div class="copy">
+          <p>A large part of Funerals360 is connecting people to the local businesses they need when planning for a funeral. To facilitate this process I built fully custom, interactive search functionality using Angular and interfacing with a RESTful API. The search page is fully responsive, utilizes several Google Maps API components and includes filtering, advanced search by additional fields, custom saved searches (for logged-in users), loading states, query string search and pagination.</p>
+        </div>
+      </div>
+    </section>
+    <div class="side-content">
+      <div class="container">
+        <div class="image-wrapper"><img src="/images/projects/funerals360/funerals360-vendor.jpg"></div>
+        <div class="side-content-copy">
+          <p>The front-end styling uses a custom Bootstrap Sass configuration along with a custom Fontello icon set. I used jQuery for most simple page interactions like photo galleries, dynamic form elements, dropdowns and tooltips and AngularJS for several more complicated components.</p>
+          <p>The site is built on top of Django, including Django CMS, allowing site content to be updated without code deployments. I worked mainly in the View and Template layers, where one challenge was accounting for differing states of the data across vendor pages. We deployed to several Heroku environments.</p>
+        </div>
       </div>
     </div>
     <section>
       <div class="container-sm light-scheme">
         <div class="copy">
-          <p>Some of the things I implemented in the Angular app were file uploads, routing, inline form validations (with client and server side errors) and plenty of responsive, interactive layouts. The front-end development workflow used Grunt with Handlebars templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and deployed to Heroku.</p>
+          <p>Communication was a key aspect of working as part of a remote team across multiple US states and continents. I advised communication strategies and we utilized Slack, Asana, Google Hangouts and Pivotal Tracker to make sure everybody was on the same page with tasks, deliverables and expectations.</p>
+          <p>My time on the project has ended, but the site is still under active development. Check it out at <a href="https://funerals360.com" target="_blank">funerals360.com</a>.</p>
         </div>
       </div>
     </section>
-    <div class="container wide-image"><img src="/images/projects/morsel/morsel-add.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
-        <div class="copy">
-          <p>I had the opportunity to conduct both formative and summative user research (think interviewing a chef in their restaurant) and develop user personas. We used our findings to refine the <i>morsel</i> creation process, among other user flows.</p>
-        </div>
-      </div>
-    </section>
-    <div class="container wide-image"><img src="/images/projects/morsel/morsel-storyboards.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
-        <div class="copy">
-          <p>To see what our users were up to on the site we used Mixpanel and Google Analytics and integrated Rollbar for error reporting.</p>
-        </div>
-      </div>
-    </section>
-    <div class="container wide-image"><img src="/images/projects/morsel/morsel-big-star.jpg"></div>
   </div>
   <section id="contact" class="contact">
     <div class="container">
