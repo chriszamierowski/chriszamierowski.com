@@ -14,6 +14,6 @@ gulp test
 
 To build & deploy:
 ```
-gulp build
+gulp build --production
 gulp deploy
 ```
