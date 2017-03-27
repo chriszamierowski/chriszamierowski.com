@@ -12,17 +12,17 @@
       "description": "Online tools and resources for planning a funeral",
       "image": "/images/projects/funerals360/funerals360-summary.jpg"
     },
-    "betterfly": {
-      "name": "Betterfly",
-      "url": "/projects/betterfly",
-      "description": "Connecting consumers with personal service providers for online lessons",
-      "image": "/images/projects/betterfly/betterfly-summary.jpg"
-    },
     "Tom Pham Photography": {
       "name": "Thomas Pham Photography",
       "url": "/projects/thomas-pham-photography",
       "description": "Portfolio site of a Chicago photographer",
       "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-summary.jpg"
+    },
+    "betterfly": {
+      "name": "Betterfly",
+      "url": "/projects/betterfly",
+      "description": "Connecting consumers with personal service providers for online lessons",
+      "image": "/images/projects/betterfly/betterfly-summary.jpg"
     },
     "morsel": {
       "name": "Morsel",
@@ -42,10 +42,10 @@
         "Back End Development"
       ],
       "prev_project": {
-        "url": "/projects/betterfly"
+        "url": "/projects/funerals360"
       },
       "next_project": {
-        "url": "/projects/morsel"
+        "url": "/projects/betterfly"
       },
       "intro_copy": [
         "Tom contacted me to work with him to give his small photography business an online home. He wanted a place to show potential clients some of his existing work and for clients to browse their photos before selecting their final album.",
@@ -78,7 +78,7 @@
       "class": "morsel",
       "header_image": "/images/projects/morsel/morsel-kevin.jpg",
       "prev_project": {
-        "url": "/projects/thomas-pham-photography"
+        "url": "/projects/betterfly"
       },
       "next_project": {
         "url": ""
@@ -125,10 +125,10 @@
       "class": "betterfly",
       "header_image": "/images/projects/betterfly/betterfly-homepage.jpg",
       "prev_project": {
-        "url": "/projects/tasting-collective"
+        "url": "/projects/thomas-pham-photography"
       },
       "next_project": {
-        "url": "/projects/thomas-pham-photography"
+        "url": "/projects/morsel"
       },
       "badges": [
         "Front End Development",
@@ -164,16 +164,18 @@
         "url": ""
       },
       "next_project": {
-        "url": "/projects/betterfly"
+        "url": "/projects/funerals360"
       },
       "badges": [
         "Front End Development",
         "Responsive Web Design",
-        "Ruby on Rails"
+        "Ruby on Rails",
+        "Remote Work",
+        "Contract"
       ],
       "intro_copy": [
         "Tasting Collective members enjoy access to private chef-led dining events at top restaurants, as well as exclusive perks from leading food-related brands.",
-        "Working on a small remote team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer, a designer and the CEO."
+        "Working on a small, remote team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer, a designer and the CEO."
       ],
       "stack": {
         "image": "/images/projects/tasting-collective/tasting-collective-events.jpg",
@@ -205,15 +207,16 @@
       "class": "funerals360",
       "header_image": "/images/projects/funerals360/funerals360-resources.jpg",
       "prev_project": {
-        "url": ""
+        "url": "/projects/tasting-collective"
       },
       "next_project": {
-        "url": "/projects/betterfly"
+        "url": "/projects/thomas-pham-photography"
       },
       "badges": [
         "Front End Development",
         "Responsive Web Design",
-        "Remote Work"
+        "Remote Work",
+        "Contract"
       ],
       "intro_copy": [
         "Funerals360 was built to help navigate planning a funeral as well as finding and evaluating local funeral homes and the other funeral-related products and services. It's a consumer-friendly, easy-to-navigate and comprehensive website to help guide you along the funeral planning journey including helping find the local businesses you need. Unbiased, transparent information and consumer reviews makes it easier to plan, reduces research time and helps you confidently make funeral decisions.",

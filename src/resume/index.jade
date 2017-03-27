@@ -41,6 +41,6 @@ block content
         if s.jobs
           each j in s.jobs
             ul: li
-              p #{j.jobtitle}!{j.company ? ' - <a href=\"'+j.company.link+'\" target=\"_blank\">'+j.company.name+'</a>' : ''}. #{j.dates}. !{j.description}
+              p #{j.jobtitle}!{j.company ? ' - ' + (j.company.link ? '<a href=\"'+j.company.link+'\" target=\"_blank\">'+j.company.name+'</a>' : '<span>' + j.company.name + '</span>') : ''}. #{j.dates}. !{j.description}
 
 

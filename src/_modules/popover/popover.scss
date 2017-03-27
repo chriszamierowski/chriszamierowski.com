@@ -62,6 +62,10 @@ $popover-trigger-start-size: 2px;
   @include media($screen-medium-up) {
     max-width: 30em;
   }
+
+  .link {
+    color: $dark-blue;
+  }
 }
 
 .webui-popover-title {

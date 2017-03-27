@@ -44,44 +44,44 @@
       "status": true,
       "copy": "Available for contract or freelance"
     },
-    "blurb": "I’m a web developer producing (mostly) front-end solutions that are clean and well-coded. I'm interested in how design and web technologies can be used to enhance user experience. Also, food."
+    "blurb": "I’m a multidisciplinary thinker producing (mostly) front-end solutions."
   },
   "sections": [
     {
       "id": "things-i-use",
       "title": "Some Things I Use",
       "subtitle": "Software, tools, languages, libraries, etc.",
-      "description": "AngularJS, SASS, Yeoman, Express, Grunt, Jade, Bootstrap, jQuery, Compass, Underscore, Bourbon, Bitters, Neat, gulp, Node.js, Ruby on Rails, Handlebars, HTML5, Karma, Jasmine, PHP, Sublime Text 2, Sketch, PhotoShop, Zeplin, Git (CLI),  Heroku, AWS, GA, Mixpanel, Rollbar, Loggly, npm, Bower, Terminal, Asana, Pivotal Tracker, Balsamiq, pen & paper, Slack"
+      "description": "JavaScript (ES2015), AngularJS, HTML5, Sass, gulp, Sketch, Ruby on Rails, Node.js, Express, Webpack, Riot, Yeoman, Jade/Pug, Bootstrap, jQuery, Karma, Jasmine, Protractor, Jenkins, PostCSS, Underscore, Sublime Text 2, Sketch, Photoshop, Zeplin, Git (CLI), Heroku, AWS S3, Google Analytics, Mixpanel, Rollbar, Terminal, Asana, Pivotal Tracker, Balsamiq, pen & paper, Slack"
     },
     {
       "title": "Work Experience",
       "jobs": [
         {
-          "jobtitle": "Front-end Engineer",
+          "jobtitle": "Lead Front-end Engineer",
           "company": {
             "name": "Leo Burnett Interactive",
             "link": "http://www.leoburnettinteractive.com/"
           },
           "dates": "March 2015 - July 2015, June 2016-Present",
-          "description": "As a contractor, I'm working on a team to build a single-page online dashboard and on-device webapp for an electronics client."
+          "description": "As a contractor, I'm working on a team to build a single-page online dashboard and on-device webapp for a major electronics client."
         },
         {
           "jobtitle": "Front-end Engineer",
           "company": {
             "name": "Morsel",
-            "link": "https://www.eatmorsel.com/"
+            "link": "/projects/morsel"
           },
           "dates": "Nov 2013 - Feb 2015",
-          "description": "First hire, responsible for full UI, design and development of web stack of <a href=\"https://www.eatmorsel.com/\">eatmorsel.com</a>."
+          "description": "First hire, responsible for full UI, design and development of web stack of eatmorsel.com."
         },
         {
           "jobtitle": "Software Engineer",
           "company": {
             "name": "Betterfly",
-            "link": "http://betterfly.com/"
+            "link": "/projects/betterfly"
           },
           "dates": "Feb 2013 - Oct 2013",
-          "description": "Built and managed front-end of <a href=\"http://betterfly.com/\">betterfly.com</a> (acquired 2013), including custom online video chat tool."
+          "description": "Built and managed front-end of betterfly.com (acquired 2013), including custom online video chat tool."
         },
         {
           "jobtitle": "Web Developer",
@@ -109,9 +109,9 @@
     {
       "title": "Tidbits",
       "description": [
-        "I sometimes stand while I work",
-        "I eat kiwis with the skin on",
-        "I appreciate a good oatmeal stout"
+        "I sometimes stand while I work.",
+        "I eat kiwis with the skin on.",
+        "I appreciate a good oatmeal stout."
       ]
     }
   ]
