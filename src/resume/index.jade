@@ -32,10 +32,16 @@ block content
         if s.subtitle
           h5= s.subtitle
         if (typeof(s.description) === 'object')
-          ul
-            each d in s.description
-              li
-                p= d
+          ul(class=s.columns ? 'columns' : '')
+            if (Array.isArray(s.description))
+              each d in s.description
+                li
+                  p= d
+            else
+              each v, k in s.description
+                li
+                  h5= `${k}:`
+                  = v
         else
           p= s.description
         if s.jobs

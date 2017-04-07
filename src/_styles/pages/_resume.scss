@@ -80,6 +80,19 @@
     a, span {
       text-transform: uppercase;
     }
+
+    .columns {
+      color: $dark-gray;
+
+      h5 {
+        display: inline-block;
+        margin-right: 0.25em;
+      }
+
+      @include media($screen-medium-up) {
+        columns: 2;
+      }
+    }
   }
 
   @media print {

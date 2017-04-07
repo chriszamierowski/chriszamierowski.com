@@ -42,7 +42,7 @@
     "location": "Remote / Chicago, IL",
     "availability": {
       "status": true,
-      "copy": "Available for contract or freelance"
+      "copy": "Available for contract, freelance or full-time"
     },
     "blurb": "I’m a multidisciplinary thinker producing (mostly) front-end solutions."
   },
@@ -51,10 +51,21 @@
       "id": "things-i-use",
       "title": "Some Things I Use",
       "subtitle": "Software, tools, languages, libraries, etc.",
-      "description": "JavaScript (ES2015), AngularJS, HTML5, Sass, gulp, Sketch, Ruby on Rails, Node.js, Express, Webpack, Riot, Yeoman, Jade/Pug, Bootstrap, jQuery, Karma, Jasmine, Protractor, Jenkins, PostCSS, Underscore, Sublime Text 2, Sketch, Photoshop, Zeplin, Git (CLI), Heroku, AWS S3, Google Analytics, Mixpanel, Rollbar, Terminal, Asana, Pivotal Tracker, Balsamiq, pen & paper, Slack"
+      "description": "JavaScript (ES6), AngularJS, HTML5, Sass, gulp, Sketch, Ruby on Rails, Node.js, Express, Webpack, Riot, Yeoman, Jade/Pug, Bootstrap, jQuery, Karma, Jasmine, Protractor, Jenkins, PostCSS, Underscore, Sublime Text, Sketch, Photoshop, Zeplin, Git (CLI), Heroku, AWS S3, Google Analytics, Mixpanel, Rollbar, Terminal, Asana, Pivotal Tracker, Balsamiq, pen & paper, Slack"
     },
     {
-      "title": "Work Experience",
+      "id": "areas-of-work",
+      "title": "What I Like To Work On",
+      "columns": true,
+      "description": {
+        "FE Development" : "web apps, responsive interfaces",
+        "UX Design" : "wireframes, prototyping, user research",
+        "Product Design" : "ideation, analytics",
+        "UI Design" : "layouts, animation"
+      }
+    },
+    {
+      "title": "Experience",
       "jobs": [
         {
           "jobtitle": "Lead Front-end Engineer",
@@ -63,7 +74,12 @@
             "link": "http://www.leoburnettinteractive.com/"
           },
           "dates": "March 2015 - July 2015, June 2016-Present",
-          "description": "As a contractor, I'm working on a team to build a single-page online dashboard and on-device webapp for a major electronics client."
+          "description": "As a contractor, I'm working on a team to build a single-page online dashboard and custom hybrid app for a major electronics client."
+        },
+        {
+          "jobtitle": "Freelance Web Design & Development",
+          "dates": "Jan 2009 - Present",
+          "description": "Provide full design and development of sites for multiple small clients, ranging from portfolio to e-commerce sites."
         },
         {
           "jobtitle": "Front-end Engineer",
@@ -91,11 +107,6 @@
           },
           "dates": "Jun 2011 - Feb 2013",
           "description": "Worked together with Design, IA, UX teams to build and deliver sites for clients including Discover Financial Services and E*TRADE."
-        },
-        {
-          "jobtitle": "Freelance Web Design & Development",
-          "dates": "Jan 2009 - Present",
-          "description": "Provide full design and development of sites for multiple small clients, ranging from portfolio to e-commerce sites."
         }
       ]
     },
