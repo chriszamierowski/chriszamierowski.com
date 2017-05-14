@@ -39,7 +39,7 @@
       "name": "hi@chriszamierowski.com",
       "link": "mailto:hi@chriszamierowski.com"
     },
-    "location": "Remote / Chicago, IL",
+    "location": "&nbsp;",
     "availability": {
       "status": true,
       "copy": "Available for contract, freelance or full-time"
@@ -70,8 +70,8 @@
         {
           "jobtitle": "Lead Front-end Engineer",
           "company": {
-            "name": "Leo Burnett Interactive",
-            "link": "http://www.leoburnettinteractive.com/"
+            "name": "Leo Burnett",
+            "link": "http://leoburnett.com/"
           },
           "dates": "March 2015 - July 2015, June 2016-Present",
           "description": "As a contractor, I'm working on a team to build a single-page online dashboard and custom hybrid app for a major electronics client."
