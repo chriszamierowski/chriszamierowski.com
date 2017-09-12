@@ -138,6 +138,30 @@
       }
     },
     {
+      "id": "whereischris",
+      "title": "Where Is Chris?",
+      "class": "where-is-chris",
+      "description": "A public calendar to quickly find out where I am",
+      "summary_image": "/images/projects/where-is-chris/where-is-chris-summary.jpg",
+      "header_image": "/images/projects/where-is-chris/where-is-chris-calendar.jpg",
+      "url": "/projects/where-is-chris",
+      "badges": [
+        "Responsive Web Design",
+        "Side Project",
+        "Product Design"
+      ],
+      "intro_copy": [
+        "I like to travel, so I built a quick site so people can keep track of where I am. Now Mom can keep tabs on me, friends know when I'm out of town and clients get a heads up for when I might be working at odd hours."
+      ],
+      "final": {
+        "image": "/images/projects/where-is-chris/where-is-chris-car.svg",
+        "copy": [
+          "The site pulls in data via the Google Calendar API and displays it with a simple Express server.",
+          "Check it out at <a href=\"http://whereis.chriszamierowski.com\" target=\"_blank\">whereis.chriszamierowski.com</a> or the source is available <a href=\"https://github.com/chriszamierowski/where-is-chris\" target=\"_blank\">on Github</a>."
+        ]
+      }
+    },
+    {
       "id": "funerals360",
       "title": "Funerals360",
       "class": "funerals360",

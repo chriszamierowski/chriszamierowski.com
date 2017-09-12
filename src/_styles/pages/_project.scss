@@ -221,6 +221,10 @@
         padding: 3px 8px;
         text-transform: uppercase;
       }
+
+      a {
+        @include light-scheme-link();
+      }
     }
   }
 
