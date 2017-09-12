@@ -12,8 +12,8 @@ To test:
 gulp test
 ```
 
-To build & deploy:
+To build & deploy (on master branch):
 ```
-gulp build
+gulp build --production
 gulp deploy
 ```
