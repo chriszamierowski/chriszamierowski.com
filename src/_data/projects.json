@@ -8,12 +8,7 @@
       "description": "A simple family tree that's quick to build and easy to share",
       "summary_image": "/images/projects/explain-your-family/explain-your-family-summary.jpg",
       "header_image": "/images/projects/explain-your-family/explain-your-family-tree.jpg",
-      "prev_project": {
-        "url": "/projects/tasting-collective"
-      },
-      "next_project": {
-        "url": "/projects/thomas-pham-photography"
-      },
+      "url": "/projects/explain-your-family",
       "badges": [
         "Front End Development",
         "Back End Development",
