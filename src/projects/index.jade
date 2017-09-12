@@ -1,0 +1,19 @@
+extends ../_layouts/base
+
+include ../_modules/card/card
+include ../_modules/project-header/project-header
+
+block vars
+  - var baseUrl = '../'
+  - var bodyClass = 'projects-page';
+
+block header
+  +project-header
+
+block content
+  section.container
+    h2.text-center
+      = site.data.projects.title
+    .cards
+      each c in site.data.projects.list 
+        +card(c)

@@ -1,88 +1,58 @@
 {
-  "summaries": {
-    "tastingcollective": {
-      "name": "Tasting Collective",
-      "url": "/projects/tasting-collective",
+  "title": "Projects",
+  "list": [
+    {
+      "id": "tastingcollective",
+      "title": "Tasting Collective",
+      "class": "tasting-collective",
       "description": "NYC members-only chef-led restaurant experiences and exclusive perks",
-      "image": "/images/projects/tasting-collective/tasting-collective-summary.jpg"
-    },
-    "funerals360": {
-      "name": "Funerals360",
-      "url": "/projects/funerals360",
-      "description": "Online tools and resources for planning a funeral",
-      "image": "/images/projects/funerals360/funerals360-summary.jpg"
-    },
-    "Tom Pham Photography": {
-      "name": "Thomas Pham Photography",
-      "url": "/projects/thomas-pham-photography",
-      "description": "Portfolio site of a Chicago photographer",
-      "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-summary.jpg"
-    },
-    "betterfly": {
-      "name": "Betterfly",
-      "url": "/projects/betterfly",
-      "description": "Connecting consumers with personal service providers for online lessons",
-      "image": "/images/projects/betterfly/betterfly-summary.jpg"
-    },
-    "morsel": {
-      "name": "Morsel",
-      "url": "/projects/morsel",
-      "description": "Share the stories, inspirations and techniques that make your food your own",
-      "image": "/images/projects/morsel/morsel-summary.jpg"
-    }
-  },
-  "detailed": {
-    "tompham": {
-      "title": "Thomas Pham Photography",
-      "class": "tompham",
-      "header_image": "/images/projects/thomas-pham-photography/thomas-pham-photography-splash.jpg",
+      "summary_image": "/images/projects/tasting-collective/tasting-collective-summary.jpg",
+      "header_image": "/images/projects/tasting-collective/tasting-collective-perks.jpg",
+      "url": "/projects/tasting-collective",
       "badges": [
-        "Visual Design",
         "Front End Development",
-        "Back End Development"
+        "Responsive Web Design",
+        "Ruby on Rails",
+        "Remote Work",
+        "Contract"
       ],
-      "prev_project": {
-        "url": "/projects/funerals360"
-      },
-      "next_project": {
-        "url": "/projects/betterfly"
-      },
       "intro_copy": [
-        "Tom contacted me to work with him to give his small photography business an online home. He wanted a place to show potential clients some of his existing work and for clients to browse their photos before selecting their final album.",
-        "Tom wanted the site to be simple and elegant, with a focus on big photos."
+        "Tasting Collective members enjoy access to private chef-led dining events at top restaurants, as well as exclusive perks from leading food-related brands.",
+        "Working on a small, remote team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer, a designer and the CEO."
       ],
-      "architecture": {
-        "video": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover.mp4",
-        "video_poster": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover-poster.jpg",
+      "stack": {
+        "image": "/images/projects/tasting-collective/tasting-collective-events.jpg",
+        "copy": "The site is built with Ruby on Rails, using Haml templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and jQuery. I was responsible for manipulating designs in Sketch and full front-end development, including working in the V&C layers of Rails. I utilized Fontello for icons and we deployed to Heroku."
+      },
+      "single_page": {
+        "image": "/images/projects/tasting-collective/tasting-collective-checkout.jpg",
+        "title": "Fully Responsive",
         "copy": [
-          "Since Tom's two main areas of focus are weddings and senior portraits, we decided to organize the site using a splash page and two identical sub-sites.",
-          "This allowed potential clients to browse info and photos only related to their interest."
+          "The site was designed and built to look great on all viewports and devices.",
+          "My development included interfacing with a REST API, form validation (both client and server-side), custom photo carousels, navigation and Google Maps integration. We also utilized and modified several JavaScript Bootstrap components like modals and dropdowns.",
+          "We also leveraged several third-party libraries and APIs to enhance the user's experience."
         ]
       },
-      "contact": {
-        "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-contact.jpg",
-        "copy": "I used a clean, unobtrusive, black and white design that let Tom's photos shine through on each page."
+      "event_detail": {
+        "image": "/images/projects/tasting-collective/tasting-collective-event-detail.jpg",
+        "copy": "We wanted to keep the focus on the food and all the awesome perks and events, so the site features lots of (delicious) imagery while still being informative for the user."
       },
       "final": {
+        "image": "/images/projects/tasting-collective/tasting-collective-experience-restaurants.jpg",
         "copy": [
-          "To minimize Tom's effort needed for client and photo management, I set up a client portal he could manage using Google Docs, which meant no new software to learn or fancy URLs to remember.",
-          "The site was built using PHP, CSS and JavaScript. Check it out at <a href=\"http://thomasphamphotography.com\" target=\"_blank\">thomasphamphotography.com</a>"
+          "The site also includes Google Analytics as well as several campaign tracking and analytics libraries.",
+          "Check it out at <a href=\"https://tastingcollective.com\" target=\"_blank\">tastingcollective.com</a>."
         ]
-      },
-      "reception": {
-        "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-reception.jpg"
       }
     },
-    "morsel": {
+    {
+      "id": "morsel",
       "title": "Morsel",
       "class": "morsel",
+      "description": "Share the stories, inspirations and techniques that make your food your own",
+      "summary_image": "/images/projects/morsel/morsel-summary.jpg",
       "header_image": "/images/projects/morsel/morsel-kevin.jpg",
-      "prev_project": {
-        "url": "/projects/betterfly"
-      },
-      "next_project": {
-        "url": ""
-      },
+      "url": "/projects/morsel",
       "badges": [
         "Front End Development",
         "User Research",
@@ -120,98 +90,14 @@
         ]
       }
     },
-    "betterfly": {
-      "title": "Betterfly",
-      "class": "betterfly",
-      "header_image": "/images/projects/betterfly/betterfly-homepage.jpg",
-      "prev_project": {
-        "url": "/projects/thomas-pham-photography"
-      },
-      "next_project": {
-        "url": "/projects/morsel"
-      },
-      "badges": [
-        "Front End Development",
-        "UI Design",
-        "A/B Testing",
-        "User Analytics"
-      ],
-      "intro_copy": [
-        "Betterfly was a community for connecting personal service providers (guitar teachers, life coaches, Spanish tutors, etc) to students looking to learn online.",
-        "As the lone front-end developer, I was responsible for full UI design and development, including building a custom online video chat tool."
-      ],
-      "search": {
-        "image": "/images/projects/betterfly/betterfly-search.jpg"
-      },
-      "video_chat": {
-        "image": "/images/projects/betterfly/betterfly-video-chat.jpg",
-        "copy": "Betterfly students and teachers were all over the country, so we needed an integrated video tool that was easy to use and fit Betterfly’s existing design. I built Betterfly’s custom video chat using WebRTC and text chat using WebSockets, as well as a diagnostic tool for testing microphone and video connections and internet speed."
-      },
-      "final": {
-        "image": "/images/projects/betterfly/betterfly-guarantee.jpg",
-        "copy": [
-          "I worked mostly in the View layer of our PHP application, using jQuery and Sass on the front-end to build custom interfaces and page layouts.",
-          "I also kept tabs on user behavior on the site and implemented A/B tests and user flows using Google Analytics and a suite of other analytics tools.",
-          "Betterfly was acquired by <a href=\"http://takelessons.com\" target=\"_blank\">TakeLessons</a> in late 2013."
-        ]
-      }
-    },
-    "tastingcollective": {
-      "title": "Tasting Collective",
-      "class": "tasting-collective",
-      "header_image": "/images/projects/tasting-collective/tasting-collective-perks.jpg",
-      "prev_project": {
-        "url": ""
-      },
-      "next_project": {
-        "url": "/projects/funerals360"
-      },
-      "badges": [
-        "Front End Development",
-        "Responsive Web Design",
-        "Ruby on Rails",
-        "Remote Work",
-        "Contract"
-      ],
-      "intro_copy": [
-        "Tasting Collective members enjoy access to private chef-led dining events at top restaurants, as well as exclusive perks from leading food-related brands.",
-        "Working on a small, remote team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer, a designer and the CEO."
-      ],
-      "stack": {
-        "image": "/images/projects/tasting-collective/tasting-collective-events.jpg",
-        "copy": "The site is built with Ruby on Rails, using Haml templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and jQuery. I was responsible for manipulating designs in Sketch and full front-end development, including working in the V&C layers of Rails. I utilized Fontello for icons and we deployed to Heroku."
-      },
-      "single_page": {
-        "image": "/images/projects/tasting-collective/tasting-collective-checkout.jpg",
-        "title": "Fully Responsive",
-        "copy": [
-          "The site was designed and built to look great on all viewports and devices.",
-          "My development included interfacing with a REST API, form validation (both client and server-side), custom photo carousels, navigation and Google Maps integration. We also utilized and modified several JavaScript Bootstrap components like modals and dropdowns.",
-          "We also leveraged several third-party libraries and APIs to enhance the user's experience."
-        ]
-      },
-      "event_detail": {
-        "image": "/images/projects/tasting-collective/tasting-collective-event-detail.jpg",
-        "copy": "We wanted to keep the focus on the food and all the awesome perks and events, so the site features lots of (delicious) imagery while still being informative for the user."
-      },
-      "final": {
-        "image": "/images/projects/tasting-collective/tasting-collective-experience-restaurants.jpg",
-        "copy": [
-          "The site also includes Google Analytics as well as several campaign tracking and analytics libraries.",
-          "Check it out at <a href=\"https://tastingcollective.com\" target=\"_blank\">tastingcollective.com</a>."
-        ]
-      }
-    },
-    "funerals360": {
+    {
+      "id": "funerals360",
       "title": "Funerals360",
       "class": "funerals360",
+      "description": "Online tools and resources for planning a funeral",
+      "summary_image": "/images/projects/funerals360/funerals360-summary.jpg",
       "header_image": "/images/projects/funerals360/funerals360-resources.jpg",
-      "prev_project": {
-        "url": "/projects/tasting-collective"
-      },
-      "next_project": {
-        "url": "/projects/thomas-pham-photography"
-      },
+      "url": "/projects/funerals360",
       "badges": [
         "Front End Development",
         "Responsive Web Design",
@@ -240,6 +126,79 @@
           "My time on the project has ended, but the site is still under active development. Check it out at <a href=\"https://funerals360.com\" target=\"_blank\">funerals360.com</a>."
         ]
       }
+    },
+    {
+      "id": "betterfly",
+      "title": "Betterfly",
+      "class": "betterfly",
+      "description": "Connecting consumers with personal service providers for online lessons",
+      "summary_image": "/images/projects/betterfly/betterfly-summary.jpg",
+      "header_image": "/images/projects/betterfly/betterfly-homepage.jpg",
+      "url": "/projects/betterfly",
+      "badges": [
+        "Front End Development",
+        "UI Design",
+        "A/B Testing",
+        "User Analytics"
+      ],
+      "intro_copy": [
+        "Betterfly was a community for connecting personal service providers (guitar teachers, life coaches, Spanish tutors, etc) to students looking to learn online.",
+        "As the lone front-end developer, I was responsible for full UI design and development, including building a custom online video chat tool."
+      ],
+      "search": {
+        "image": "/images/projects/betterfly/betterfly-search.jpg"
+      },
+      "video_chat": {
+        "image": "/images/projects/betterfly/betterfly-video-chat.jpg",
+        "copy": "Betterfly students and teachers were all over the country, so we needed an integrated video tool that was easy to use and fit Betterfly’s existing design. I built Betterfly’s custom video chat using WebRTC and text chat using WebSockets, as well as a diagnostic tool for testing microphone and video connections and internet speed."
+      },
+      "final": {
+        "image": "/images/projects/betterfly/betterfly-guarantee.jpg",
+        "copy": [
+          "I worked mostly in the View layer of our PHP application, using jQuery and Sass on the front-end to build custom interfaces and page layouts.",
+          "I also kept tabs on user behavior on the site and implemented A/B tests and user flows using Google Analytics and a suite of other analytics tools.",
+          "Betterfly was acquired by <a href=\"http://takelessons.com\" target=\"_blank\">TakeLessons</a> in late 2013."
+        ]
+      }
+    },
+    {
+      "id": "tompham",
+      "title": "Thomas Pham Photography",
+      "class": "tompham",
+      "description": "Portfolio site of a Chicago photographer",
+      "summary_image": "/images/projects/thomas-pham-photography/thomas-pham-photography-summary.jpg",
+      "header_image": "/images/projects/thomas-pham-photography/thomas-pham-photography-splash.jpg",
+      "badges": [
+        "Visual Design",
+        "Front End Development",
+        "Back End Development"
+      ],
+      "url": "/projects/thomas-pham-photography",
+      "intro_copy": [
+        "Tom contacted me to work with him to give his small photography business an online home. He wanted a place to show potential clients some of his existing work and for clients to browse their photos before selecting their final album.",
+        "Tom wanted the site to be simple and elegant, with a focus on big photos."
+      ],
+      "architecture": {
+        "video": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover.mp4",
+        "video_poster": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover-poster.jpg",
+        "copy": [
+          "Since Tom's two main areas of focus are weddings and senior portraits, we decided to organize the site using a splash page and two identical sub-sites.",
+          "This allowed potential clients to browse info and photos only related to their interest."
+        ]
+      },
+      "contact": {
+        "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-contact.jpg",
+        "copy": "I used a clean, unobtrusive, black and white design that let Tom's photos shine through on each page."
+      },
+      "final": {
+        "copy": [
+          "To minimize Tom's effort needed for client and photo management, I set up a client portal he could manage using Google Docs, which meant no new software to learn or fancy URLs to remember.",
+          "The site was built using PHP, CSS and JavaScript. Check it out at <a href=\"http://thomasphamphotography.com\" target=\"_blank\">thomasphamphotography.com</a>"
+        ]
+      },
+      "reception": {
+        "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-reception.jpg"
+      }
     }
-  }
+  ]
 }

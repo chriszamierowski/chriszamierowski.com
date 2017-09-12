@@ -20,7 +20,8 @@
     "subtitle": "T-Bone Shaped"
   },
   "examples": {
-    "title": "Examples",
-    "subtitle": "A Few"
+    "title": "Projects",
+    "subtitle": "A Few",
+    "more": "See more projects <a href=\"/projects\">here</a>"
   }
 }

@@ -2,16 +2,13 @@ extends ../../_layouts/base
 
 block vars
   - var baseUrl = '../../'
-  - var pageData = site.data.projects.detailed.tompham
+  - var pageData = site.data.projects.list.find(p => p.id === 'tompham')
   - var bodyClass = 'project-page project-'+ pageData.class
 
 include ../../_modules/project-header/project-header
 
 block header
-  +project-header({
-    prev: pageData.prev_project,
-    next: pageData.next_project
-  })
+  +project-header(pageData)
 
 block content
   .intro-image

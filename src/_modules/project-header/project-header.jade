@@ -1,13 +1,19 @@
 mixin project-header(spec)
   - spec = spec || {}
+  - ind = site.data.projects.list.findIndex(p => p.id === spec.id)
+  - prev = ind === 0 ? null : site.data.projects.list[ind - 1]
+  - next = ind === site.data.projects.list.length - 1 ? null : site.data.projects.list[ind + 1]
 
-  header.main-nav.resume-nav: nav: .container
+  header.main-nav.small-nav: nav: .container
     ul
       li
-        +link()(href='/#examples') Back to Examples
-      if spec.prev && spec.prev.url
+        +link()(href='/#projects') Home
+      if ~ind
         li
-          +link()(href=spec.prev.url) Prev
-      if spec.next && spec.next.url
+          +link()(href='/projects') All Projects
+      if ~ind && prev && prev.url
         li
-          +link()(href=spec.next.url) Next
+          +link()(href=prev.url) Prev
+      if ~ind && next && next.url
+        li
+          +link()(href=next.url) Next
