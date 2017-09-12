@@ -163,15 +163,15 @@
 
     .video-wrapper {
       display: flex;
-      @include justify-content(center);
-      @include align-items(flex-start);
+      justify-content: center;
+      align-items: flex-start;
       overflow: hidden;
 
       @include media($screen-medium-up) {
         @include span-columns(5);
         display: flex;
-        @include justify-content(flex-end);
-        @include align-items(center);
+        justify-content: flex-end;
+        align-items: center;
       }
     }
 
@@ -279,7 +279,7 @@
 
     @include media($screen-medium-up) {
       display: flex;
-      @include justify-content(top);
+      justify-content: top;
 
       img {
         display: block;

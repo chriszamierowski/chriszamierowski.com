@@ -3,8 +3,8 @@
   
   ul {
     display: flex;
-    @include justify-content(space-around);
-    @include align-items(center);
+    justify-content: space-around;
+    align-items: center;
   }
 
   li {

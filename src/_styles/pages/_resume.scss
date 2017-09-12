@@ -11,12 +11,12 @@
     header {
       section {
         display: flex;
-        @include align-items(top);
-        @include flex-direction(row);
-        @include justify-content(space-between);
+        align-items: top;
+        flex-direction: row;
+        justify-content: space-between;
 
         @include media($screen-medium-down) {
-          @include flex-direction(column);
+          flex-direction: column;
 
           div{
             text-align: center !important;
@@ -53,8 +53,8 @@
           text-transform: uppercase;
           font-weight: $bold;
           display: flex;
-          @include justify-content(space-around);
-          @include flex-direction(column);
+          justify-content: space-around;
+          flex-direction: column;
 
           p {
             color: $medium-gray;

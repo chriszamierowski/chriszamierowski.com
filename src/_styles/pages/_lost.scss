@@ -1,7 +1,7 @@
 .lost {
   header {
     .mobile-menu {
-      @include justify-content(center);
+      justify-content: center;
 
       .icon-menu {
         display: none;
@@ -20,9 +20,9 @@
       min-height: 100vh;
       display: flex;
       text-align: center;
-      @include flex-direction(column);
-      @include justify-content(center);
-      @include align-items(center);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
 
     img {
