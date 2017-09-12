@@ -46,6 +46,6 @@ block content
       ul
         each t in site.data.resume.summary.tools
           li
-            +link({text: t.name})(href = t.link, target = '_blank')
+            +link({text: t.name})(href = t.link, target = '_blank', title= t.name)
               i(class='sprite sprite-#{t.class}')
       p.h6 !{site.data.resume.summary.more}
