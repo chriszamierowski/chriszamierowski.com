@@ -2,6 +2,56 @@
   "title": "Projects",
   "list": [
     {
+      "id": "explainyourfamily",
+      "title": "Explain Your Family",
+      "class": "explain-your-family",
+      "description": "A simple family tree that's quick to build and easy to share",
+      "summary_image": "/images/projects/explain-your-family/explain-your-family-summary.jpg",
+      "header_image": "/images/projects/explain-your-family/explain-your-family-tree.jpg",
+      "prev_project": {
+        "url": "/projects/tasting-collective"
+      },
+      "next_project": {
+        "url": "/projects/thomas-pham-photography"
+      },
+      "badges": [
+        "Front End Development",
+        "Back End Development",
+        "Responsive Web Design",
+        "SPA",
+        "UX Design",
+        "Product Design"
+      ],
+      "intro_copy": [
+        "I built Explain Your Family to scratch my own itch - my girlfriend and I have 24 aunts and uncles between the two of us (and who knows how many cousins...) and as we were each meeting the other's family, we struggled to keep track of who's who.",
+        "Explain Your Family sets out to be one thing: an easy place to document your family tree so you can show it to someone else."
+      ],
+      "ideation": {
+        "image": "/images/projects/explain-your-family/explain-your-family-ideation.jpg",
+        "copy": [
+          "I started by laying out a simple user story (my own). From there, I added features that might help with each step of the user journey, then added details about what those features might entail. I then took those features and plotted them on an impact vs. effort plot and used that to decide what I would include in an MVP version of Explain Your Family."
+        ]
+      },
+      "value": {
+        "image": "/images/projects/explain-your-family/explain-your-family-share.jpg",
+        "copy": [
+          "I realized that 90% of the value for my user story would be in creating and plotting people's basic details and mapping their relationships, so I thought up how that could be done as simply as possible (by sequentially adding people and managing their relationships) and built it. One key aspect of Explain Your Family is it doesn't require signing up or logging in, as this would be a significant barrier to entry, but you can edit your tree and share it with others (without fear of them editing it)."
+        ]
+      },
+      "tech": {
+        "copy": [
+          "The site is comprised of a Rails 5 API and an SPA built with Vue.js, Webpack and Bulma/Buefy.",
+          "I decided to roll my own vanilla JS tree-rendering algorithm after exploring some existing choices and not finding anything that quite fit the needs of the project."
+        ]
+      },
+      "final": {
+        "image": "/images/projects/explain-your-family/explain-your-family-logo.svg",
+        "copy": [
+          "Check it out at <a href=\"http://explainyourfamily.com\" target=\"_blank\">explainyourfamily.com</a>."
+        ]
+      }
+    },
+    {
       "id": "tastingcollective",
       "title": "Tasting Collective",
       "class": "tasting-collective",
@@ -55,6 +105,7 @@
       "url": "/projects/morsel",
       "badges": [
         "Front End Development",
+        "SPA",
         "User Research",
         "Wireframes",
         "UI Design",
