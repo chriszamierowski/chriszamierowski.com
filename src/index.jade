@@ -35,7 +35,7 @@ block content
     .cards
       +card(site.data.projects.list[0])
       +card(site.data.projects.list[1])
-    p.h6 !{site.data.homepage.examples.more}
+    p.h6.popin.scroll-dependent(data-distance-from-bottom = '120') !{site.data.homepage.examples.more}
   section#resume.resume
     .container-sm
       h2
@@ -46,6 +46,6 @@ block content
       ul
         each t in site.data.resume.summary.tools
           li
-            +link({text: t.name})(href = t.link, target = '_blank', title= t.name)
+            +link({text: t.name})(href = t.link, target = '_blank', title= t.name, class = 'popin scroll-dependent', data-distance-from-bottom = '120')
               i(class='sprite sprite-#{t.class}')
       p.h6 !{site.data.resume.summary.more}

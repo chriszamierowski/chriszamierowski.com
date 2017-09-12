@@ -22,7 +22,7 @@ $popover-trigger-start-size: 2px;
     @include animation(popoverPulse 3s infinite);
   }
 
-  &.scroll-window-bottom {
+  &#{$scrollWindowBottom} {
     @include size($popover-trigger-size);
     margin-left: 0;
     margin-top: 0;
