@@ -2,13 +2,18 @@
   "summary": {
     "title": "Resume",
     "subtitle": "A Brief",
-    "blurb": "Northwestern grad, I’ve worked for agencies, startups and as a freelancer",
-    "blurb_tools": "Here are some tools I like to use:",
+    "blurb": "Northwestern grad; I’ve worked for agencies, startups and as a freelancer",
+    "blurb_tools": "Currently focusing on:",
     "tools": [
       {
-        "name": "AngularJS",
-        "link": "https://angularjs.org/",
-        "class": "angularjs"
+        "name": "Vue.js",
+        "link": "https://vuejs.org/",
+        "class": "vuejs"
+      },
+      {
+        "name": "webpack",
+        "link": "https://webpack.github.io/",
+        "class": "webpack"
       },
       {
         "name": "Sass",
@@ -16,17 +21,12 @@
         "class": "sass"
       },
       {
-        "name": "Gulp",
-        "link": "http://gulpjs.com/",
-        "class": "gulp"
-      },
-      {
         "name": "Sketch",
         "link": "https://www.sketchapp.com/",
         "class": "sketch"
       }
     ],
-    "more": "Check out my <a href=\"/resume\">full resume</a> for a more detailed list of tools and experience"
+    "more": "Check out my <a href=\"/resume\" class=\"uppercase-link\">full resume</a> for a more detailed list of tools and experience"
   },
   "header": {
     "name": "Chris Zamierowski",
@@ -39,7 +39,7 @@
       "name": "hi@chriszamierowski.com",
       "link": "mailto:hi@chriszamierowski.com"
     },
-    "location": "&nbsp;",
+    "location": "Remote / Seattle, WA",
     "availability": {
       "status": true,
       "copy": "Available for contract, freelance or full-time"
@@ -51,7 +51,7 @@
       "id": "things-i-use",
       "title": "Some Things I Use",
       "subtitle": "Software, tools, languages, libraries, etc.",
-      "description": "JavaScript (ES6), AngularJS, HTML5, Sass, gulp, Sketch, Ruby on Rails, Node.js, Express, Webpack, Riot, Yeoman, Jade/Pug, Bootstrap, jQuery, Karma, Jasmine, Protractor, Jenkins, PostCSS, Underscore, Sublime Text, Sketch, Photoshop, Zeplin, Git (CLI), Heroku, AWS S3, Google Analytics, Mixpanel, Rollbar, Terminal, Asana, Pivotal Tracker, Balsamiq, pen & paper, Slack"
+      "description": "JavaScript (ES6), Vue.js, Webpack, Bulma, AngularJS, HTML5, Sass, gulp, Sketch, Ruby on Rails, Node.js, Express, Riot, Yeoman, Jade/Pug, Bootstrap, jQuery, Karma, Jasmine, Protractor, Jenkins, PostCSS, Underscore, Sublime Text, Sketch, Photoshop, Zeplin, Git (CLI), Heroku, AWS S3, Google Analytics, Mixpanel, Rollbar, Terminal, Asana, Pivotal Tracker, Balsamiq, pen & paper, Slack"
     },
     {
       "id": "areas-of-work",
@@ -68,18 +68,18 @@
       "title": "Experience",
       "jobs": [
         {
+          "jobtitle": "Freelance Web Design & Development",
+          "dates": "Jan 2009 - Present",
+          "description": "Provide full design and development of sites for multiple clients, ranging from portfolio to e-commerce sites."
+        },
+        {
           "jobtitle": "Lead Front-end Engineer",
           "company": {
             "name": "Leo Burnett",
             "link": "http://leoburnett.com/"
           },
-          "dates": "March 2015 - July 2015, June 2016-Present",
-          "description": "As a contractor, I'm working on a team to build a single-page online dashboard and custom hybrid app for a major electronics client."
-        },
-        {
-          "jobtitle": "Freelance Web Design & Development",
-          "dates": "Jan 2009 - Present",
-          "description": "Provide full design and development of sites for multiple small clients, ranging from portfolio to e-commerce sites."
+          "dates": "March 2015 - July 2015, June 2016-July 2017",
+          "description": "As a contractor, I worked on a team to build a single-page online dashboard and custom hybrid app for a major electronics client."
         },
         {
           "jobtitle": "Front-end Engineer",

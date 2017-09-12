@@ -8,10 +8,7 @@
   transition: box-shadow .6s $base-timing;
 
   a {
-    @include white-link();
-    text-transform: uppercase;
-    font-weight: $ultrabold;
-    letter-spacing: .5px;
+    @include uppercase-link()
     display: block;
   }
 
@@ -110,7 +107,7 @@
   }
 }
 
-.resume-nav {
+.small-nav {
   ul {
     display: flex;
     @include flex-direction(row);

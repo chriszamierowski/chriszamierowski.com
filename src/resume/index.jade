@@ -5,9 +5,9 @@ block vars
   - var bodyClass = 'resume-page';
 
 block header
-  header.main-nav.resume-nav: nav: .container
+  header.main-nav.small-nav: nav: .container
     ul
-      li #[+link({text: 'Back'})(href='/#resume')]
+      li #[+link({text: 'Home'})(href='/#resume')]
       li #[+link({text: 'Download'})(href='../'+config.directories.downloads+'/'+config.downloads.resume, target='_blank')]
       li #[+link({text: 'Print'})(href='#', id='resume-print')]
 

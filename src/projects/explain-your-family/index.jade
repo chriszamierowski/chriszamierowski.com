@@ -2,7 +2,7 @@ extends ../../_layouts/base
 
 block vars
   - var baseUrl = '../../'
-  - var pageData = site.data.projects.list.find(p => p.id === 'funerals360')
+  - var pageData = site.data.projects.list.find(p => p.id === 'explainyourfamily')
   - var bodyClass = 'project-page project-'+ pageData.class
 
 include ../../_modules/project-header/project-header
@@ -23,28 +23,27 @@ block content
       .copy-wrapper
         each c in pageData.intro_copy
           p= c
-  section
-    .video-wrapper
-      video(src='#{pageData.search.video}', type='video/mp4', autoplay='autoplay', loop='loop', poster='#{pageData.search.video_poster}', preload='auto')
+  .container.wide-image
+    img(src=pageData.ideation.image)
   section
     .container-sm.light-scheme
       .copy
-        p= pageData.search.copy
+        each c in pageData.ideation.copy
+          p= c
   .side-content
     .container
       .image-wrapper
-        img(src=pageData.tech.image)
+        img(src=pageData.value.image)
       .side-content-copy
-        each c in pageData.tech.copy
+        each c in pageData.value.copy
           p= c
-  //- .container.dual-images
-  //-   .img-wrapper
-  //-     img(src=pageData.tech.images[0])
-  //-   .middle-column
-  //-     each c in pageData.tech.copy
-  //-       p= c
-  //-   .img-wrapper
-  //-     img(src=pageData.tech.images[1])
+  section
+    .container-sm.light-scheme
+      .copy
+        each c in pageData.tech.copy
+          p !{c}
+  .container-sm
+    img(src=pageData.final.image)
   section
     .container-sm.light-scheme
       .copy

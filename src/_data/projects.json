@@ -1,171 +1,60 @@
 {
-  "summaries": {
-    "tastingcollective": {
-      "name": "Tasting Collective",
-      "url": "/projects/tasting-collective",
-      "description": "NYC members-only chef-led restaurant experiences and exclusive perks",
-      "image": "/images/projects/tasting-collective/tasting-collective-summary.jpg"
-    },
-    "funerals360": {
-      "name": "Funerals360",
-      "url": "/projects/funerals360",
-      "description": "Online tools and resources for planning a funeral",
-      "image": "/images/projects/funerals360/funerals360-summary.jpg"
-    },
-    "Tom Pham Photography": {
-      "name": "Thomas Pham Photography",
-      "url": "/projects/thomas-pham-photography",
-      "description": "Portfolio site of a Chicago photographer",
-      "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-summary.jpg"
-    },
-    "betterfly": {
-      "name": "Betterfly",
-      "url": "/projects/betterfly",
-      "description": "Connecting consumers with personal service providers for online lessons",
-      "image": "/images/projects/betterfly/betterfly-summary.jpg"
-    },
-    "morsel": {
-      "name": "Morsel",
-      "url": "/projects/morsel",
-      "description": "Share the stories, inspirations and techniques that make your food your own",
-      "image": "/images/projects/morsel/morsel-summary.jpg"
-    }
-  },
-  "detailed": {
-    "tompham": {
-      "title": "Thomas Pham Photography",
-      "class": "tompham",
-      "header_image": "/images/projects/thomas-pham-photography/thomas-pham-photography-splash.jpg",
-      "badges": [
-        "Visual Design",
-        "Front End Development",
-        "Back End Development"
-      ],
-      "prev_project": {
-        "url": "/projects/funerals360"
-      },
-      "next_project": {
-        "url": "/projects/betterfly"
-      },
-      "intro_copy": [
-        "Tom contacted me to work with him to give his small photography business an online home. He wanted a place to show potential clients some of his existing work and for clients to browse their photos before selecting their final album.",
-        "Tom wanted the site to be simple and elegant, with a focus on big photos."
-      ],
-      "architecture": {
-        "video": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover.mp4",
-        "video_poster": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover-poster.jpg",
-        "copy": [
-          "Since Tom's two main areas of focus are weddings and senior portraits, we decided to organize the site using a splash page and two identical sub-sites.",
-          "This allowed potential clients to browse info and photos only related to their interest."
-        ]
-      },
-      "contact": {
-        "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-contact.jpg",
-        "copy": "I used a clean, unobtrusive, black and white design that let Tom's photos shine through on each page."
-      },
-      "final": {
-        "copy": [
-          "To minimize Tom's effort needed for client and photo management, I set up a client portal he could manage using Google Docs, which meant no new software to learn or fancy URLs to remember.",
-          "The site was built using PHP, CSS and JavaScript. Check it out at <a href=\"http://thomasphamphotography.com\" target=\"_blank\">thomasphamphotography.com</a>"
-        ]
-      },
-      "reception": {
-        "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-reception.jpg"
-      }
-    },
-    "morsel": {
-      "title": "Morsel",
-      "class": "morsel",
-      "header_image": "/images/projects/morsel/morsel-kevin.jpg",
-      "prev_project": {
-        "url": "/projects/betterfly"
-      },
-      "next_project": {
-        "url": ""
-      },
+  "title": "Projects",
+  "list": [
+    {
+      "id": "explainyourfamily",
+      "title": "Explain Your Family",
+      "class": "explain-your-family",
+      "description": "A simple family tree that's quick to build and easy to share",
+      "summary_image": "/images/projects/explain-your-family/explain-your-family-summary.jpg",
+      "header_image": "/images/projects/explain-your-family/explain-your-family-tree.jpg",
+      "url": "/projects/explain-your-family",
       "badges": [
         "Front End Development",
-        "User Research",
-        "Wireframes",
-        "UI Design",
+        "Back End Development",
         "Responsive Web Design",
-        "A/B Testing",
-        "User Analytics"
+        "SPA",
+        "UX Design",
+        "Product Design"
       ],
       "intro_copy": [
-        "Morsel is a storytelling platform for people who love food. Built around a community of people passionate about food and drink with a curiosity about what inspires others, Morsel allows you to understand the chef's vision, the mixologist's creativity, the sommelier's understanding of what makes a great pairing and the home-cook's creative meals all in one place.",
-        "As the first hire and lone front-end developer, I was responsible for full UI design and development of the site. This included working with the full web stack, interfacing with our API, prototyping and user research."
+        "I built Explain Your Family to scratch my own itch - my girlfriend and I have 24 aunts and uncles between the two of us (and who knows how many cousins...) and as we were each meeting the other's family, we struggled to keep track of who's who.",
+        "Explain Your Family sets out to be one thing: an easy place to document your family tree so you can show it to someone else."
       ],
-      "single_page": {
-        "background": "/images/projects/morsel/morsel-troost.jpg",
-        "image": "/images/projects/morsel/morsel-mobile.jpg",
-        "title": "Morsel on Mobile",
+      "ideation": {
+        "image": "/images/projects/explain-your-family/explain-your-family-ideation.jpg",
         "copy": [
-          "Full functionality (without sacrificing speed) on mobile was a priority for us, so I built the site as a fully responsive single-page app, written in AngularJS on top of a simple Express (Node.js) web server. This allowed functionality updates to be in one codebase, cutting down development time, as well as keeping UI elements consistent across all device sizes.",
-          "To grow quickly and consistently across platforms, my teammate built a RESTful API in Ruby on Rails that would interface with both an iOS app and my web app, which further improved perceived loading times on mobile web by only needing to load front-end assets once per user session."
+          "I started by laying out a simple user story (my own). From there, I added features that might help with each step of the user journey, then added details about what those features might entail. I then took those features and plotted them on an impact vs. effort plot and used that to decide what I would include in an MVP version of Explain Your Family."
         ]
       },
-      "workflow": {
-        "image": "/images/projects/morsel/morsel-add.jpg",
-        "copy": "Some of the things I implemented in the Angular app were file uploads, routing, inline form validations (with client and server side errors) and plenty of responsive, interactive layouts. The front-end development workflow used Grunt with Handlebars templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and deployed to Heroku."
+      "value": {
+        "image": "/images/projects/explain-your-family/explain-your-family-share.jpg",
+        "copy": [
+          "I realized that 90% of the value for my user story would be in creating and plotting people's basic details and mapping their relationships, so I thought up how that could be done as simply as possible (by sequentially adding people and managing their relationships) and built it.",
+          "One key aspect of Explain Your Family is it doesn't require signing up or logging in, as this would be a significant barrier to entry, but you can edit your tree and share it with others (without fear of them editing it)."
+        ]
       },
-      "users": {
-        "image": "/images/projects/morsel/morsel-storyboards.jpg",
-        "copy": "I had the opportunity to conduct both formative and summative user research (think interviewing a chef in their restaurant) and develop user personas. We used our findings to refine the <i>morsel</i> creation process, among other user flows."
+      "tech": {
+        "copy": [
+          "The site is comprised of a Rails 5 API and an SPA built with Vue.js, Webpack and Bulma/Buefy.",
+          "I decided to roll my own vanilla JS tree-rendering algorithm after exploring some existing choices and not finding anything that quite fit the needs of the project."
+        ]
       },
       "final": {
-        "image": "/images/projects/morsel/morsel-big-star.jpg",
+        "image": "/images/projects/explain-your-family/explain-your-family-logo.svg",
         "copy": [
-          "To see what our users were up to on the site we used Mixpanel and Google Analytics and integrated Rollbar for error reporting."
+          "Check it out at <a href=\"http://explainyourfamily.com\" target=\"_blank\">explainyourfamily.com</a>."
         ]
       }
     },
-    "betterfly": {
-      "title": "Betterfly",
-      "class": "betterfly",
-      "header_image": "/images/projects/betterfly/betterfly-homepage.jpg",
-      "prev_project": {
-        "url": "/projects/thomas-pham-photography"
-      },
-      "next_project": {
-        "url": "/projects/morsel"
-      },
-      "badges": [
-        "Front End Development",
-        "UI Design",
-        "A/B Testing",
-        "User Analytics"
-      ],
-      "intro_copy": [
-        "Betterfly was a community for connecting personal service providers (guitar teachers, life coaches, Spanish tutors, etc) to students looking to learn online.",
-        "As the lone front-end developer, I was responsible for full UI design and development, including building a custom online video chat tool."
-      ],
-      "search": {
-        "image": "/images/projects/betterfly/betterfly-search.jpg"
-      },
-      "video_chat": {
-        "image": "/images/projects/betterfly/betterfly-video-chat.jpg",
-        "copy": "Betterfly students and teachers were all over the country, so we needed an integrated video tool that was easy to use and fit Betterfly’s existing design. I built Betterfly’s custom video chat using WebRTC and text chat using WebSockets, as well as a diagnostic tool for testing microphone and video connections and internet speed."
-      },
-      "final": {
-        "image": "/images/projects/betterfly/betterfly-guarantee.jpg",
-        "copy": [
-          "I worked mostly in the View layer of our PHP application, using jQuery and Sass on the front-end to build custom interfaces and page layouts.",
-          "I also kept tabs on user behavior on the site and implemented A/B tests and user flows using Google Analytics and a suite of other analytics tools.",
-          "Betterfly was acquired by <a href=\"http://takelessons.com\" target=\"_blank\">TakeLessons</a> in late 2013."
-        ]
-      }
-    },
-    "tastingcollective": {
+    {
+      "id": "tastingcollective",
       "title": "Tasting Collective",
       "class": "tasting-collective",
+      "description": "NYC members-only chef-led restaurant experiences and exclusive perks",
+      "summary_image": "/images/projects/tasting-collective/tasting-collective-summary.jpg",
       "header_image": "/images/projects/tasting-collective/tasting-collective-perks.jpg",
-      "prev_project": {
-        "url": ""
-      },
-      "next_project": {
-        "url": "/projects/funerals360"
-      },
+      "url": "/projects/tasting-collective",
       "badges": [
         "Front End Development",
         "Responsive Web Design",
@@ -202,16 +91,60 @@
         ]
       }
     },
-    "funerals360": {
+    {
+      "id": "morsel",
+      "title": "Morsel",
+      "class": "morsel",
+      "description": "Share the stories, inspirations and techniques that make your food your own",
+      "summary_image": "/images/projects/morsel/morsel-summary.jpg",
+      "header_image": "/images/projects/morsel/morsel-kevin.jpg",
+      "url": "/projects/morsel",
+      "badges": [
+        "Front End Development",
+        "SPA",
+        "User Research",
+        "Wireframes",
+        "UI Design",
+        "Responsive Web Design",
+        "A/B Testing",
+        "User Analytics"
+      ],
+      "intro_copy": [
+        "Morsel is a storytelling platform for people who love food. Built around a community of people passionate about food and drink with a curiosity about what inspires others, Morsel allows you to understand the chef's vision, the mixologist's creativity, the sommelier's understanding of what makes a great pairing and the home-cook's creative meals all in one place.",
+        "As the first hire and lone front-end developer, I was responsible for full UI design and development of the site. This included working with the full web stack, interfacing with our API, prototyping and user research."
+      ],
+      "single_page": {
+        "background": "/images/projects/morsel/morsel-troost.jpg",
+        "image": "/images/projects/morsel/morsel-mobile.jpg",
+        "title": "Morsel on Mobile",
+        "copy": [
+          "Full functionality (without sacrificing speed) on mobile was a priority for us, so I built the site as a fully responsive single-page app, written in AngularJS on top of a simple Express (Node.js) web server. This allowed functionality updates to be in one codebase, cutting down development time, as well as keeping UI elements consistent across all device sizes.",
+          "To grow quickly and consistently across platforms, my teammate built a RESTful API in Ruby on Rails that would interface with both an iOS app and my web app, which further improved perceived loading times on mobile web by only needing to load front-end assets once per user session."
+        ]
+      },
+      "workflow": {
+        "image": "/images/projects/morsel/morsel-add.jpg",
+        "copy": "Some of the things I implemented in the Angular app were file uploads, routing, inline form validations (with client and server side errors) and plenty of responsive, interactive layouts. The front-end development workflow used Grunt with Handlebars templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and deployed to Heroku."
+      },
+      "users": {
+        "image": "/images/projects/morsel/morsel-storyboards.jpg",
+        "copy": "I had the opportunity to conduct both formative and summative user research (think interviewing a chef in their restaurant) and develop user personas. We used our findings to refine the <i>morsel</i> creation process, among other user flows."
+      },
+      "final": {
+        "image": "/images/projects/morsel/morsel-big-star.jpg",
+        "copy": [
+          "To see what our users were up to on the site we used Mixpanel and Google Analytics and integrated Rollbar for error reporting."
+        ]
+      }
+    },
+    {
+      "id": "funerals360",
       "title": "Funerals360",
       "class": "funerals360",
+      "description": "Online tools and resources for planning a funeral",
+      "summary_image": "/images/projects/funerals360/funerals360-summary.jpg",
       "header_image": "/images/projects/funerals360/funerals360-resources.jpg",
-      "prev_project": {
-        "url": "/projects/tasting-collective"
-      },
-      "next_project": {
-        "url": "/projects/thomas-pham-photography"
-      },
+      "url": "/projects/funerals360",
       "badges": [
         "Front End Development",
         "Responsive Web Design",
@@ -240,6 +173,79 @@
           "My time on the project has ended, but the site is still under active development. Check it out at <a href=\"https://funerals360.com\" target=\"_blank\">funerals360.com</a>."
         ]
       }
+    },
+    {
+      "id": "betterfly",
+      "title": "Betterfly",
+      "class": "betterfly",
+      "description": "Connecting consumers with personal service providers for online lessons",
+      "summary_image": "/images/projects/betterfly/betterfly-summary.jpg",
+      "header_image": "/images/projects/betterfly/betterfly-homepage.jpg",
+      "url": "/projects/betterfly",
+      "badges": [
+        "Front End Development",
+        "UI Design",
+        "A/B Testing",
+        "User Analytics"
+      ],
+      "intro_copy": [
+        "Betterfly was a community for connecting personal service providers (guitar teachers, life coaches, Spanish tutors, etc) to students looking to learn online.",
+        "As the lone front-end developer, I was responsible for full UI design and development, including building a custom online video chat tool."
+      ],
+      "search": {
+        "image": "/images/projects/betterfly/betterfly-search.jpg"
+      },
+      "video_chat": {
+        "image": "/images/projects/betterfly/betterfly-video-chat.jpg",
+        "copy": "Betterfly students and teachers were all over the country, so we needed an integrated video tool that was easy to use and fit Betterfly’s existing design. I built Betterfly’s custom video chat using WebRTC and text chat using WebSockets, as well as a diagnostic tool for testing microphone and video connections and internet speed."
+      },
+      "final": {
+        "image": "/images/projects/betterfly/betterfly-guarantee.jpg",
+        "copy": [
+          "I worked mostly in the View layer of our PHP application, using jQuery and Sass on the front-end to build custom interfaces and page layouts.",
+          "I also kept tabs on user behavior on the site and implemented A/B tests and user flows using Google Analytics and a suite of other analytics tools.",
+          "Betterfly was acquired by <a href=\"http://takelessons.com\" target=\"_blank\">TakeLessons</a> in late 2013."
+        ]
+      }
+    },
+    {
+      "id": "tompham",
+      "title": "Thomas Pham Photography",
+      "class": "tompham",
+      "description": "Portfolio site of a Chicago photographer",
+      "summary_image": "/images/projects/thomas-pham-photography/thomas-pham-photography-summary.jpg",
+      "header_image": "/images/projects/thomas-pham-photography/thomas-pham-photography-splash.jpg",
+      "badges": [
+        "Visual Design",
+        "Front End Development",
+        "Back End Development"
+      ],
+      "url": "/projects/thomas-pham-photography",
+      "intro_copy": [
+        "Tom contacted me to work with him to give his small photography business an online home. He wanted a place to show potential clients some of his existing work and for clients to browse their photos before selecting their final album.",
+        "Tom wanted the site to be simple and elegant, with a focus on big photos."
+      ],
+      "architecture": {
+        "video": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover.mp4",
+        "video_poster": "/images/projects/thomas-pham-photography/thomas-pham-photography-hover-poster.jpg",
+        "copy": [
+          "Since Tom's two main areas of focus are weddings and senior portraits, we decided to organize the site using a splash page and two identical sub-sites.",
+          "This allowed potential clients to browse info and photos only related to their interest."
+        ]
+      },
+      "contact": {
+        "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-contact.jpg",
+        "copy": "I used a clean, unobtrusive, black and white design that let Tom's photos shine through on each page."
+      },
+      "final": {
+        "copy": [
+          "To minimize Tom's effort needed for client and photo management, I set up a client portal he could manage using Google Docs, which meant no new software to learn or fancy URLs to remember.",
+          "The site was built using PHP, CSS and JavaScript. Check it out at <a href=\"http://thomasphamphotography.com\" target=\"_blank\">thomasphamphotography.com</a>"
+        ]
+      },
+      "reception": {
+        "image": "/images/projects/thomas-pham-photography/thomas-pham-photography-reception.jpg"
+      }
     }
-  }
+  ]
 }

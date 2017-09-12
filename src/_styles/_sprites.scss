@@ -1,6 +1,8 @@
+
 .sprite {
-  background-image: url(../images/sprites/sprite.png);
+  background-image: url('../images/sprites/sprite.png');
 }
+
 .sprite-angularjs {
   background-position: -0px -0px;
   width: 108px;
@@ -23,6 +25,16 @@
 }
 .sprite-sketch {
   background-position: -0px -432px;
+  width: 108px;
+  height: 108px;
+}
+.sprite-vuejs {
+  background-position: -0px -540px;
+  width: 108px;
+  height: 108px;
+}
+.sprite-webpack {
+  background-position: -0px -648px;
   width: 108px;
   height: 108px;
 }
