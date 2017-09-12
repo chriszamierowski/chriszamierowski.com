@@ -22,6 +22,6 @@
   "examples": {
     "title": "Projects",
     "subtitle": "A Few",
-    "more": "See more projects <a href=\"/projects\">here</a>"
+    "more": "See more projects <a href=\"/projects\" class=\"uppercase-link\">here</a>"
   }
 }

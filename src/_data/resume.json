@@ -26,7 +26,7 @@
         "class": "sketch"
       }
     ],
-    "more": "Check out my <a href=\"/resume\">full resume</a> for a more detailed list of tools and experience"
+    "more": "Check out my <a href=\"/resume\" class=\"uppercase-link\">full resume</a> for a more detailed list of tools and experience"
   },
   "header": {
     "name": "Chris Zamierowski",

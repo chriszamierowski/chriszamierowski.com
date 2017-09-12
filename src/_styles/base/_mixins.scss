@@ -18,6 +18,13 @@
   }
 }
 
+@mixin uppercase-link() {
+  @include white-link();
+  text-transform: uppercase;
+  font-weight: $ultrabold;
+  letter-spacing: .5px;
+}
+
 @mixin light-scheme-link() {
   color: $bright-blue;
 
