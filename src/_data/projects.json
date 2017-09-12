@@ -30,7 +30,8 @@
       "value": {
         "image": "/images/projects/explain-your-family/explain-your-family-share.jpg",
         "copy": [
-          "I realized that 90% of the value for my user story would be in creating and plotting people's basic details and mapping their relationships, so I thought up how that could be done as simply as possible (by sequentially adding people and managing their relationships) and built it. One key aspect of Explain Your Family is it doesn't require signing up or logging in, as this would be a significant barrier to entry, but you can edit your tree and share it with others (without fear of them editing it)."
+          "I realized that 90% of the value for my user story would be in creating and plotting people's basic details and mapping their relationships, so I thought up how that could be done as simply as possible (by sequentially adding people and managing their relationships) and built it.",
+          "One key aspect of Explain Your Family is it doesn't require signing up or logging in, as this would be a significant barrier to entry, but you can edit your tree and share it with others (without fear of them editing it)."
         ]
       },
       "tech": {
