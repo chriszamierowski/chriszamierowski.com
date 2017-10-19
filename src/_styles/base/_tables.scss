@@ -14,11 +14,11 @@ th {
 
 td {
   border-bottom: $base-border;
-  padding: $small-spacing 0;
+  padding: $small-spacing $small-spacing $small-spacing 0;
+  vertical-align: top;
 }
 
 tr,
-td,
 th {
   vertical-align: middle;
 }

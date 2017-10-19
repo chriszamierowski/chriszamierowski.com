@@ -92,6 +92,116 @@
       }
     },
     {
+      "id": "fillup",
+      "title": "FillUp",
+      "class": "fillup",
+      "description": "An automated drink making machine designed for tailgating",
+      "summary_image": "/images/projects/explain-your-family/explain-your-family-summary.jpg",
+      "header_image": "/images/projects/fillup/fillup-banner.jpg",
+      "url": "/projects/fillup",
+      "badges": [
+        "Product Design",
+        "User Research",
+        "Prototyping",
+        "Usability Testing"
+      ],
+      "intro_copy": [
+        "FillUp is an automated drink making machine designed for tailgating.",
+        "FillUp was a side project I worked on over the course of a few football seasons (2012-2015). Its iterations have been the stars of football tailgates, weekend camping trips and house parties. While bringing FillUp to market wasn't in the cards, it was a lot of fun to work on. My role in the project included working on product design, prototyping, facilitating and documenting user feedback, writing the code for the chip and building our <a href=\"http://fillup-public-site.herokuapp.com/\" target=\"_blank\">website</a>."
+      ],
+      "inspiration": {
+        "title": "Inspiration",
+        "image": "/images/projects/fillup/fillup-features.jpg",
+        "copy": [
+          "FillUp was a collaboration with a friend (a mechnical engineer and obsessive tinkerer) and fellow tailgater. We recognized a desire amongst tailgaters for something to take their tailgates to the next level and sought to create it. We formally defined our audience, early tech-adopting tailgate hosts like ourselves, based on our own by-weekly experience. From talking to fellow tailgaters, we knew that our audience is always looking for something to enhance their tailgate and make them stand out from others:"
+        ],
+        "list": [
+          "Fancy food and drink spreads are great, but they're expensive and hard to scale.",
+          "Lawn games are a great way to attract audiences, but they take up lots of space and are rarely exotic enough to entice strangers to join in."
+        ],
+        "copy2": [
+          "We knew that tailgates are extremely social events, so we'd need something that could be the center of attention, but would also be functional within the small space of a tailgating spot. We had come across <a href=\"http://somabar.com/\" target=\"_blank\">several</a> <a href=\"https://www.barbotics.com/\" target=\"_blank\">drink-making</a> <a href=\"http://www.smartbarusa.com/\" target=\"_blank\">products</a> geared towards making <a href=\"https://www.theinebriator.com/\" target=\"_blank\">higher-end</a> <a href=\"https://partyrobotics.com/\" target=\"_blank\">cocktails</a>, but nothing that would be appropriate for a tailgate. We realized that we could transform the mundane task of pouring a drink into something that would faciliate conversation, so we set off to design it for the needs of our audience."
+        ]
+      },
+      "process": {
+        "title": "Process",
+        "image": "/images/projects/fillup/fillup-iterations.jpg",
+        "copy": [
+          "We knew to be successful with our product, we would need to build something fun, engaging and unique. After our initial brainstorms, we identified a few more detailed design constraints that we developed from our own experience and comments from other tailgaters:"
+        ],
+        "table": [
+          {
+            "concern": "The product should be low maintenance, so tailgate visitors can interact with it themselves and hosts can enjoy the tailgate.",
+            "constraint": "Needs able to hold a bunch of liquid so it doesn't require hosts filling it up, needs intuitive controls/interaction"
+          },
+          {
+            "concern": "It should require relatively little setup/teardown from the host.",
+            "constraint": "It needs to be easily assembled, disassembled and cleaned"
+          },
+          {
+            "concern": "It needs to work in a parking lot.",
+            "constraint": "No reliance on electric hookups, wifi, etc. Can be easily transported"
+          }
+        ],
+        "copy2": [
+          "These contraints would develop into FillUp's key features."
+        ],
+        "copy3": [
+          "We produced countless sketches of various ideas related to the shape of the physical housing, the \"plumbing\" that was responsible for pouring a drink and the interaction between a user and the machine. We built rapid prototypes of the housing and spout using household materials and collected feedback from my teammate's roommates. We explored hardware and software solutions and tested them immediately (duct tape <i>sometimes</i> works at preventing liquids from succumbing to that whole gravity thing). Building FillUp was a constantly iterative process; we produced at least 4 fully functional prototypes that we tested ourselves and with others at our tailgates every few weeks. We constructed several journey maps, including a host's setup on game day, a stranger's passing by a tailgate with our product and the experience of a regular who uses the product at each tailgate. We used these to modify our design to make sure that it was approachable for all of our users."
+        ]
+      },
+      "feedback": {
+        "title": "Learning from Feedback",
+        "copy": [
+          "Here are a few interesting things we learned from our users and how we adjusted our approach:"
+        ],
+        "table": [
+          {
+            "feedback": "We noticed immediately that there were two main reactions when seeing the product for the first time: people said \"cool, can it pour me a drink?\" and others said \"cool, how does it work?\". The majority of users were in the former group; they tended to see our product, go through the process to get a drink and then move on to socialize. The latter group asked us questions and wanted a behind-the-scenes look at the interior of the machine, took pictures and even stuck around and explain it to others.",
+            "reaction": "We realized that one of the major draws of having something like this at a tailgate is that it is mysterious (no one asks you how your new grill works), so we incorporated transparent plastics into our design so you could see the inner workings of the machine as it poured."
+          },
+          {
+            "feedback": "Based on a survey of users, we noted that the two main ways people decided what to drink at a tailgate was by picking an alcohol and then seeing what was available to mix with, or by identifying that they wanted a shot and then picking their alcohol (plenty of people also prefer beer, which FillUp doesn't support because keeping it cold wasn't practical within our design restrictions). Rarely did people select a mixer and then an alcohol, or change their mind after deciding they wanted a shot.",
+            "reaction": "This led us to design the app to start by asking a user whether they wanted a shot or a mixed drink, then selecting an alcohol, then pouring or in the case of a mixed drink, presenting the options. (???)"
+          },
+          {
+            "feedback": "One consistent problem we had was that people weren't sure when FillUp was done pouring their drink; they would pull their cup away too early and spill liquid while it was still pouring, or become hesitant and wait unnecessarily to pick up their drink.",
+            "reaction": "To combat this, we programmed LED lights on the machine to flash in a pattern that indicated it was finished (as opposed to other patterns that it showed while pouring) as well as added a pouring animation in the app and an alert to the user that their drink was ready. As a last resort, we installed a depth sensor that stopped any pouring if the cup was removed prematurely."
+          }
+        ]
+      },
+      "logo_branding": {
+        "title": "Logo & Branding Process",
+        "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1010 234\" version=\"1.1\"><title>FillUp</title><desc>The first automated drink mixing machine made for tailgaiting</desc><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><path d=\"M703.714005 232.872447L621.622065 232.872447 591 0.650416577 611.679494 1.11459374C611.679494 1.11459374 637.32485 198.485606 644.779071 208.182567 652.233292 217.879527 694.802383 216.006862 702.315964 216.169475 702.505799 216.173583 702.686935 216.188147 702.859688 216.212634 702.870037 216.166402 702.875523 216.142375 702.875523 216.142375 702.875523 216.142375 753.726101 217.879527 761.180321 208.182567 768.634542 198.485606 794.279898 1.11459374 794.279898 1.11459374L814.959392 0.650416577 784.337328 232.872447C784.337328 232.872447 712.966539 232.872447 703.714005 232.872447L703.714005 232.872447Z\" fill=\"#526FA0\"/><g class=\"fillup-liquid\" fill=\"#ED3B40\"><path d=\"M0.8039601 7.63664774C0.803960101 19.2512305 18.3542084 110.776813 18.3542084 110.776813 18.3542084 110.776813 16.0260674 116.394322 65.9831366 116.609489 115.940206 116.824656 115.940203 109.936942 115.940203 109.936942 115.940203 109.936942 134.800305 5.79589524 134.800302 2.86142521 134.800298-0.0730448086 121.859913 0.468011723 106.449231 4.05232974 91.0385487 7.63664775 61.9462445 4.05232971 51.79092 2.36098421 41.6355955 0.669638718 0.803960098-3.97793499 0.8039601 7.63664774Z\" id=\"#ED3B40\"/></g><path d=\"M147.89046 63.4119942L151.289737 1.075 -0.3 1.075 -0.3 233.005115 79.1311905 233.005115 79.1311905 148.265109 130.778629 148.265109 130.778629 94.7638428 79.1311905 94.7638428 79.1311905 63.4119942 147.89046 63.4119942ZM251.787935 233.020969L251.787935 1.075 173.517578 1.075 173.517578 233.020969 251.787935 233.020969ZM419.538762 233.222171L424.545247 172.6384 359.762059 172.6384 360.655362 1.075 280.444966 1.075 280.444966 233.222171 419.538762 233.222171ZM581.263294 233.067844L586.537342 173.231433 522.043362 173.231433 522.830975 1.075 442.622792 1.075 442.622792 233.067844 581.263294 233.067844ZM938.059085 160.589404C958.899181 157.24834 1005.97724 158.101846 1009.06092 89.0117752 1012.14459 19.9217045 975.725 1.075 916.225 1.075L831.235271 1.075 831.235271 233.000171 909.315883 233.000171 909.315883 160.589404 938.059085 160.589404ZM917.563513 112.575L908.35 112.575 908.35 60.075 916.247297 60.075C929.738514 60.075 932.7 68.0496835 932.7 86.6572785 932.7 105.264873 930.067568 112.575 917.563513 112.575Z\" id=\"fillup-text\" fill=\"#526FA0\"/></g></svg>",
+        "list": [
+          "When we started the project, we referred to it simply as \"The Drink Mixer\". That worked well enough for a while amongst us and our friends, but once more people got eyes on it at tailgates, we knew we needed something more unique and memorable. after several rounds of brainstorming (??), we decided on FillUp. We liked that the personification pun fit our design principles, while still conveying its purpose.",
+          "Our logo went through several design updates (??) as well. what started as a visual analogy of the machine's tanks quickly lost its meaning as our design, and the number of tanks, changed (FillUp would eventually offer 6 half-gallon tanks to be used for alcohol or mixers, which provided sufficient options and capacity but wasn't too bulky). We knew we need something that clearly embodied FillUp's purpose and was immediately recognizable. We decided to use a cup - a tongue in cheek representation of FillUp and our glass half full (and pouring) attitude.",
+          "In selecting the final color scheme for FillUp's physical body and software visuals, we knew we needed something that would hold up to the loud, flashy colors of gameday. We selected a range of bright tones that pop and give FillUp the attention it deserves. (??)"
+        ]
+      },
+      "design_principles": {
+        "title": "Design Principles",
+        "copy": "We created a very simple set of design principles for FillUp:",
+        "list": [
+          "Be easy and approachable",
+          "Be witty to the point of eye-rolling (this is a novelty product, after all)"
+        ]
+      },
+      "implementation": {
+        "title": "Implementation",
+        "copy": [
+          "After several rounds of feedback, we began discussing the potential for bringing a production-quality FillUp to market. We quickly came to realize that we wouldn't be able to produce FillUp at a reasonable cost for our market without ramping up to a much larger production scale, which would have required outside funding that we weren't willing to take on. Since we decided FillUp wasn't something we intended to produce and market, we needed to come up with some ways to measure and evaluate our success. We decided that a good metric would be seeing if FillUp could attract opposing team's fans to our next tailgate without \"marketing\" it. Sure enough, we drew in several groups who insisted that while we may not win the game, we certainly won the tailgate."
+        ]
+      },
+      "tech": {
+        "title": "Tech",
+        "image": "/images/projects/fillup/fillup-app.jpg",
+        "copy": [
+          "FillUp is controlled by a custom PhoneGap app that communicates over Bluetooth to an Arduino chip within the machine's housing. This chip controls the machine's LED lights, drink sensor and valves."
+        ]
+      }
+    },
+    {
       "id": "morsel",
       "title": "Morsel",
       "class": "morsel",

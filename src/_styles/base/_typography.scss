@@ -64,6 +64,18 @@ p {
   }
 }
 
+li {
+  .light-scheme & {
+    color: $dark-gray;
+  }
+}
+
+table {
+  .light-scheme & {
+    color: $dark-gray;
+  }
+}
+
 .lead {
   color: $medium-gray;
   text-align: center;

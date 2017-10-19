@@ -1,0 +1,52 @@
+Tags:
+Sketching, Prototyping, Usability Testing, research
+
+Intro:
+FillUp is an automated drink making machine designed for tailgating.
+
+Inspiration:
+FillUp was a collaboration with a friend (a mechnical engineer and obsessive tinkerer) and fellow tailgater. We recognized a desire amongst tailgaters for something to take their tailgates to the next level and sought to create it. We formally defined our audience, early tech-adopting tailgate hosts like ourselves, based on our own by-weekly experience. From talking to fellow tailgaters, we knew that our audience is always looking for something to enhance their tailgate and make them stand out from others.
+  - Fancy food and drink spreads are great, but they're expensive and hard to scale.
+  - Lawn games are a great way to attract audiences, but they take up lots of space and are rarely exotic enough to entice strangers to join in.
+We knew that tailgates are extremely social events, so we'd need something that could be the center of attention, but would also be functional within the small space of a tailgating spot. We had come across several (http://somabar.com/) drink-mixing (http://somabar.com/) products (http://smartbarusa.com/) geared towards making higher (https://www.theinebriator.com/) end cocktails and realized that we could transform the mundane task of pouring a drink into something that would faciliate conversation, so we set off to design it for the needs of our audience.
+
+Process:
+We knew to be successful with our product, we would need to build something fun, engaging and unique. After our initial brainstorms, we identified a few more detailed design constraints that we developed from our own experience and comments from other tailgaters: 
+Concern: the product should be low maintenance, so tailgate visitors can interact with it themselves and hosts can enjoy the tailgate
+Constraint: Needs able to hold a bunch of liquid so it doesn't require hosts filling it up, needs intuitive controls/interaction
+Concern: it should require relatively little setup/teardown from the host
+Constraint: it needs to be easily assembled, disassembled and cleaned
+Concern: it needs to work in a parking lot
+Constraint: no reliance on electric hookups, wifi, etc. Could be easily transported
+
+We produced countless sketches of various ideas related to the shape of the physical housing, the "plumbing" that was responsible for pouring a drink and the interaction between a user and the machine. We built rapid prototypes of the housing and spout using household materials and collected feedback from my teammate's roommates. We explored hardware and software solutions and tested them immediately (duct tape _sometimes_ works at preventing liquids from succumbing to that whole gravity thing). Building FillUp was a constantly iterative process; we produced at least 4 functional prototypes that we tested ourselves and with others at our tailgates every few weeks. We constructed several journey maps, including a host's setup on game day, a stranger's passing by a tailgate with our product and the experience of a regular who uses the product at each tailgate. We used these to modify our design to make sure that it was approachable for all of our users.
+
+Implementation:
+Here are a few interesting things we learned from our users and how we adjusted our approach:
+- we noticed immediately that there were two main reactions when seeing the product for the first time: people said "cool, can it pour me a drink?" and others said "cool, how does it work?". The majority of users were in the former group; they tended to see our product, go through the process to get a drink and then move on to socialize. The latter group asked us questions and wanted a behind-the-scenes look at the interior of the machine (link to "what is that, a phillips head?"), took pictures and even stuck around and explain it to others. We realized that one of the major draws of having something like this at a tailgate is that it is mysterious (no one asks you how your new grill works), so we incorporated transparent plastics into our design so you could see the inner workings of the machine as it poured.
+- based on a survey of users, we noted that the two main ways people decided what to drink at a tailgate was by picking an alcohol and then seeing what was available to mix with, or by identifying that they wanted a shot and then picking their alcohol (plenty of people also prefer beer, which FillUp doesn't support because keeping it cold wasn't practical within our design restrictions). Rarely did people select a mixer and then an alcohol, or change their mind after deciding they wanted a shot. This led us to design the app to start by asking a user whether they wanted a shot or a mixed drink, then selecting an alcohol, then pouring or in the case of a mixed drink, presenting the options. (???)
+- one consistent problem we had was that people weren't sure when FillUp was done pouring their drink; they would pull their cup away too early and spill liquid while it was still pouring, or become hesitant and wait unnecessarily to pick up their drink. To combat this, we programmed LED lights on the machine to flash in a pattern that indicated it was finished (as opposed to other patterns that it showed while pouring) as well as added a pouring animation in the app and an alert to the user that their drink was ready. As a last resort, we installed a depth sensor that stopped any pouring if the cup was removed prematurely.
+
+Logo/branding process:
+- when we started the project, we referred to it simply as "The Drink Mixer". That worked well enough for a while amongst us and our friends, but once more people got eyes on it at tailgates, we knew we needed something more unique and memorable. after several rounds of brainstorming (??), we decided on FillUp. We liked that the personification pun fit our design principles, while still conveying its purpose.
+- our logo went through several design updates (??) as well. what started as a visual analogy of the machine's tanks quickly lost its meaning as our design, and the number of tanks, changed (FillUp would eventually offer 6 half-gallon tanks to be used for alcohol or mixers, which provided sufficient options and capacity but wasn't too bulky). We knew we need something that clearly embodied FillUp's purpose and was immediately recognizable. We decided to use a cup - a tongue in cheek representation of FillUp and our glass half full (and pouring) attitude.
+- In selecting the final color scheme for FillUp's physical body and software visuals, we knew we needed something that would hold up to the loud, flashy colors of gameday. We selected a range of bright tones that pop and give FillUp the attention it deserves. (??)
+
+Design Principles:
+- Be easy and approachable
+- Be witty to the point of eye-rolling (this is a novelty product, after all)
+
+Implementation:
+After several rounds of feedback, we began discussing the potential for bringing a production-quality FillUp to market. We quickly came to realize that we wouldn't be able to produce FillUp at a reasonable cost for our market without ramping up to a much larger production scale, which would have required outside funding that we weren't willing to take on. Since we decided FillUp wasn't something we intended to produce and market, we needed to come up with some ways to measure and evaluate our success. We decided that a good metric would be seeing if FillUp could attract opposing team's fans to our next tailgate without "marketing" it. Sure enough, we drew in several groups who insisted that while we may not win the game, we certainly won the tailgate.
+
+Tech:
+FillUp is controlled by a custom PhoneGap app that communicates over Bluetooth to an Arduino chip within the machine's housing. This chip controls the machine's LED lights, drink sensor and valves.
+
+Outcome:
+FillUp was a side project I worked on over the course of a few football seasons (2012-2015). Its iterations have been the stars of football tailgates, weekend camping trips and house parties. While bringing FillUp to market wasn't in the cards, it was a lot of fun to work on. My role in the project included working on product design, prototyping, facilitating and documenting user feedback, writing the code for the chip and building our website (http://fillup-public-site.herokuapp.com/).
+
+todo:
+- tense issues
+- wordy as fuck
+- departure from normal projects
+- learnings?
