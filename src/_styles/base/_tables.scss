@@ -16,9 +16,18 @@ td {
   border-bottom: $base-border;
   padding: $small-spacing $small-spacing $small-spacing 0;
   vertical-align: top;
+  font-size: .85em;
 }
 
 tr,
 th {
   vertical-align: middle;
+}
+
+tr {
+  &:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
 }

@@ -338,13 +338,17 @@
     .device-background {
       background: #526FA0;
     }
+
+    .note {
+      font-size: 0.7em;
+    }
   }
 
   .badges {
     margin-bottom: 2em;
 
     @include media($screen-medium-up) {
-      @include span-columns(4);
+      @include span-columns(3);
     }
 
     .badge {
@@ -358,7 +362,24 @@
     line-height: $copy-line-height;
 
     @include media($screen-medium-up) {
-      @include span-columns(8);
+      @include span-columns(9);
+    }
+  }
+
+  .container-sm {
+    .badges {
+      @include media($screen-medium-up) {
+        @include span-columns(4);
+      }
+    }
+
+    .copy-wrapper {
+      font-size: $copy-size;
+      line-height: $copy-line-height;
+
+      @include media($screen-medium-up) {
+        @include span-columns(8);
+      }
     }
   }
 

@@ -73,6 +73,10 @@ li {
 table {
   .light-scheme & {
     color: $dark-gray;
+
+    td {
+      color: $medium-gray;
+    }
   }
 }
 
