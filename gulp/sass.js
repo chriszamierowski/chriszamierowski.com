@@ -14,6 +14,7 @@ module.exports = function(gulp, plugins, args, config, taskTarget, browserSync) 
     gulp.src(path.join(dirs.source, dirs.styles, entries.css))
       .pipe(plugins.plumber())
       .pipe(gulpif(!args.production, plugins.sourcemaps.init()))
+      .pipe(plugins.sassGlob())
       .pipe(plugins.sass({
         outputStyle: 'expanded',
         precision: 10,

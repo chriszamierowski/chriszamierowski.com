@@ -1,0 +1,14 @@
+mixin device-background(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.copy = Array.isArray(spec.copy) ? spec.copy : [spec.copy]
+
+  .device-background(class=spec.__class)&attributes(attributes)
+    .device
+      .screen(style='background-image:url(#{spec.image})')
+      img(src=spec.image)
+    .device-text
+      if spec.title
+        h4= spec.title
+      each c in spec.copy
+        p !{c}

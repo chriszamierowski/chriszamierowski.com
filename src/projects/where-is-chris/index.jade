@@ -1,32 +1,11 @@
-extends ../../_layouts/base
+extends ../../_layouts/project
 
 block vars
-  - var baseUrl = '../../'
-  - var pageData = site.data.projects.list.find(p => p.id === 'whereischris')
-  - var bodyClass = 'project-page project-'+ pageData.class
+  - var pageData = getData('whereischris');
 
-include ../../_modules/project-header/project-header
-
-block header
-  +project-header(pageData)
-
-block content
-  .intro-image
-    .intro-image-wrap
-      img(src=pageData.header_image)
-  section
-    .container-sm.light-scheme
-      h1= pageData.title
-      .badges
-        each b in pageData.badges
-          .badge= b
-      .copy-wrapper
-        each c in pageData.intro_copy
-          p= c
-  .side-content
-    .container
-      .image-wrapper
-        img(src=pageData.final.image)
-      .side-content-copy
-        each c in pageData.final.copy
-          p !{c}
+block project-content
+  +side-content({
+    image: pageData.final.image,
+    copy: pageData.final.copy,
+    side: 'right'
+  })
