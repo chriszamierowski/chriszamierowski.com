@@ -16,6 +16,7 @@ include ../_modules/content/video-wrapper/video-wrapper
 include ../_modules/content/device-background/device-background
 include ../_modules/content/intro/intro
 include ../_modules/content/dual-images/dual-images
+include ../_modules/content/aside-container/aside-container
 
 block header
   +project-header(pageData)
@@ -25,7 +26,8 @@ block content
     image: pageData.header_image,
     title: pageData.title,
     badges: pageData.badges,
-    copy: pageData.intro_copy
+    copy: pageData.intro_copy,
+    large: pageData.largeIntro
   })
 
   block project-content

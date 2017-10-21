@@ -6,8 +6,8 @@ mixin intro(spec)
   .intro-image(class=spec.__class)&attributes(attributes)
     .intro-image-wrap
       img(src=spec.image)
-  section
-    .container-sm.light-scheme
+  section.intro-content
+    .light-scheme(class = spec.large ? 'container' : 'container-sm')
       h1= spec.title
       .badges
         each b in spec.badges

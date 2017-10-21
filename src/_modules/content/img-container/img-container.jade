@@ -3,4 +3,8 @@ mixin img-container(spec)
   - spec.__class = spec.__class || ''
 
   .img-container(class=spec.__class)&attributes(attributes)
-    img(src=spec.image)
+    if spec.img
+      img(src=spec.image)
+    if block
+      .image-wrapper
+        block

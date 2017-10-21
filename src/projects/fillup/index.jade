@@ -1,110 +1,76 @@
-extends ../../_layouts/base
+extends ../../_layouts/project
 
 block vars
-  - var baseUrl = '../../'
-  - var pageData = site.data.projects.list.find(p => p.id === 'fillup')
-  - var bodyClass = 'project-page project-'+ pageData.class
+  - var pageData = getData('fillup');
+  - pageData.largeIntro = true;
 
-include ../../_modules/project-header/project-header
-
-block header
-  +project-header(pageData)
-
-block content
-  .intro-image
-    .intro-image-wrap
-      img(src=pageData.header_image)
-  section
-    .container.light-scheme
-      h1= pageData.title
-      .badges
-        each b in pageData.badges
-          .badge= b
-      .copy-wrapper
-        each c in pageData.intro_copy
-          p !{c}
-  section
-    .container.light-scheme
-      .copy.copy-full
-        h5.h5= pageData.inspiration.title
-        each c in pageData.inspiration.copy
-          p !{c}
-  section
-    .container.light-scheme
-      .copy.copy-full
-        h5.h5= pageData.process.title
-        each c in pageData.process.copy
-          p= c
-        table
-          tr
-            th Requirement
-            th Constraint
-          each tr in pageData.process.table
-            tr
-              td !{tr.requirement}
-              td !{tr.constraint}
-  .container.wide-image
-    img(src=pageData.inspiration.image)
-  section
-    .container.light-scheme
-      .copy.copy-full
-        each c in pageData.process.copy2
-          p !{c}
-  .side-content
-    .container
-      .image-wrapper
-        img(src=pageData.process.image)
-      .side-content-copy
-        each c in pageData.process.copy3
-          p !{c}
-  section
-    .container.aside-container.light-scheme
-      .copy
-        each c in pageData.process.copy4
-          p= c
-      aside
-        h5.h5= pageData.design_principles.title
-        p= pageData.design_principles.copy
-        ul.project-list
-          each li in pageData.design_principles.list
-            li !{li}
-  section
-    .container.light-scheme
-      .copy.copy-full
-        h5.h5= pageData.feedback.title
-        each c in pageData.feedback.copy
-          p !{c}
-        table
-          tr
-            th Feedback
-            th Reaction
-          each tr in pageData.feedback.table
-            tr
-              td !{tr.feedback}
-              td !{tr.reaction}
-        p.note= pageData.feedback.note
-  .container
-    .image-wrapper
-      .fillup-logo
-        !{pageData.logo_branding.image}
-  section
-    .container.light-scheme
-      .copy.copy-full
-        h5.h5= pageData.logo_branding.title
-        ul.project-list
-          each li in pageData.logo_branding.list
-            li !{li}
-  section
-    .container.light-scheme
-      .copy.copy-full
-        h5.h5= pageData.implementation.title
-        each c in pageData.implementation.copy
-          p= c
-  .device-background
-    .device
-      .screen(style='background-image:url(#{pageData.tech.image})')
-      img(src=pageData.tech.image)
-    .device-text
-      h4= pageData.tech.title
-      each c in pageData.tech.copy
-        p !{c}
+block project-content
+  +section-copy({
+    copy: pageData.inspiration.copy,
+    title: pageData.inspiration.title,
+    large: true
+  })
+  +section-copy({
+    title: pageData.process.title,
+    copy: pageData.process.copy,
+    large: true
+  })
+    table
+      tr
+        th Requirement
+        th Constraint
+      each tr in pageData.process.table
+        tr
+          td !{tr.requirement}
+          td !{tr.constraint}
+  +wide-image({image: pageData.inspiration.image})
+  +section-copy({
+    copy: pageData.process.copy2,
+    large: true
+  })
+  +side-content({
+    image: pageData.process.image,
+    copy: pageData.process.copy3,
+    side: 'right'
+  })
+  +aside-container({
+    copy: pageData.process.copy4,
+    side: 'right'
+  })
+    h5.h5= pageData.design_principles.title
+    p= pageData.design_principles.copy
+    ul.project-list
+      each li in pageData.design_principles.list
+        li !{li}
+  +section-copy({
+    title: pageData.feedback.title,
+    copy: pageData.feedback.copy,
+    large: true
+  })
+    table
+      tr
+        th Feedback
+        th Reaction
+      each tr in pageData.feedback.table
+        tr
+          td !{tr.feedback}
+          td !{tr.reaction}
+    p.note= pageData.feedback.note
+  +img-container()
+    .fillup-logo
+      !{pageData.logo_branding.image}
+  +section-copy({
+    list: pageData.logo_branding.list,
+    title: pageData.logo_branding.title,
+    large: true
+  })
+  +section-copy({
+    copy: pageData.implementation.copy,
+    title: pageData.implementation.title,
+    large: true
+  })
+  +device-background({
+    image: pageData.tech.image,
+    copy: pageData.tech.copy,
+    title: pageData.tech.title
+  })

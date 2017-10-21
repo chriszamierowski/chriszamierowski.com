@@ -2,7 +2,7 @@
   text-align: center;
 
   .intro-image-wrap {
-    display: inline-block;
+    display: block;
     position: relative;
     max-height: 40vh;
     overflow: hidden;
@@ -17,7 +17,7 @@
       left: 0;
       display: block;
       content: '';
-      background: linear-gradient(rgba($dark-gray, 0) 0%, rgba($dark-gray, 0) 55%, rgba($dark-gray, .2) 90%, rgba($dark-gray, .8) 100%), no-repeat;
+      background: $intro-image-gradient, no-repeat;
       opacity: 1;
       transition: opacity .6s $base-timing;
     }
@@ -36,24 +36,40 @@
   }
 }
 
-.badges {
-  margin-bottom: 2em;
+.intro-content {
+  .badges {
+    margin-bottom: 2em;
 
-  @include media($screen-medium-up) {
-    @include span-columns(4);
+    @include media($screen-medium-up) {
+      @include span-columns(3);
+    }
+
+    .badge {
+      margin: .4em;
+      font-size: 1em;
+    }
   }
 
-  .badge {
-    margin: .4em;
-    font-size: 1em;
+  .copy-wrapper {
+    font-size: $project-copy-size;
+    line-height: $project-line-height;
+
+    @include media($screen-medium-up) {
+      @include span-columns(9);
+    }
   }
-}
 
-.copy-wrapper {
-  font-size: $project-copy-size;
-  line-height: $project-line-height;
+  .container-sm {
+    .badges {
+      @include media($screen-medium-up) {
+        @include span-columns(4);
+      }
+    }
 
-  @include media($screen-medium-up) {
-    @include span-columns(8);
+    .copy-wrapper {
+      @include media($screen-medium-up) {
+        @include span-columns(8);
+      }
+    }
   }
 }

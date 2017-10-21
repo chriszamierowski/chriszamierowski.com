@@ -4,4 +4,17 @@
     max-width: 90%;
     margin: 0 auto;
   }
+
+  .image-wrapper {
+    margin: 4em 0;
+
+    @include media($screen-medium-up) {
+      @include shift(3);
+      @include span-columns(6);
+
+      img {
+        display: block;
+      }
+    }
+  }
 }

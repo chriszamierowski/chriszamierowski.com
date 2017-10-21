@@ -9,25 +9,6 @@
         @include pad();
       }
     }
-
-    & > .container {
-      text-align: center;
-    }
-  }
-
-  .copy {
-    font-size: $project-copy-size;
-    line-height: $project-line-height;
-
-    @include media($screen-medium-up) {
-      @include span-columns(8);
-      @include shift(2);
-    }
-
-    &.copy-full {
-      @include span-columns(12);
-      @include shift(0);
-    }
   }
 
   .contact {
@@ -38,12 +19,32 @@
     background-color: black;
   }
 
-  &.project-morsel .device-background {
-    background: #e96144;
+  &.project-betterfly .intro-image {
+    background-color: black;
+  }
+
+  &.project-where-is-chris .intro-image {
+    background-color: #eae8e9
+  }
+
+  &.project-morsel {
+    .intro-image {
+      background-color: #f3f2f0;
+    }
+
+    .device-background {
+      background-color: #e96144;
+    }
   }
 
   &.project-tasting-collective .device-background {
-    background: #444b52;
+    background-color: #444b52;
+  }
+
+  &.project-explain-your-family {
+    .intro-image {
+      background-color: #dce7f2;
+    }
   }
 
   &.project-fillup {
@@ -63,37 +64,27 @@
       }
 
       .fillup-liquid {
-        @include transition(all 0.5s ease-in-out);
-        @include transform(translate(637px, 81px));
+        transition: all 0.5s ease-in-out;
+        transform: translate(637px, 81px);
       }
 
       &:hover {
         .fillup-liquid {
-          @include transform(translate(637px, 81px) translateY(-50%) scaleY(1.5));
+          transform: translate(637px, 81px) translateY(-50%) scaleY(1.5);
         }
       }
     }
 
+    .intro-image {
+      background-color: #f3f2f0;
+    }
+
     .device-background {
-      background: #526FA0;
+      background-color: #526FA0;
     }
 
     .note {
       font-size: 0.7em;
-    }
-  }
-
-  .aside-container {
-    & > .copy {
-      @include span-columns(7);
-      @include shift(0);
-    }
-
-    & > aside {
-      padding: 2em;
-      @include span-columns(4);
-      @include shift(1);
-      background-color: $light-gray
     }
   }
 

@@ -1,1 +1,16 @@
-// section-copy styles
+.section-copy {
+  .copy {
+    font-size: $project-copy-size;
+    line-height: $project-line-height;
+
+    &.copy-full {
+      @include span-columns(12);
+      @include shift(0);
+    }
+
+    @include media($screen-medium-up) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
+}
