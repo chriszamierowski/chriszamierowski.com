@@ -1,40 +1,11 @@
-extends ../../_layouts/base
+extends ../../_layouts/project
 
 block vars
-  - var baseUrl = '../../'
-  - var pageData = site.data.projects.list.find(p => p.id === 'betterfly')
-  - var bodyClass = 'project-page project-'+ pageData.class
+  - var pageData = getData('betterfly');
 
-include ../../_modules/project-header/project-header
-
-block header
-  +project-header(pageData)
-
-block content
-  .intro-image
-    .intro-image-wrap
-      img(src=pageData.header_image)
-  section
-    .container-sm.light-scheme
-      h1= pageData.title
-      .badges
-        each b in pageData.badges
-          .badge= b
-      .copy-wrapper
-        each c in pageData.intro_copy
-          p= c
-  .container.wide-image
-    img(src=pageData.video_chat.image)
-  section
-    .container-sm.light-scheme
-      .copy
-        p= pageData.video_chat.copy
-  .container.wide-image
-    img(src=pageData.search.image)
-  section
-    .container-sm.light-scheme
-      .copy
-        each c in pageData.final.copy
-          p !{c}
-  .container.wide-image
-    img(src=pageData.final.image)
+block project-content
+  +wide-image({image: pageData.video_chat.image})
+  +section-copy({copy: pageData.video_chat.copy})
+  +wide-image({image: pageData.search.image})
+  +section-copy({copy: pageData.final.copy})
+  +wide-image({image: pageData.final.image})

@@ -1,0 +1,10 @@
+mixin section-copy(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.copy = Array.isArray(spec.copy) ? spec.copy : [spec.copy]
+
+  section(class=spec.__class)&attributes(attributes)
+    .container-sm.light-scheme
+      .copy
+        each c in spec.copy
+          p !{c}

@@ -1,0 +1,59 @@
+.intro-image {
+  text-align: center;
+
+  .intro-image-wrap {
+    display: inline-block;
+    position: relative;
+    max-height: 40vh;
+    overflow: hidden;
+    transition: max-height .6s $base-timing;
+    cursor: pointer;
+
+    &:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      content: '';
+      background: linear-gradient(rgba($dark-gray, 0) 0%, rgba($dark-gray, 0) 55%, rgba($dark-gray, .2) 90%, rgba($dark-gray, .8) 100%), no-repeat;
+      opacity: 1;
+      transition: opacity .6s $base-timing;
+    }
+
+    &.expand {
+      max-height: 200vh;
+
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
+
+  & + section {
+    padding-top: 2.5em;
+  }
+}
+
+.badges {
+  margin-bottom: 2em;
+
+  @include media($screen-medium-up) {
+    @include span-columns(4);
+  }
+
+  .badge {
+    margin: .4em;
+    font-size: 1em;
+  }
+}
+
+.copy-wrapper {
+  font-size: $project-copy-size;
+  line-height: $project-line-height;
+
+  @include media($screen-medium-up) {
+    @include span-columns(8);
+  }
+}

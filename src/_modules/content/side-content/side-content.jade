@@ -1,0 +1,34 @@
+mixin side-content(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.copy = Array.isArray(spec.copy) ? spec.copy : [spec.copy]
+
+  .side-content(class=spec.__class)&attributes(attributes)
+    .container
+      if spec.video
+        if spec.side === 'right'
+          +side-content-video(spec.video, spec.poster)
+          +side-content-copy(spec.copy)
+        else
+          +side-content-copy(spec.copy)
+          +side-content-video(spec.video, spec.poster)
+      else
+        if spec.side === 'right'
+          +side-content-image(spec.image)
+          +side-content-copy(spec.copy)
+        else
+          +side-content-copy(spec.image)
+          +side-content-image(spec.copy)
+
+mixin side-content-image(image)
+  .image-wrapper
+    img(src=image)
+
+mixin side-content-video(video, poster)
+  .video-wrapper
+    video(src='#{video}', type='video/mp4', autoplay='autoplay', loop='loop', poster='#{poster}', preload='auto')
+
+mixin side-content-copy(copy)
+  .side-content-copy
+    each c in copy
+      p !{c}

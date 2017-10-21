@@ -1,0 +1,6 @@
+mixin img-container(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  .img-container(class=spec.__class)&attributes(attributes)
+    img(src=spec.image)

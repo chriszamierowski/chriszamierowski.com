@@ -1,51 +1,16 @@
-extends ../../_layouts/base
+extends ../../_layouts/project
 
 block vars
-  - var baseUrl = '../../'
-  - var pageData = site.data.projects.list.find(p => p.id === 'explainyourfamily')
-  - var bodyClass = 'project-page project-'+ pageData.class
+  - var pageData = getData('explainyourfamily');
 
-include ../../_modules/project-header/project-header
-
-block header
-  +project-header(pageData)
-
-block content
-  .intro-image
-    .intro-image-wrap
-      img(src=pageData.header_image)
-  section
-    .container-sm.light-scheme
-      h1= pageData.title
-      .badges
-        each b in pageData.badges
-          .badge= b
-      .copy-wrapper
-        each c in pageData.intro_copy
-          p= c
-  .container.wide-image
-    img(src=pageData.ideation.image)
-  section
-    .container-sm.light-scheme
-      .copy
-        each c in pageData.ideation.copy
-          p= c
-  .side-content
-    .container
-      .image-wrapper
-        img(src=pageData.value.image)
-      .side-content-copy
-        each c in pageData.value.copy
-          p= c
-  section
-    .container-sm.light-scheme
-      .copy
-        each c in pageData.tech.copy
-          p !{c}
-  .container-sm
-    img(src=pageData.final.image)
-  section
-    .container-sm.light-scheme
-      .copy
-        each c in pageData.final.copy
-          p !{c}
+block project-content
+  +wide-image({image: pageData.ideation.image})
+  +section-copy({copy: pageData.ideation.copy})
+  +side-content({
+    image: pageData.value.image,
+    copy: pageData.value.copy,
+    side: 'right'
+  })
+  +section-copy({copy: pageData.tech.copy})
+  +img-container({image: pageData.final.image}).container-sm
+  +section-copy({copy: pageData.final.copy})
