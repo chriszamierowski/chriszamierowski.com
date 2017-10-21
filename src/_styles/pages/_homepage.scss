@@ -114,7 +114,7 @@ $things-i-am-margin: .2em;
   }
 }
 
-@showThings {
+@keyframes showThings {
   $numThings: 4;
   $hold: 7;
   $switch: 3;
@@ -144,7 +144,7 @@ $things-i-am-margin: .2em;
   }
 }
 
-@scrollDown {
+@keyframes scrollDown {
   0% {
     bottom: -10px;
     opacity: 0;
