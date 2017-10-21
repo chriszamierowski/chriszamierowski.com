@@ -19,7 +19,7 @@ $popover-trigger-start-size: 2px;
   }
 
   &.popover-pulse {
-    @include animation(popoverPulse 3s infinite);
+    animation: popoverPulse 3s infinite;
   }
 
   &#{$scrollWindowBottom} {
@@ -30,7 +30,7 @@ $popover-trigger-start-size: 2px;
   }
 }
 
-@include keyframes(popoverPulse) {
+@keyframes popoverPulse {
   0% {
     box-shadow: 0 0 0 3px $white, 0 0 0 5px $dark-blue, 2px 2px 0 6px rgba($dark-gray, .3);
   }

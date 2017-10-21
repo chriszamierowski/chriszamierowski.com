@@ -49,6 +49,6 @@ section {
   }
 }
 
-@include selection {
+::section {
   background-color: $bright-orange;
 }

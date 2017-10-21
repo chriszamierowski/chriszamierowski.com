@@ -1,7 +1,7 @@
 .cards {
   display: flex;
-  @include flex-wrap(wrap);
-  @include justify-content(space-between);
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .card {
@@ -9,9 +9,9 @@
   $card-background: $base-background-color;
   $card-margin: 1em;
 
-  @include flex-basis(18em);
-  @include flex-grow(1);
-  @include transition (all 0.2s ease-in-out);
+  flex-basis: 18em;
+  flex-grow: 1;
+  transition: all 0.2s ease-in-out;
   background-color: $card-background;
   border-radius: 2px;
   @include shadow(true);
@@ -54,6 +54,6 @@
   &:focus,
   &:hover {
     cursor: pointer;
-    @include transform(translate(-2px, -2px));
+    transform: translate(-2px, -2px);
   }
 }

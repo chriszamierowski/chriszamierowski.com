@@ -1,7 +1,6 @@
 .device-background {
   $base-border-radius: 3px !default;
   $action-color: #477DCA !default;
-  $large-screen: em(860) !default;
   $device-padding-vertical: 5em;
   $device-padding-horizontal: 0.4em;
   $device-screen-width: 14em;
@@ -63,14 +62,14 @@
     @include media($screen-medium-up) {
       overflow: auto;
       max-height: none;
-      @include transform(
+      transform:
         perspective(800px) 
         translateX(0px) 
         translateY($device-medium-translate-y) 
         translateZ(50px) 
         rotateX(0deg) 
         rotateY(-20deg) 
-        rotateZ(-0deg));
+        rotateZ(-0deg);
       background-color: $device-background;
       border-radius: 2em;
       box-shadow: 
@@ -101,14 +100,14 @@
     }
 
     @include media($screen-large-up) {
-      @include transform(
+      transform:
         perspective(800px) 
         translateX(0px) 
         translateY($device-large-translate-y) 
         translateZ(50px) 
         rotateX(0deg) 
         rotateY(-20deg) 
-        rotateZ(-0deg));
+        rotateZ(-0deg);
     }
   }
 }

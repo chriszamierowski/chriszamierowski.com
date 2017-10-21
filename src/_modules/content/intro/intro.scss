@@ -17,7 +17,7 @@
       left: 0;
       display: block;
       content: '';
-      @include background(linear-gradient(rgba($dark-gray, 0) 0%, rgba($dark-gray, 0) 55%, rgba($dark-gray, .2) 90%, rgba($dark-gray, .8) 100%), no-repeat);
+      background: linear-gradient(rgba($dark-gray, 0) 0%, rgba($dark-gray, 0) 55%, rgba($dark-gray, .2) 90%, rgba($dark-gray, .8) 100%), no-repeat;
       opacity: 1;
       transition: opacity .6s $base-timing;
     }
