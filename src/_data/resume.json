@@ -85,7 +85,7 @@
           "jobtitle": "Front-end Engineer",
           "company": {
             "name": "Morsel",
-            "link": "/projects/morsel"
+            "link": "http://chriszamierowski.com/projects/morsel"
           },
           "dates": "Nov 2013 - Feb 2015",
           "description": "First hire, responsible for full UI, design and development of web stack of eatmorsel.com."
@@ -94,7 +94,7 @@
           "jobtitle": "Software Engineer",
           "company": {
             "name": "Betterfly",
-            "link": "/projects/betterfly"
+            "link": "http://chriszamierowski.com/projects/betterfly"
           },
           "dates": "Feb 2013 - Oct 2013",
           "description": "Built and managed front-end of betterfly.com (acquired 2013), including custom online video chat tool."
