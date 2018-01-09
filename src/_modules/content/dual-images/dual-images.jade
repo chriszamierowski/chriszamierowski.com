@@ -1,0 +1,13 @@
+mixin dual-images(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.copy = Array.isArray(spec.copy) ? spec.copy : [spec.copy]
+
+  .container.dual-images(class=spec.__class)&attributes(attributes)
+    .img-wrapper
+      img(src=spec.images[0])
+    .middle-column
+      each c in spec.copy
+        p !{c}
+    .img-wrapper
+      img(src=spec.images[1])

@@ -1,0 +1,20 @@
+mixin section-copy(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.copy = spec.copy ? (Array.isArray(spec.copy) ? spec.copy : [spec.copy]) : []
+  - spec.list = spec.list ? (Array.isArray(spec.list) ? spec.list : [spec.list]) : []
+
+  section.section-copy(class=spec.__class)&attributes(attributes)
+    .light-scheme(class = spec.large ? 'container' : 'container-sm')
+      .copy(class = spec.large ? 'copy-full' : '')
+        if spec.title
+          h5.h5= spec.title
+        if spec.copy.length
+          each c in spec.copy
+            p !{c}
+        if spec.list.length
+          ul.project-list
+            each li in spec.list
+              li !{li}
+        if block
+          block

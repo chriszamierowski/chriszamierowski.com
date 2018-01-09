@@ -21,7 +21,7 @@ block content
         a(href='#skills')= site.data.homepage.welcome.scroll
   section#skills.skills
     .container
-      h2
+      h2.section-title
         span= site.data.homepage.skills.subtitle
         = site.data.homepage.skills.title
       .t-bone-shaped-skills
@@ -29,16 +29,16 @@ block content
         each p in site.data.expertise.popovers
           +popover(p)
   section#projects.examples.container
-    h2
+    h2.section-title
       span= site.data.homepage.examples.subtitle
       = site.data.homepage.examples.title
     .cards
       +card(site.data.projects.list[0])
       +card(site.data.projects.list[1])
-    p.h6 !{site.data.homepage.examples.more}
+    p.h6.popin.scroll-dependent(data-distance-from-bottom = '120') !{site.data.homepage.examples.more}
   section#resume.resume
     .container-sm
-      h2
+      h2.section-title
         span= site.data.resume.summary.subtitle
         = site.data.resume.summary.title
       h5= site.data.resume.summary.blurb
@@ -46,6 +46,6 @@ block content
       ul
         each t in site.data.resume.summary.tools
           li
-            +link({text: t.name})(href = t.link, target = '_blank', title= t.name)
+            +link({text: t.name})(href = t.link, target = '_blank', title= t.name, class = 'popin scroll-dependent', data-distance-from-bottom = '120')
               i(class='sprite sprite-#{t.class}')
       p.h6 !{site.data.resume.summary.more}

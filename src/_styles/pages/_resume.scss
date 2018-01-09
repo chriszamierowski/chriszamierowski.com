@@ -11,12 +11,12 @@
     header {
       section {
         display: flex;
-        @include align-items(top);
-        @include flex-direction(row);
-        @include justify-content(space-between);
+        align-items: top;
+        flex-direction: row;
+        justify-content: space-between;
 
         @include media($screen-medium-down) {
-          @include flex-direction(column);
+          flex-direction: column;
 
           div{
             text-align: center !important;
@@ -53,8 +53,8 @@
           text-transform: uppercase;
           font-weight: $bold;
           display: flex;
-          @include justify-content(space-around);
-          @include flex-direction(column);
+          justify-content: space-around;
+          flex-direction: column;
 
           p {
             color: $medium-gray;
@@ -74,24 +74,34 @@
     h4,
     h5,
     h6 {
-      margin-bottom: $small-spacing/2;
+      margin-bottom: $small-spacing/1.8;
     }
 
     a, span {
       text-transform: uppercase;
     }
 
-    .columns {
+    .lead {
       color: $dark-gray;
+    }
 
+    .columns {
       h5 {
         display: inline-block;
         margin-right: 0.25em;
       }
 
       @include media($screen-medium-up) {
-        columns: 2;
+        li {
+          width: 49%;
+          display: inline-block;
+        }
       }
+    }
+
+    .resume-bold {
+      color: $dark-gray;
+      font-weight: $ultrabold;
     }
   }
 
@@ -100,12 +110,10 @@
     padding-top: 0;
 
     .main section {
-      &:not(.lead) {
-        @include pad();
-        padding-left: 0;
-        padding-right: 0;
-        padding-bottom: 0;
-      }
+      @include pad();
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0;
 
       h1 {
         font-size: 2.4em;
@@ -120,13 +128,24 @@
       }
 
       .lead {
-        font-size: 1.2em;
+        font-size: 0.95em;
         line-height: 1.5em;
+        width: 100%;
+        margin-left: 0;
+      }
+
+      &:last {
+        padding-bottom: 0;
       }
     }
 
     .main-nav, .contact {
       display: none;
+    }
+
+    .columns li {
+      width: 49%;
+      display: inline-block;
     }
   }
 }

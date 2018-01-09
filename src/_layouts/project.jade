@@ -1,0 +1,33 @@
+extends ./base
+
+block prevars
+  - var baseUrl = '../../'
+  - function getData(id) { return site.data.projects.list.find(p => p.id === id);}
+
+block postvars
+  - var bodyClass = 'project-page project-'+pageData.class;
+
+include ../_modules/project-header/project-header
+include ../_modules/content/side-content/side-content
+include ../_modules/content/wide-image/wide-image
+include ../_modules/content/section-copy/section-copy
+include ../_modules/content/img-container/img-container
+include ../_modules/content/video-wrapper/video-wrapper
+include ../_modules/content/device-background/device-background
+include ../_modules/content/intro/intro
+include ../_modules/content/dual-images/dual-images
+include ../_modules/content/aside-container/aside-container
+
+block header
+  +project-header(pageData)
+
+block content
+  +intro({
+    image: pageData.header_image,
+    title: pageData.title,
+    badges: pageData.badges,
+    copy: pageData.intro_copy,
+    large: pageData.largeIntro
+  })
+
+  block project-content

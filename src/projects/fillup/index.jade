@@ -1,0 +1,72 @@
+extends ../../_layouts/project
+
+block vars
+  - var pageData = getData('fillup');
+  - pageData.largeIntro = true;
+
+block project-content
+  +section-copy({
+    copy: pageData.inspiration.copy,
+    title: pageData.inspiration.title,
+    large: true
+  })
+  +wide-image({image: pageData.inspiration.image})
+  +section-copy({
+    title: pageData.process.title,
+    copy: pageData.process.copy,
+    large: true
+  })
+    table
+      tr
+        th Requirement
+        th Constraint
+      each tr in pageData.process.table
+        tr
+          td !{tr.requirement}
+          td !{tr.constraint}
+  +side-content({
+    image: pageData.process.image,
+    copy: pageData.process.copy2,
+    side: 'right'
+  })
+  +aside-container({
+    copy: pageData.process.copy3,
+    side: 'right'
+  })
+    h5.h5= pageData.design_principles.title
+    p= pageData.design_principles.copy
+    ul.project-list
+      each li in pageData.design_principles.list
+        li !{li}
+  +section-copy({
+    title: pageData.feedback.title,
+    copy: pageData.feedback.copy,
+    large: true
+  })
+    table
+      tr
+        th Feedback
+        th Reaction
+      each tr in pageData.feedback.table
+        tr
+          td !{tr.feedback}
+          td !{tr.reaction}
+    p.note= pageData.feedback.note
+  +img-container()
+    .fillup-logo
+      !{pageData.logo_branding.image}
+  +section-copy({
+    list: pageData.logo_branding.list,
+    title: pageData.logo_branding.title,
+    large: true
+  })
+  +section-copy({
+    copy: pageData.implementation.copy,
+    title: pageData.implementation.title,
+    large: true
+  })
+  +device-background({
+    image: pageData.tech.image,
+    copy: pageData.tech.copy,
+    title: pageData.tech.title
+  })

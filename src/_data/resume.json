@@ -2,8 +2,8 @@
   "summary": {
     "title": "Resume",
     "subtitle": "A Brief",
-    "blurb": "Northwestern grad; I’ve worked for agencies, startups and as a freelancer",
-    "blurb_tools": "Currently focusing on:",
+    "blurb": "Northwestern grad; I’ve worked for startups, agencies and as a freelancer",
+    "blurb_tools": "I'm currently focusing on:",
     "tools": [
       {
         "name": "Vue.js",
@@ -44,60 +44,59 @@
       "status": true,
       "copy": "Available for contract, freelance or full-time"
     },
-    "blurb": "I’m a multidisciplinary thinker producing (mostly) front-end solutions."
+    "blurb": "I’m a multidisciplinary thinker producing (mostly) front-end web solutions. I'm looking to join, learn from and collaborate with a talented team that pushes me to create my best work, from initial concept to shipping a product."
   },
   "sections": [
-    {
-      "id": "things-i-use",
-      "title": "Some Things I Use",
-      "subtitle": "Software, tools, languages, libraries, etc.",
-      "description": "JavaScript (ES6), Vue.js, Webpack, Bulma, AngularJS, HTML5, Sass, gulp, Sketch, Ruby on Rails, Node.js, Express, Riot, Yeoman, Jade/Pug, Bootstrap, jQuery, Karma, Jasmine, Protractor, Jenkins, PostCSS, Underscore, Sublime Text, Sketch, Photoshop, Zeplin, Git (CLI), Heroku, AWS S3, Google Analytics, Mixpanel, Rollbar, Terminal, Asana, Pivotal Tracker, Balsamiq, pen & paper, Slack"
-    },
     {
       "id": "areas-of-work",
       "title": "What I Like To Work On",
       "columns": true,
       "description": {
         "FE Development" : "web apps, responsive interfaces",
+        "Product Design" : "ideation, strategy, analytics",
         "UX Design" : "wireframes, prototyping, user research",
-        "Product Design" : "ideation, analytics",
         "UI Design" : "layouts, animation"
       }
+    },
+    {
+      "id": "things-i-use",
+      "title": "Current Toolset",
+      "description": "JavaScript (ES6), Vue.js, Webpack, HTML5, Sass, Sketch, Ruby on Rails, Node.js, Docker, Bulma, gulp, Express, Karma, Jasmine, Sublime Text, Sketch, Photoshop, Zeplin, Git (CLI), Heroku, AWS S3, Google Analytics, Mixpanel, Rollbar, Trello, Asana, Pivotal Tracker, Balsamiq, pen & paper, Slack"
     },
     {
       "title": "Experience",
       "jobs": [
         {
-          "jobtitle": "Freelance Web Design & Development",
-          "dates": "Jan 2009 - Present",
-          "description": "Provide full design and development of sites for multiple clients, ranging from portfolio to e-commerce sites."
+          "jobtitle": "Web Designer & Developer (Freelance)",
+          "dates": "Jul 2017 - Present",
+          "description": "Provide early-stage startups with a range of services including full-stack web development, interaction design, UI design and product strategy."
         },
         {
-          "jobtitle": "Lead Front-end Engineer",
+          "jobtitle": "Lead Front-end Engineer (Contract)",
           "company": {
-            "name": "Leo Burnett Interactive",
-            "link": "http://www.leoburnettinteractive.com/"
+            "name": "Leo Burnett",
+            "link": "http://leoburnett.com/"
           },
-          "dates": "March 2015 - July 2015, June 2016-July 2017",
-          "description": "As a contractor, I worked on a team to build a single-page online dashboard and custom hybrid app for a major electronics client."
+          "dates": "Mar - Jul 2015, Jun 2016 - Jul 2017",
+          "description": "Worked with a small team to build a single-page online dashboard and custom hybrid app on devices across multiple operating systems in 30+ languages for Intel."
         },
         {
           "jobtitle": "Front-end Engineer",
           "company": {
             "name": "Morsel",
-            "link": "/projects/morsel"
+            "link": "http://chriszamierowski.com/projects/morsel"
           },
           "dates": "Nov 2013 - Feb 2015",
-          "description": "First hire, responsible for full UI, design and development of web stack of eatmorsel.com."
+          "description": "First hire: responsible for full UI, design and development of AngularJS + Node.js web stack. Designed site UI, designed and built an embeddable module for restaurants' sites, did a significant amount of brainstorming and prototyping, and conducted user research."
         },
         {
           "jobtitle": "Software Engineer",
           "company": {
             "name": "Betterfly",
-            "link": "/projects/betterfly"
+            "link": "http://chriszamierowski.com/projects/betterfly"
           },
-          "dates": "Feb 2013 - Oct 2013",
-          "description": "Built and managed front-end of betterfly.com (acquired 2013), including custom online video chat tool."
+          "dates": "Feb - Oct 2013",
+          "description": "Built and managed front-end of betterfly.com (acquired 2013), including custom online video chat tool, a simple document sharing/organization application and an internet connection speed wizard."
         },
         {
           "jobtitle": "Web Developer",
@@ -106,15 +105,16 @@
             "link": "http://mcdpartners.com/"
           },
           "dates": "Jun 2011 - Feb 2013",
-          "description": "Worked together with Design, IA, UX teams to build and deliver sites for clients including Discover Financial Services and E*TRADE."
+          "description": "Worked together with UI, IA and UX design teams to build and deliver sites for clients including Discover Financial Services and E*TRADE."
         }
       ]
     },
     {
       "title": "Education",
+      "subtitle": "Northwestern University, McCormick School of Engineering",
       "description": [
-        "Master of Science in Computer Science. Northwestern University, Robert R. McCormick School of Engineering and Applied Science. 2011.",
-        "Bachelor of Science in Computer Science. Animate Arts (Adjunct Major). Northwestern University, Robert R. McCormick School of Engineering and Applied Science. 2010."
+        "Master of Science in Computer Science, 2011.",
+        "Bachelor of Science in Computer Science, Animate Arts (Adjunct Major), 2010."
       ]
     },
     {

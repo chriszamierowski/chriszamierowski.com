@@ -23,14 +23,14 @@ block content
         div
           +link({text: site.data.resume.header.site.name})(href=site.data.resume.header.site.link, target='_blank')
           +link({text: site.data.resume.header.email.name})(href=site.data.resume.header.email.link)
-          p= site.data.resume.header.location
+          p!= site.data.resume.header.location
       section
         h3.lead= site.data.resume.header.blurb
     each s in site.data.resume.sections
       section(id=s.id ? s.id : '')
         h3= s.title
         if s.subtitle
-          h5= s.subtitle
+          h5.resume-bold= s.subtitle
         if (typeof(s.description) === 'object')
           ul(class=s.columns ? 'columns' : '')
             if (Array.isArray(s.description))
@@ -40,13 +40,13 @@ block content
             else
               each v, k in s.description
                 li
-                  h5= `${k}:`
+                  h5.resume-bold= `${k}:`
                   = v
         else
           p= s.description
         if s.jobs
           each j in s.jobs
             ul: li
-              p #{j.jobtitle}!{j.company ? ' - ' + (j.company.link ? '<a href=\"'+j.company.link+'\" target=\"_blank\">'+j.company.name+'</a>' : '<span>' + j.company.name + '</span>') : ''}. #{j.dates}. !{j.description}
+              div <span class="resume-bold">#{j.jobtitle}</span>!{j.company ? ' - ' + (j.company.link ? '<a href=\"'+j.company.link+'\" target=\"_blank\">'+j.company.name+'</a>' : '<span>' + j.company.name + '</span>') : ''} <span>#{j.dates}</span>. <p>!{j.description}</p>
 
 

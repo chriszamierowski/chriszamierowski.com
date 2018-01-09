@@ -4,17 +4,6 @@ $things-i-am-margin: .2em;
 .homepage {
   .main {
     text-align: center;
-
-    section:not(.welcome) {
-      h2 {
-        margin-top: 5vh;
-
-        span {
-          display: block;
-          font-size: .3em;
-        }
-      }
-    }
   }
 
   .contact {
@@ -28,8 +17,8 @@ $things-i-am-margin: .2em;
 
 .welcome {
   display: flex;
-  @include justify-content(center);
-  @include align-items(center);
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   font-size: .6em;
   margin-top: -$header-mobile-height;
@@ -62,7 +51,7 @@ $things-i-am-margin: .2em;
 
   .things-i-am {
     display: flex;
-    @include justify-content(center);
+    justify-content: center;
     line-height: $things-i-am-height;
 
     ul {
@@ -72,13 +61,13 @@ $things-i-am-margin: .2em;
     }
 
     li {
-      @include transform(translateY(0));
+      transform: translateY(0);
     }
 
     &.rotating {
       li {
-        @include animation(showThings 20s infinite);
-        @include animation-delay(2s);
+        animation: showThings 20s infinite;
+        animation-delay: 1s;
         margin-bottom: $things-i-am-margin;
       }
     }
@@ -92,7 +81,7 @@ $things-i-am-margin: .2em;
     opacity: 0;
 
     &.fade-in {
-      @include animation(scrollDown 2s 1);
+      animation: scrollDown 2s 1;
       opacity: 1;
     }
 
@@ -114,10 +103,10 @@ $things-i-am-margin: .2em;
   }
 }
 
-@include keyframes(showThings) {
+@keyframes showThings {
   $numThings: 4;
-  $hold: 7;
-  $switch: 3;
+  $hold: 5;
+  $switch: 2;
   $inc: 0;
   $amount: -($things-i-am-height + $things-i-am-margin);
 
@@ -125,13 +114,13 @@ $things-i-am-margin: .2em;
     @if ($inc < $numThings) {
       @if ($i != 0 and $i % ($hold*$inc + $switch*($inc - 1 )) == 0) {
         #{$i * 1%} {
-          @include transform(translateY(($inc - 1)*$amount));
+          transform: translateY(($inc - 1)*$amount);
         }
       }
 
       @if ($i % ($hold + $switch)*$inc == 0) {
         #{$i * 1%} {
-          @include transform(translateY($inc*$amount));
+          transform: translateY($inc*$amount);
         }
 
         $inc: $inc + 1;
@@ -140,11 +129,11 @@ $things-i-am-margin: .2em;
   }
 
   100% {
-    @include transform(translateY(($inc - 1)*$amount));
+    transform: translateY(($inc - 1)*$amount);
   }
 }
 
-@include keyframes(scrollDown) {
+@keyframes scrollDown {
   0% {
     bottom: -10px;
     opacity: 0;
@@ -193,8 +182,8 @@ $things-i-am-margin: .2em;
 
   ul {
     display: flex;
-    @include justify-content(space-around);
-    @include flex-wrap(wrap);
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin-bottom: 2.5em;
   }
 
