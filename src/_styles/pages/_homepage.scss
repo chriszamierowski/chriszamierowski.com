@@ -4,17 +4,6 @@ $things-i-am-margin: .2em;
 .homepage {
   .main {
     text-align: center;
-
-    section:not(.welcome) {
-      h2 {
-        margin-top: 5vh;
-
-        span {
-          display: block;
-          font-size: .3em;
-        }
-      }
-    }
   }
 
   .contact {

@@ -55,3 +55,9 @@
     }
   }
 }
+
+@mixin lift($d: 1px) {
+  &:hover, &:focus {
+    transform: translate(-$d, -$d);
+  }
+}

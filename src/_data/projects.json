@@ -1,5 +1,6 @@
 {
   "title": "Projects",
+  "subtitle": "Select",
   "list": [
     {
       "id": "explainyourfamily",
@@ -24,13 +25,13 @@
       "ideation": {
         "image": "/images/projects/explain-your-family/explain-your-family-ideation.jpg",
         "copy": [
-          "I started by laying out a simple user story (my own). From there, I added features that might help with each step of the user journey, then added details about what those features might entail. I then took those features and plotted them on an impact vs. effort plot and used that to decide what I would include in an MVP version of Explain Your Family."
+          "I started by laying out a simple user story (my own). From there, I added features that might help with each step of the user journey, then added details about what those features might entail. I then took those features and plotted them on an impact vs. effort plot and used that to decide what I would include in an MVP version of Explain Your Family.",
+          "I realized that the major value prop for my user story would be in creating and plotting people's basic details and mapping their relationships, so I designed how I thought that could be done as simply as possible (conclusion: by sequentially adding people and managing their relationships) and built it."
         ]
       },
       "value": {
         "image": "/images/projects/explain-your-family/explain-your-family-share.jpg",
         "copy": [
-          "I realized that 90% of the value for my user story would be in creating and plotting people's basic details and mapping their relationships, so I thought up how that could be done as simply as possible (by sequentially adding people and managing their relationships) and built it.",
           "One key aspect of Explain Your Family is it doesn't require signing up or logging in, as this would be a significant barrier to entry, but you can edit your tree and share it with others (without fear of them editing it)."
         ]
       },
@@ -64,24 +65,24 @@
       ],
       "intro_copy": [
         "Tasting Collective members enjoy access to private chef-led dining events at top restaurants, as well as exclusive perks from leading food-related brands.",
-        "Working on a small, remote team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer, a designer and the CEO."
+        "Working on a small, remote team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer and the CEO."
       ],
       "stack": {
         "image": "/images/projects/tasting-collective/tasting-collective-events.jpg",
-        "copy": "The site is built with Ruby on Rails, using Haml templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and jQuery. I was responsible for manipulating designs in Sketch and full front-end development, including working in the V&C layers of Rails. I utilized Fontello for icons and we deployed to Heroku."
+        "copy": "The site is built with Ruby on Rails, using Haml templates, Sass and jQuery. I was responsible for manipulating designs in Sketch, full front-end development and project/team management. I utilized Fontello for icons and we deployed to Heroku."
       },
       "single_page": {
         "image": "/images/projects/tasting-collective/tasting-collective-checkout.jpg",
         "title": "Fully Responsive",
         "copy": [
           "The site was designed and built to look great on all viewports and devices.",
-          "My development included interfacing with a REST API, form validation (both client and server-side), custom photo carousels, navigation and Google Maps integration. We also utilized and modified several JavaScript Bootstrap components like modals and dropdowns.",
-          "We also leveraged several third-party libraries and APIs to enhance the user's experience."
+          "My role included building interactions that interfaced with a RESTful API, form validation (both client and server-side), custom photo carousels, metadata structuring, page layouts and Google Maps integration. I also contributed extensively to back-end business logic including complex state management, admin data access and email campaigns.",
+          "We leveraged several third-party libraries and APIs for payment processing, contact importing, error reporting and site maintenance."
         ]
       },
       "event_detail": {
         "image": "/images/projects/tasting-collective/tasting-collective-event-detail.jpg",
-        "copy": "We wanted to keep the focus on the food and all the awesome perks and events, so the site features lots of (delicious) imagery while still being informative for the user."
+        "copy": "We wanted to keep the focus on the food and all the awesome perks and events, so the site features lots of delicious imagery while still being informative for the user."
       },
       "final": {
         "image": "/images/projects/tasting-collective/tasting-collective-experience-restaurants.jpg",
@@ -106,23 +107,23 @@
         "Usability Testing"
       ],
       "intro_copy": [
-        "FillUp, an automatic drink-mixing machine, was a side project that a friend (a mechanical engineer, obsessive tinkerer and fellow tailgater) and I worked on over the course of a few football seasons, during which time its iterations became the star of weekend tailgates, camping trips and house parties.",
-        "It allows anyone to select a drink through their iPhone or Android device and have it poured MORE HERE",
+        "FillUp, an automatic drink-mixing machine, was a side project that I worked on over the course of a few football seasons, during which time its iterations became the star of weekend tailgates, camping trips and house parties.",
         "My role in the project included product design, prototyping, facilitating and documenting user feedback, writing the code for the chip, developing the app and building the marketing website."
       ],
       "inspiration": {
         "title": "Inspiration",
         "image": "/images/projects/fillup/fillup-features.jpg",
         "copy": [
-          "The idea was born when we recognized an opportunity to leverage tailgaters’ desire to one-up each other with their team spirit and elaborate setups. Since catering fancy food can be expensive and hard to scale, and increasingly exotic lawn games take up lots of space, we decided to redefine something every tailgate already does, pour drinks, to outdo the opposing (tailgate) team.",
-          "We wanted to transform the mundane, and sometimes messy, task of pouring a drink into an experience that would ignite enthusiastic conversation. All of this in a parking lot--so it had to be flashy, yet compact and functional. In our early research, we came across <a href=\"http://somabar.com/\" target=\"_blank\">several</a> <a href=\"https://www.barbotics.com/\" target=\"_blank\">drink-making</a> <a href=\"http://www.smartbarusa.com/\" target=\"_blank\">products</a> geared towards making <a href=\"https://www.theinebriator.com/\" target=\"_blank\">higher-end</a> <a href=\"https://partyrobotics.com/\" target=\"_blank\">cocktails</a>, but none suitable for a tailgate, so we set off to build one."
+          "FillUp was created in collaboration with a friend (a mechanical engineer and obsessive tinkerer) and fellow tailgater. The idea was born when we recognized an opportunity to leverage tailgaters’ desire to one-up other tailgaters with their team spirit and elaborate setups. From catering fancy food options to increasingly exotic lawn games, there's an innate competition in the otherwise light hearted environment, so we decided to get in the game by tackling the not-so-serious drink-dispensing dilemma for tailgaters wanting to outdo the opposing (tailgate) team.",
+          "We wanted a device that could transform the mundane, and sometimes messy, task of pouring a drink into an experience that would ignite enthusiastic conversation. All of this in a parking lot--so it had to be flashy, yet compact and functional."
         ]
       },
       "process": {
         "title": "Process",
         "image": "/images/projects/fillup/fillup-iterations.jpg",
         "copy": [
-          "We defined our audience as early tech-adopting tailgate hosts like ourselves, then documented more design constraints that we identified through a combination of personal experience and talking with other tailgaters."
+          "In our early research we came across <a href=\"http://somabar.com/\" target=\"_blank\">several</a> <a href=\"https://www.barbotics.com/\" target=\"_blank\">drink-making</a> <a href=\"http://www.smartbarusa.com/\" target=\"_blank\">products</a> geared towards making <a href=\"https://www.theinebriator.com/\" target=\"_blank\">higher-end</a> <a href=\"https://partyrobotics.com/\" target=\"_blank\">cocktails</a>, but none suitable for a tailgate, so we set off to create a version fit for our audience.",
+          "We initially defined our audience (early tech-adopting tailgate hosts like ourselves) based on our own by-weekly experience, then documented more design constraints that we identified through a combination of personal experience and talking with other tailgaters. These contraints would develop into FillUp's key features."
         ],
         "table": [
           {
@@ -139,13 +140,10 @@
           }
         ],
         "copy2": [
-          "These contraints guided the development of FillUp's key features MORE HERE MORE HERE MORE HERE"
-        ],
-        "copy3": [
-          "We sketched countless ideas for the physical housing and \"plumbing\" that was responsible for pouring a drink, continually tested the interaction between user, app and machine, built rapid prototypes of the housing and spout using household materials, collected continual feedback from friends, and explored and tested immediate hardware and software solutions (duct tape <i>sometimes</i> works at preventing liquids from succumbing to that whole gravity thing).",
+          "We sketched countless ideas for the physical housing and \"plumbing\" that was responsible for pouring a drink, continually tested the interaction between user, app and machine, built rapid prototypes of the housing and spout using household materials, collected continual feedback from friends, and explored and tested hardware (duct tape <i>sometimes</i> works at preventing liquids from succumbing to that whole gravity thing) and software solutions.",
           "Building FillUp was a constantly iterative process; we produced 4 fully functional prototypes that were tested in real time at our tailgates every few weeks."
         ],
-        "copy4": [
+        "copy3": [
           "In addition, we constructed several journey maps, including a host's setup on game day, a stranger passing by our product at a neighboring tailgate, and the experience of a “regular” who uses the product weekly. We used these to modify our design to make sure it would be approachable for all of our users."
         ]
       },
@@ -156,11 +154,11 @@
         ],
         "table": [
           {
-            "feedback": "There were two main reactions to initially seeing FillUp. The first was to stop and ogle, say \"cool, can it pour me a drink?\" and then move on to socialize. The second was to say \"wow, how does it work?\" and want a behind-the-scenes look into the machine; this group took pictures and even stuck around to explain how it worked to others.",
+            "feedback": "There were two main reactions to initially seeing FillUp: <ul class=\"project-list\"><li>Stop and ogle, say \"cool, can it pour me a drink?\" and then move on to socialize</li><li>Say \"wow, how does it work?\" and want a behind-the-scenes look into the machine; this group took pictures and even stuck around to explain how it worked to others.</li></ul>",
             "reaction": "We incorporated transparent plastics into our design to showcase the inner workings of the machine as it poured, which encouraged discussion and feedback amongst users in a way other tailgate props don't (no one asks you to explain how your new grill works)."
           },
           {
-            "feedback": "From surveying users we learned the main ways people decide what to drink at a tailgate are: 1. picking an alcohol then seeking available mixers, or 2. identifying they want a shot then choosing an alcohol. Rarely did people select a mixer and then an alcohol, or change their mind after deciding they wanted a shot.*",
+            "feedback": "From surveying users we learned the main ways people decide what to drink at a tailgate are:<ul class=\"project-list\"><li>Picking an alcohol then seeking available mixers</li><li>Identifying they want a shot then choosing an alcohol.</li></ul>Rarely did people select a mixer and then an alcohol, or change their mind after deciding they wanted a shot.*",
             "reaction": "We altered the app navigation to start by asking whether the user wanted a shot or a mixed drink. Then came alcohol selection, and in the case of a mixed drink, presenting the options."
           },
           {
@@ -175,7 +173,7 @@
         "image": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1010 234\" version=\"1.1\"><title>FillUp</title><desc>The first automated drink mixing machine made for tailgaiting</desc><g stroke=\"none\" stroke-width=\"1\" fill=\"none\" fill-rule=\"evenodd\"><path d=\"M703.714005 232.872447L621.622065 232.872447 591 0.650416577 611.679494 1.11459374C611.679494 1.11459374 637.32485 198.485606 644.779071 208.182567 652.233292 217.879527 694.802383 216.006862 702.315964 216.169475 702.505799 216.173583 702.686935 216.188147 702.859688 216.212634 702.870037 216.166402 702.875523 216.142375 702.875523 216.142375 702.875523 216.142375 753.726101 217.879527 761.180321 208.182567 768.634542 198.485606 794.279898 1.11459374 794.279898 1.11459374L814.959392 0.650416577 784.337328 232.872447C784.337328 232.872447 712.966539 232.872447 703.714005 232.872447L703.714005 232.872447Z\" fill=\"#526FA0\"/><g class=\"fillup-liquid\" fill=\"#ED3B40\"><path d=\"M0.8039601 7.63664774C0.803960101 19.2512305 18.3542084 110.776813 18.3542084 110.776813 18.3542084 110.776813 16.0260674 116.394322 65.9831366 116.609489 115.940206 116.824656 115.940203 109.936942 115.940203 109.936942 115.940203 109.936942 134.800305 5.79589524 134.800302 2.86142521 134.800298-0.0730448086 121.859913 0.468011723 106.449231 4.05232974 91.0385487 7.63664775 61.9462445 4.05232971 51.79092 2.36098421 41.6355955 0.669638718 0.803960098-3.97793499 0.8039601 7.63664774Z\" id=\"#ED3B40\"/></g><path d=\"M147.89046 63.4119942L151.289737 1.075 -0.3 1.075 -0.3 233.005115 79.1311905 233.005115 79.1311905 148.265109 130.778629 148.265109 130.778629 94.7638428 79.1311905 94.7638428 79.1311905 63.4119942 147.89046 63.4119942ZM251.787935 233.020969L251.787935 1.075 173.517578 1.075 173.517578 233.020969 251.787935 233.020969ZM419.538762 233.222171L424.545247 172.6384 359.762059 172.6384 360.655362 1.075 280.444966 1.075 280.444966 233.222171 419.538762 233.222171ZM581.263294 233.067844L586.537342 173.231433 522.043362 173.231433 522.830975 1.075 442.622792 1.075 442.622792 233.067844 581.263294 233.067844ZM938.059085 160.589404C958.899181 157.24834 1005.97724 158.101846 1009.06092 89.0117752 1012.14459 19.9217045 975.725 1.075 916.225 1.075L831.235271 1.075 831.235271 233.000171 909.315883 233.000171 909.315883 160.589404 938.059085 160.589404ZM917.563513 112.575L908.35 112.575 908.35 60.075 916.247297 60.075C929.738514 60.075 932.7 68.0496835 932.7 86.6572785 932.7 105.264873 930.067568 112.575 917.563513 112.575Z\" id=\"fillup-text\" fill=\"#526FA0\"/></g></svg>",
         "list": [
           "Our original name, \"The Drink Mixer\", worked well enough amongst friends, but as more people got eyes on it at tailgates, we knew we needed something unique and more memorable. After <a href=\"https://www.nickkolenda.com/brand-names/\" target=\"_blank\">some thought</a>, we came up with FillUp — a personification pun that fit our design principles perfectly, while still conveying its purpose.",
-          "Our logo started as a visual analogy of the machine's tanks, but quickly lost its meaning as our physical design, and the number of tanks, changed. We needed something that clearly embodied FillUp's purpose and was immediately recognizable; we decided on the plastic cup — a tongue in cheek representation of FillUp and our glass half full (and pouring!) attitude.",
+          "Our logo started as a visual analogy of the machine's tanks but quickly lost its meaning as our physical design, and the number of tanks, changed. We needed something that clearly embodied FillUp's purpose and was immediately recognizable; we decided on the plastic cup — a tongue in cheek representation of FillUp and our glass half full (and pouring!) attitude.",
           "For the color scheme of FillUp's physical body and software components, we created a range of bright, strong tones, giving FillUp the attention it deserves even among loud and flashy gameday colors."
         ]
       },
@@ -198,7 +196,7 @@
         "title": "Tools & Tech",
         "image": "/images/projects/fillup/fillup-app.jpg",
         "copy": [
-          "FillUp is controlled by a custom PhoneGap app that communicates over Bluetooth to an Arduino chip within the machine's housing. This chip controls the machine's LED lights, drink sensor and valves. ADD SOMETHING ABOUT WEBSITE <a href=\"http://fillup-public-site.herokuapp.com/\" target=\"_blank\">website</a>"
+          "FillUp is controlled by a custom PhoneGap app that communicates over Bluetooth to an Arduino chip within the machine's housing. This chip controls the machine's LED lights, drink sensor and valves."
         ]
       }
     },
@@ -221,8 +219,8 @@
         "User Analytics"
       ],
       "intro_copy": [
-        "Morsel is a storytelling platform for people who love food. Built around a community of people passionate about food and drink with a curiosity about what inspires others, Morsel allows you to understand the chef's vision, the mixologist's creativity, the sommelier's understanding of what makes a great pairing and the home-cook's creative meals all in one place.",
-        "As the first hire and lone front-end developer, I was responsible for full UI design and development of the site. This included working with the full web stack, interfacing with our API, prototyping and user research."
+        "Morsel was a story-telling platform for those who love food. Built around a community of people passionate about food and drink with a curiosity of what inspires others, Morsel allowed you to see the stories behind the chef's vision, the mixologist's creativity, the sommelier's pairings and the home-cook's creative meals all in one place.",
+        "As the first hire and only front-end developer, I was responsible for full UI design and development of <a href=\"https://web.archive.org/web/20150421072804/https://www.eatmorsel.com/\" target=\"_blank\">eatmorsel.com</a>. This included working with the full web stack, interfacing with our API, prototyping and user research."
       ],
       "single_page": {
         "background": "/images/projects/morsel/morsel-troost.jpg",
@@ -244,7 +242,7 @@
       "final": {
         "image": "/images/projects/morsel/morsel-big-star.jpg",
         "copy": [
-          "To see what our users were up to on the site we used Mixpanel and Google Analytics and integrated Rollbar for error reporting."
+          "To track user behavior we used Mixpanel and Google Analytics and integrated Rollbar for error reporting."
         ]
       }
     },
@@ -337,7 +335,7 @@
       "final": {
         "image": "/images/projects/betterfly/betterfly-guarantee.jpg",
         "copy": [
-          "I worked mostly in the View layer of our PHP application, using jQuery and Sass on the front-end to build custom interfaces and page layouts.",
+          "I worked mostly in the View layer of our PHP application, using jQuery, Backbone and Sass on the front-end to build custom interfaces and page layouts.",
           "I also kept tabs on user behavior on the site and implemented A/B tests and user flows using Google Analytics and a suite of other analytics tools.",
           "Betterfly was acquired by <a href=\"http://takelessons.com\" target=\"_blank\">TakeLessons</a> in late 2013."
         ]
@@ -345,6 +343,7 @@
     },
     {
       "id": "tompham",
+      "disabled": true,
       "title": "Thomas Pham Photography",
       "class": "tompham",
       "description": "Portfolio site of a Chicago photographer",

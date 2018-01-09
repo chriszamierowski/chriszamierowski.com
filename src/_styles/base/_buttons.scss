@@ -16,14 +16,13 @@
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-
   @include shadow(true)
+  @include lift();
 
   &:hover,
   &:focus {
     background-color: shade($action-color, 20%);
     color: #fff;
-    transform: translate(-1px, -1px);
   }
 
   &:disabled {

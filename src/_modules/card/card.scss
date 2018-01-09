@@ -13,12 +13,13 @@
   flex-grow: 1;
   transition: all 0.2s ease-in-out;
   background-color: $card-background;
-  border-radius: 2px;
+  border-radius: $base-border-radius;
   @include shadow(true);
   cursor: pointer;
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
   text-align: center;
+  @include lift();
 
   .card-image {
     overflow: hidden;
@@ -54,6 +55,5 @@
   &:focus,
   &:hover {
     cursor: pointer;
-    transform: translate(-1px, -1px);
   }
 }

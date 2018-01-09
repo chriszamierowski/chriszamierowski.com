@@ -10,6 +10,7 @@ block project-content
     title: pageData.inspiration.title,
     large: true
   })
+  +wide-image({image: pageData.inspiration.image})
   +section-copy({
     title: pageData.process.title,
     copy: pageData.process.copy,
@@ -23,18 +24,13 @@ block project-content
         tr
           td !{tr.requirement}
           td !{tr.constraint}
-  +wide-image({image: pageData.inspiration.image})
-  +section-copy({
-    copy: pageData.process.copy2,
-    large: true
-  })
   +side-content({
     image: pageData.process.image,
-    copy: pageData.process.copy3,
+    copy: pageData.process.copy2,
     side: 'right'
   })
   +aside-container({
-    copy: pageData.process.copy4,
+    copy: pageData.process.copy3,
     side: 'right'
   })
     h5.h5= pageData.design_principles.title

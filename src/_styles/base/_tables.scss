@@ -14,9 +14,13 @@ th {
 
 td {
   border-bottom: $base-border;
-  padding: $small-spacing $small-spacing $small-spacing 0;
+  padding: $small-spacing $base-spacing $small-spacing 0;
   vertical-align: top;
   font-size: .85em;
+
+  &:last-child {
+    padding-right: 0;
+  }
 }
 
 tr,

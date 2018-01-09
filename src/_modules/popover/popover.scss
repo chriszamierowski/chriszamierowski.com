@@ -4,7 +4,8 @@ $popover-trigger-start-size: 2px;
 .popover-trigger {
   @include size($popover-trigger-start-size);
   background-color: rgba($dark-blue, 1);
-  box-shadow: 0 0 0 3px $white, 2px 2px 0 5px rgba($dark-gray, .3);
+  box-shadow: 2px 2px 0 0 rgba($dark-gray, .3);
+  border: 3px solid white;
   border-radius: 50%;
   position: absolute;
   transition: all .5s ease-in;
@@ -18,7 +19,7 @@ $popover-trigger-start-size: 2px;
   }
 
   &.popover-pulse {
-    animation: popoverPulse 3s infinite;
+    animation: popoverPulse 2s infinite;
   }
 
   &#{$scrollWindowBottom} {
@@ -31,11 +32,13 @@ $popover-trigger-start-size: 2px;
 
 @keyframes popoverPulse {
   0% {
-    box-shadow: 0 0 0 3px $white, 2px 2px 0 5px rgba($dark-gray, .3);
+    box-shadow: 2px 2px 0 0 rgba($dark-gray, .3);
+    transform: translate(0, 0);
   }
 
   50% {
-    box-shadow: 0 0 0 1px $white, 1px 1px 0 3px rgba($dark-gray, .3);
+    box-shadow: 4px 4px 0 0 rgba($dark-gray, .3);
+    transform: translate(-1px, -1px);
   }
 }
 
@@ -47,6 +50,7 @@ $popover-trigger-start-size: 2px;
   color: $dark-gray;
   @include shadow();
   z-index: 1000;
+  border-radius: $base-border-radius;
 }
 
 .webui-popover-content {

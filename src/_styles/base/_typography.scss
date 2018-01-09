@@ -72,10 +72,10 @@ li {
 
 table {
   .light-scheme & {
-    color: $dark-gray;
+    color: $medium-gray;
 
     td {
-      color: $medium-gray;
+      color: $dark-gray;
     }
   }
 }
@@ -145,4 +145,13 @@ picture {
 
 .text-center {
   text-align: center;
+}
+
+.section-title {
+  margin-top: 5vh;
+
+  span {
+    display: block;
+    font-size: .3em;
+  }
 }
