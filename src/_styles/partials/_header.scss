@@ -54,14 +54,29 @@
     .main-menu {
       background-color: $bright-blue;
       @include shadow(false, 2px);
+      z-index: 1;
+
+      &.main-menu-open {
+        &:after {
+          content: '';
+          background-color: rgba($dark-gray, .5);
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: -1;
+        }
+      }
     }
 
     .mobile-menu {
+      background-color: $bright-blue;
       height: $header-mobile-height;
       display: flex;
-      @include flex-direction(row);
-      @include justify-content(space-between);
-      @include align-items(center);
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
     }
 
     li a {
@@ -85,9 +100,9 @@
 
     ul {
       display: flex;
-      @include flex-direction(row);
-      @include justify-content(space-around);
-      @include align-items(center);
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
       height: $header-height;
     }
 
@@ -110,9 +125,9 @@
 .small-nav {
   ul {
     display: flex;
-    @include flex-direction(row);
-    @include justify-content(space-between);
-    @include align-items(flex-end);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
 
     li:first-child {
       margin-right: auto;

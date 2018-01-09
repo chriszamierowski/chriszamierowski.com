@@ -1,0 +1,28 @@
+.dual-images {
+  background: $light-gray;
+
+  .middle-column {
+    padding: 2em;
+    color: $dark-gray;
+    text-align: justify;
+    font-size: $project-copy-size;
+    line-height: $project-line-height;
+  }
+
+  @include media($screen-medium-up) {
+    display: flex;
+    justify-content: top;
+
+    img {
+      display: block;
+    }
+
+    .img-wrapper {
+      flex-basis: 300px;
+    }
+
+    .middle-column {
+      flex: 1;
+    }
+  }
+}

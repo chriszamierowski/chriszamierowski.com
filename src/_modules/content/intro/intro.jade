@@ -1,0 +1,17 @@
+mixin intro(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+  - spec.copy = Array.isArray(spec.copy) ? spec.copy : [spec.copy]
+
+  .intro-image(class=spec.__class)&attributes(attributes)
+    .intro-image-wrap
+      img(src=spec.image)
+  section.intro-content
+    .light-scheme(class = spec.large ? 'container' : 'container-sm')
+      h1= spec.title
+      .badges
+        each b in spec.badges
+          .badge= b
+      .copy-wrapper
+        each c in spec.copy
+          p !{c}

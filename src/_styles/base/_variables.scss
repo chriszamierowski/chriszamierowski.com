@@ -5,7 +5,7 @@ $white: #fff;
 $dark-gray: #424242;
 $medium-gray: #78909C;
 $light-gray: #E9E9E9;
-// $bright-orange: #FF5722;
+$brighter-orange: #FF5722;
 $bright-orange: #FB9170;
 $black: #000;
 
@@ -22,17 +22,19 @@ $heading-font-weight: $bold;
 // Font Sizes
 $base-font-size: 1em;
 $mobile-font-size: 14px;
+$project-copy-size: 1.15em;
 
 // Font Colors
 $base-font-color: $white;
-$action-color: $dark-gray;
+$action-color: $brighter-orange;
 
 // Line height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
+$project-line-height: 2em;
 
 // Other Sizes
-$base-border-radius: 4px;
+$base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
@@ -66,3 +68,6 @@ $socialPalette:
 
 // Scroll classes
 $scrollWindowTop: '.scroll-window-top';
+$scrollWindowBottom: '.scroll-window-bottom';
+
+$intro-image-gradient: linear-gradient(rgba($dark-gray, 0) 0%, rgba($dark-gray, 0) 55%, rgba($dark-gray, .2) 90%, rgba($dark-gray, .8) 100%);

@@ -64,6 +64,22 @@ p {
   }
 }
 
+li {
+  .light-scheme & {
+    color: $dark-gray;
+  }
+}
+
+table {
+  .light-scheme & {
+    color: $medium-gray;
+
+    td {
+      color: $dark-gray;
+    }
+  }
+}
+
 .lead {
   color: $medium-gray;
   text-align: center;
@@ -78,7 +94,7 @@ p {
 a {
   color: $action-color;
   text-decoration: none;
-  transition: color $base-duration $base-timing;
+  transition: all $base-duration $base-timing;
 
   &:active,
   &:focus,
@@ -129,4 +145,13 @@ picture {
 
 .text-center {
   text-align: center;
+}
+
+.section-title {
+  margin-top: 5vh;
+
+  span {
+    display: block;
+    font-size: .3em;
+  }
 }

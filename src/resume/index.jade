@@ -30,7 +30,7 @@ block content
       section(id=s.id ? s.id : '')
         h3= s.title
         if s.subtitle
-          h5= s.subtitle
+          h5.resume-bold= s.subtitle
         if (typeof(s.description) === 'object')
           ul(class=s.columns ? 'columns' : '')
             if (Array.isArray(s.description))
@@ -40,13 +40,13 @@ block content
             else
               each v, k in s.description
                 li
-                  h5= `${k}:`
+                  h5.resume-bold= `${k}:`
                   = v
         else
           p= s.description
         if s.jobs
           each j in s.jobs
             ul: li
-              p #{j.jobtitle}!{j.company ? ' - ' + (j.company.link ? '<a href=\"'+j.company.link+'\" target=\"_blank\">'+j.company.name+'</a>' : '<span>' + j.company.name + '</span>') : ''}. #{j.dates}. !{j.description}
+              div <span class="resume-bold">#{j.jobtitle}</span>!{j.company ? ' ' + (j.company.link ? '<a href=\"'+j.company.link+'\" target=\"_blank\">'+j.company.name+'</a>' : '<span>' + j.company.name + '</span>') : ''} <span>#{j.dates}</span>. <p>!{j.description}</p>
 
 

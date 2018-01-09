@@ -3,8 +3,8 @@
   
   ul {
     display: flex;
-    @include justify-content(space-around);
-    @include align-items(center);
+    justify-content: space-around;
+    align-items: center;
   }
 
   li {
@@ -17,7 +17,10 @@
     border-radius: 2em;
     padding: .3em;
     color: $white;
-    
+    border: 3px solid $white;
+    @include shadow(true, 3px);
+    @include lift();
+
     &:link {
       color: $white;
     }

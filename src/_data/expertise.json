@@ -2,10 +2,10 @@
   "popovers": [
     {
       "title": "Front End Development",
-      "content": "My bread and butter; I write clean, durable code to build responsive interfaces. I use the latest technologies to build and test optimized experiences across platforms and browsers.",
+      "content": "My bread and butter; I use the latest technologies to architect and write clean, durable code to build optimized responsive experiences and interactive interfaces across platforms and browsers.",
       "tools": [
         "Sass",
-        "Angular",
+        "Vue.js",
         "HTML5"
       ],
       "position": {
@@ -15,11 +15,11 @@
     },
     {
       "title": "UX Design",
-      "content": "<i>How can I make a user’s interaction as simple as possible?</i> Wireframes and rapid prototyping (I like to use HTML and very basic CSS - it’s easy, quick and I know it well, but most importantly it feels “real” to a user) are great tools for understanding behavior and validating designs.",
+      "content": "As part of my design process, I create wireframes and rapid prototypes to understand user behavior, conceptualize/validate user interactions and iterate on designs.",
       "tools": [
-        "HTML",
+        "Pen & Paper",
         "Balsamiq",
-        "Pen & Paper"
+        "HTML & CSS"
       ],
       "position": {
         "top": "4%",
@@ -27,12 +27,13 @@
       }
     },
     {
-      "title": "UI Design",
-      "content": "I’m a believer in style guides and modular design. I have some experience as a visual designer, but I’m building my design chops and I tend to leave things like iconography to others.",
+      "title": "Visual Design",
+      "content": "I’m a believer in an agile design process that includes style guides and modular design. I'm a design autodidact and enjoy UI design but prefer to leave pixel-pushing tasks like iconography to specialists.",
       "tools": [
         "Sketch",
-        "Photoshop",
-        "Sass"
+        "Zeplin",
+        "Sass",
+        "Photoshop"
       ],
       "position": {
         "top": "1%",
@@ -41,7 +42,7 @@
     },
     {
       "title": "Product Design",
-      "content": "Developers are often only concerned with coding; I enjoy being a part of the full product development process. While maintaining attention to detail, I always value seeing the big picture. I create mockups and iterate on solutions to make sure what I’m building makes sense.",
+      "content": "I evaluate user needs and business goals to contribute to product strategy and design iterations. I create mockups and iterate on solutions to make sure what I’m building makes sense.",
       "tools": [
         "Asana",
         "Post-it Notes",
@@ -54,7 +55,7 @@
     },
     {
       "title": "Back End Development",
-      "content": "While I don’t consider myself a full-stack developer (yet), I do have experience working with several backend languages/frameworks. I’m most comfortable in the View layer but am familiar enough to touch other parts of an application when needed.",
+      "content": "I have experience building RESTful APIs and traditional sites with several backend languages/frameworks, although I prefer to work mainly in the business logic/API layer and leave complex database queries and server setup to specialists.",
       "tools": [
         "Node.js",
         "Ruby on Rails"
@@ -66,11 +67,12 @@
     },
     {
       "title": "Collaboration",
-      "content": "I value communication over pretty much everything else. I'm a team player and thrive as a group leader.",
+      "content": "I believe communication and solid processes, above all else, are the key to a successful project. I'm a team player and thrive as a group leader, but am also comfortable working autonomously.",
       "tools": [
+        "Trello",
+        "Slack",
         "Pivotal Tracker",
-        "Asana",
-        "Slack"
+        "Asana"
       ],
       "position": {
         "top": "40%",
