@@ -11,9 +11,9 @@ mixin project-header(spec)
       if ~ind
         li
           +link()(href='/projects') All Projects
-      if ~ind && prev && prev.url
+      if ~ind && prev && prev.url && !prev.disabled
         li
           +link()(href=prev.url) Prev
-      if ~ind && next && next.url
+      if ~ind && next && next.url && !next.disabled
         li
           +link()(href=next.url) Next

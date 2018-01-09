@@ -1,0 +1,7 @@
+mixin video-wrapper(spec)
+  - spec = spec || {}
+  - spec.__class = spec.__class || ''
+
+  section(class=spec.__class)&attributes(attributes)
+    .video-wrapper
+      video(src='#{spec.video}', type='video/mp4', autoplay='autoplay', loop='loop', poster='#{spec.poster}', preload='auto')

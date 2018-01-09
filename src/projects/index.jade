@@ -12,8 +12,10 @@ block header
 
 block content
   section.container
-    h2.text-center
+    h2.text-center.section-title
+      span= site.data.projects.subtitle
       = site.data.projects.title
     .cards
-      each c in site.data.projects.list 
-        +card(c)
+      each c in site.data.projects.list
+        if (!c.disabled)
+          +card(c)

@@ -43,7 +43,7 @@ $(function() {
       menuToggle = $('#menu-toggle'),
       $mainMenu = $('header .main-menu'),
       $mobileMenu = $('header .mobile-menu'),
-      scrollDownDelay = 10000,
+      scrollDownDelay = 6000,
       $thingsIAm = $('.homepage .things-i-am');
 
   new Link(); // Activate Link modules logic
@@ -58,7 +58,7 @@ $(function() {
   });
 
   function toggleMenu() {
-    $mainMenu.slideToggle();
+    $mainMenu.toggleClass('main-menu-open').slideToggle();
   }
 
   // hide menu on mobile once you click

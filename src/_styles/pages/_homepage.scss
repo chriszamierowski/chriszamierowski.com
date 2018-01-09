@@ -4,17 +4,6 @@ $things-i-am-margin: .2em;
 .homepage {
   .main {
     text-align: center;
-
-    section:not(.welcome) {
-      h2 {
-        margin-top: 5vh;
-
-        span {
-          display: block;
-          font-size: .3em;
-        }
-      }
-    }
   }
 
   .contact {
@@ -114,10 +103,10 @@ $things-i-am-margin: .2em;
   }
 }
 
-@include keyframes(showThings) {
+@keyframes showThings {
   $numThings: 4;
-  $hold: 7;
-  $switch: 3;
+  $hold: 5;
+  $switch: 2;
   $inc: 0;
   $amount: -($things-i-am-height + $things-i-am-margin);
 
@@ -144,7 +133,7 @@ $things-i-am-margin: .2em;
   }
 }
 
-@include keyframes(scrollDown) {
+@keyframes scrollDown {
   0% {
     bottom: -10px;
     opacity: 0;

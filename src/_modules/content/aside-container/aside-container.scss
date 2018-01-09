@@ -1,0 +1,15 @@
+.aside-container {
+  & > .copy {
+    @include span-columns(7);
+    @include shift(0);
+    font-size: $project-copy-size;
+    line-height: $project-line-height;
+  }
+
+  & > aside {
+    padding: 2em;
+    @include span-columns(4);
+    @include shift(1);
+    background-color: $light-gray
+  }
+}

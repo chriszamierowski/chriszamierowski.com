@@ -15,18 +15,13 @@
 @import "node_modules/webui-popover/dist/jquery.webui-popover.min";
 
 // Import Modules
-@import "../_modules/card/card";
-@import "../_modules/popover/popover";
+@import "../_modules/**/*";
 
 // Import pages
-@import "pages/homepage";
-@import "pages/lost";
-@import "pages/project";
-@import "pages/resume";
+@import "pages/**/*";
 
 // Import partials
-@import "partials/header";
-@import "partials/contact";
+@import "partials/**/*";
 
 
 // Styling on warning for users on IE7 or below

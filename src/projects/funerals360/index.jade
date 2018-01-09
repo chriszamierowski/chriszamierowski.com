@@ -1,52 +1,21 @@
-extends ../../_layouts/base
+extends ../../_layouts/project
 
 block vars
-  - var baseUrl = '../../'
-  - var pageData = site.data.projects.list.find(p => p.id === 'funerals360')
-  - var bodyClass = 'project-page project-'+ pageData.class
+  - var pageData = getData('funerals360');
 
-include ../../_modules/project-header/project-header
-
-block header
-  +project-header(pageData)
-
-block content
-  .intro-image
-    .intro-image-wrap
-      img(src=pageData.header_image)
-  section
-    .container-sm.light-scheme
-      h1= pageData.title
-      .badges
-        each b in pageData.badges
-          .badge= b
-      .copy-wrapper
-        each c in pageData.intro_copy
-          p= c
-  section
-    .video-wrapper
-      video(src='#{pageData.search.video}', type='video/mp4', autoplay='autoplay', loop='loop', poster='#{pageData.search.video_poster}', preload='auto')
-  section
-    .container-sm.light-scheme
-      .copy
-        p= pageData.search.copy
-  .side-content
-    .container
-      .image-wrapper
-        img(src=pageData.tech.image)
-      .side-content-copy
-        each c in pageData.tech.copy
-          p= c
-  //- .container.dual-images
-  //-   .img-wrapper
-  //-     img(src=pageData.tech.images[0])
-  //-   .middle-column
-  //-     each c in pageData.tech.copy
-  //-       p= c
-  //-   .img-wrapper
-  //-     img(src=pageData.tech.images[1])
-  section
-    .container-sm.light-scheme
-      .copy
-        each c in pageData.final.copy
-          p !{c}
+block project-content
+  +video-wrapper({
+    video: pageData.search.video,
+    poster: pageData.search.video_poster
+  })
+  +section-copy({copy: pageData.search.copy})
+  +side-content({
+    image: pageData.tech.image,
+    copy: pageData.tech.copy,
+    side: 'right'
+  })
+  //- +dual-images({
+  //-   images: pageData.tech.images,
+  //-   copy: pageData.tech.copy
+  //- })
+  +section-copy({copy: pageData.final.copy})

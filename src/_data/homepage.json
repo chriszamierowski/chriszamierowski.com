@@ -13,7 +13,7 @@
         "carnivore"
       ]
     },
-    "scroll": "Scroll down for more"
+    "scroll": "More info down here"
   },
   "skills": {
     "title": "Skills",
@@ -21,7 +21,7 @@
   },
   "examples": {
     "title": "Projects",
-    "subtitle": "A Few",
+    "subtitle": "Some Recent",
     "more": "See more projects <a href=\"/projects\" class=\"uppercase-link\">here</a>"
   }
 }
