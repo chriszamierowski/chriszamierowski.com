@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en">
 <head>
   <!--
-  Oh, hey! You probably know by now that this site was built by Chris Zamierowski. If you're here, you're probably also wondering what's going on under the hood. This site uses: Jade, SCSS (Bourbon, Neat, Autoprefixer), jQuery and Gulp (amongst others) and is hosted on GitHub Pages. Check out the source at https://github.com/chriszamierowski/chriszamierowski.com. Happy snooping!
+  Oh, hey! You probably know by now that this site was built by Chris Zamierowski. If you're here, you're probably also wondering what's going on under the hood. This site uses the Yeogurt generator to produce static files using Jade, SCSS and Gulp (amongst others) and is hosted on GitHub Pages. Check out the source at https://github.com/chriszamierowski/chriszamierowski.com. Happy snooping!
   -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -59,8 +59,6 @@
           </li>
           <li><a class="link" href="/projects/funerals360">Prev</a>
           </li>
-          <li><a class="link" href="/projects/thomas-pham-photography">Next</a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -69,8 +67,8 @@
     <div class="intro-image">
       <div class="intro-image-wrap"><img src="/images/projects/betterfly/betterfly-homepage.jpg"></div>
     </div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="intro-content">
+      <div class="light-scheme container-sm">
         <h1>Betterfly</h1>
         <div class="badges">
           <div class="badge">Front End Development</div>
@@ -85,18 +83,18 @@
       </div>
     </section>
     <div class="container wide-image"><img src="/images/projects/betterfly/betterfly-video-chat.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
           <p>Betterfly students and teachers were all over the country, so we needed an integrated video tool that was easy to use and fit Betterfly’s existing design. I built Betterfly’s custom video chat using WebRTC and text chat using WebSockets, as well as a diagnostic tool for testing microphone and video connections and internet speed.</p>
         </div>
       </div>
     </section>
     <div class="container wide-image"><img src="/images/projects/betterfly/betterfly-search.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
-          <p>I worked mostly in the View layer of our PHP application, using jQuery and Sass on the front-end to build custom interfaces and page layouts.</p>
+          <p>I worked mostly in the View layer of our PHP application, using jQuery, Backbone and Sass on the front-end to build custom interfaces and page layouts.</p>
           <p>I also kept tabs on user behavior on the site and implemented A/B tests and user flows using Google Analytics and a suite of other analytics tools.</p>
           <p>Betterfly was acquired by <a href="http://takelessons.com" target="_blank">TakeLessons</a> in late 2013.</p>
         </div>
@@ -106,9 +104,9 @@
   </div>
   <section id="contact" class="contact">
     <div class="container">
-      <h2><span>Available for contract or freelance</span>Let's work together
+      <h2><span>Available for contract, freelance or full-time</span>Let's work together
       </h2>
-      <h3><a href="mailto:hi@chriszamierowski.com">hi@chriszamierowski.com</a></h3>
+      <div class="text-center"><a href="mailto:hi@chriszamierowski.com" class="btn">Send Me An Email</a></div>
       <div class="social-links">
         <ul>
           <li><a href="https://github.com/chriszamierowski" target="_blank" class="social-github"><i class="icon-github"></i><span class="sr-only">Github</span></a></li>

@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en">
 <head>
   <!--
-  Oh, hey! You probably know by now that this site was built by Chris Zamierowski. If you're here, you're probably also wondering what's going on under the hood. This site uses: Jade, SCSS (Bourbon, Neat, Autoprefixer), jQuery and Gulp (amongst others) and is hosted on GitHub Pages. Check out the source at https://github.com/chriszamierowski/chriszamierowski.com. Happy snooping!
+  Oh, hey! You probably know by now that this site was built by Chris Zamierowski. If you're here, you're probably also wondering what's going on under the hood. This site uses the Yeogurt generator to produce static files using Jade, SCSS and Gulp (amongst others) and is hosted on GitHub Pages. Check out the source at https://github.com/chriszamierowski/chriszamierowski.com. Happy snooping!
   -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -57,9 +57,9 @@
           </li>
           <li><a class="link" href="/projects">All Projects</a>
           </li>
-          <li><a class="link" href="/projects/tasting-collective">Prev</a>
+          <li><a class="link" href="/projects/fillup">Prev</a>
           </li>
-          <li><a class="link" href="/projects/funerals360">Next</a>
+          <li><a class="link" href="/projects/where-is-chris">Next</a>
           </li>
         </ul>
       </div>
@@ -69,8 +69,8 @@
     <div class="intro-image">
       <div class="intro-image-wrap"><img src="/images/projects/morsel/morsel-kevin.jpg"></div>
     </div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="intro-content">
+      <div class="light-scheme container-sm">
         <h1>Morsel</h1>
         <div class="badges">
           <div class="badge">Front End Development</div>
@@ -83,8 +83,8 @@
           <div class="badge">User Analytics</div>
         </div>
         <div class="copy-wrapper">
-          <p>Morsel is a storytelling platform for people who love food. Built around a community of people passionate about food and drink with a curiosity about what inspires others, Morsel allows you to understand the chef's vision, the mixologist's creativity, the sommelier's understanding of what makes a great pairing and the home-cook's creative meals all in one place.</p>
-          <p>As the first hire and lone front-end developer, I was responsible for full UI design and development of the site. This included working with the full web stack, interfacing with our API, prototyping and user research.</p>
+          <p>Morsel was a story-telling platform for those who love food. Built around a community of people passionate about food and drink with a curiosity of what inspires others, Morsel allowed you to see the stories behind the chef's vision, the mixologist's creativity, the sommelier's pairings and the home-cook's creative meals all in one place.</p>
+          <p>As the first hire and only front-end developer, I was responsible for full UI design and development of <a href="https://web.archive.org/web/20150421072804/https://www.eatmorsel.com/" target="_blank">eatmorsel.com</a>. This included working with the full web stack, interfacing with our API, prototyping and user research.</p>
         </div>
       </div>
     </section>
@@ -98,26 +98,26 @@
         <p>To grow quickly and consistently across platforms, my teammate built a RESTful API in Ruby on Rails that would interface with both an iOS app and my web app, which further improved perceived loading times on mobile web by only needing to load front-end assets once per user session.</p>
       </div>
     </div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
           <p>Some of the things I implemented in the Angular app were file uploads, routing, inline form validations (with client and server side errors) and plenty of responsive, interactive layouts. The front-end development workflow used Grunt with Handlebars templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and deployed to Heroku.</p>
         </div>
       </div>
     </section>
     <div class="container wide-image"><img src="/images/projects/morsel/morsel-add.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
           <p>I had the opportunity to conduct both formative and summative user research (think interviewing a chef in their restaurant) and develop user personas. We used our findings to refine the <i>morsel</i> creation process, among other user flows.</p>
         </div>
       </div>
     </section>
     <div class="container wide-image"><img src="/images/projects/morsel/morsel-storyboards.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
-          <p>To see what our users were up to on the site we used Mixpanel and Google Analytics and integrated Rollbar for error reporting.</p>
+          <p>To track user behavior we used Mixpanel and Google Analytics and integrated Rollbar for error reporting.</p>
         </div>
       </div>
     </section>
@@ -125,9 +125,9 @@
   </div>
   <section id="contact" class="contact">
     <div class="container">
-      <h2><span>Available for contract or freelance</span>Let's work together
+      <h2><span>Available for contract, freelance or full-time</span>Let's work together
       </h2>
-      <h3><a href="mailto:hi@chriszamierowski.com">hi@chriszamierowski.com</a></h3>
+      <div class="text-center"><a href="mailto:hi@chriszamierowski.com" class="btn">Send Me An Email</a></div>
       <div class="social-links">
         <ul>
           <li><a href="https://github.com/chriszamierowski" target="_blank" class="social-github"><i class="icon-github"></i><span class="sr-only">Github</span></a></li>

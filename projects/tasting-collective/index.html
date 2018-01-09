@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en">
 <head>
   <!--
-  Oh, hey! You probably know by now that this site was built by Chris Zamierowski. If you're here, you're probably also wondering what's going on under the hood. This site uses: Jade, SCSS (Bourbon, Neat, Autoprefixer), jQuery and Gulp (amongst others) and is hosted on GitHub Pages. Check out the source at https://github.com/chriszamierowski/chriszamierowski.com. Happy snooping!
+  Oh, hey! You probably know by now that this site was built by Chris Zamierowski. If you're here, you're probably also wondering what's going on under the hood. This site uses the Yeogurt generator to produce static files using Jade, SCSS and Gulp (amongst others) and is hosted on GitHub Pages. Check out the source at https://github.com/chriszamierowski/chriszamierowski.com. Happy snooping!
   -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -59,7 +59,7 @@
           </li>
           <li><a class="link" href="/projects/explain-your-family">Prev</a>
           </li>
-          <li><a class="link" href="/projects/morsel">Next</a>
+          <li><a class="link" href="/projects/fillup">Next</a>
           </li>
         </ul>
       </div>
@@ -69,8 +69,8 @@
     <div class="intro-image">
       <div class="intro-image-wrap"><img src="/images/projects/tasting-collective/tasting-collective-perks.jpg"></div>
     </div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="intro-content">
+      <div class="light-scheme container-sm">
         <h1>Tasting Collective</h1>
         <div class="badges">
           <div class="badge">Front End Development</div>
@@ -81,15 +81,15 @@
         </div>
         <div class="copy-wrapper">
           <p>Tasting Collective members enjoy access to private chef-led dining events at top restaurants, as well as exclusive perks from leading food-related brands.</p>
-          <p>Working on a small, remote team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer, a designer and the CEO.</p>
+          <p>Working on a small, remote team, I built a responsive interface for Tasting Collective's marketing and membership site. This included collaborating with a backend developer and the CEO.</p>
         </div>
       </div>
     </section>
     <div class="container wide-image"><img src="/images/projects/tasting-collective/tasting-collective-events.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
-          <p>The site is built with Ruby on Rails, using Haml templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and jQuery. I was responsible for manipulating designs in Sketch and full front-end development, including working in the V&amp;C layers of Rails. I utilized Fontello for icons and we deployed to Heroku.</p>
+          <p>The site is built with Ruby on Rails, using Haml templates, Sass and jQuery. I was responsible for manipulating designs in Sketch, full front-end development and project/team management. I utilized Fontello for icons and we deployed to Heroku.</p>
         </div>
       </div>
     </section>
@@ -100,20 +100,20 @@
       <div class="device-text">
         <h4>Fully Responsive</h4>
         <p>The site was designed and built to look great on all viewports and devices.</p>
-        <p>My development included interfacing with a REST API, form validation (both client and server-side), custom photo carousels, navigation and Google Maps integration. We also utilized and modified several JavaScript Bootstrap components like modals and dropdowns.</p>
-        <p>We also leveraged several third-party libraries and APIs to enhance the user's experience.</p>
+        <p>My role included building interactions that interfaced with a RESTful API, form validation (both client and server-side), custom photo carousels, metadata structuring, page layouts and Google Maps integration. I also contributed extensively to back-end business logic including complex state management, admin data access and email campaigns.</p>
+        <p>We leveraged several third-party libraries and APIs for payment processing, contact importing, error reporting and site maintenance.</p>
       </div>
     </div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
-          <p>We wanted to keep the focus on the food and all the awesome perks and events, so the site features lots of (delicious) imagery while still being informative for the user.</p>
+          <p>We wanted to keep the focus on the food and all the awesome perks and events, so the site features lots of delicious imagery while still being informative for the user.</p>
         </div>
       </div>
     </section>
     <div class="container wide-image"><img src="/images/projects/tasting-collective/tasting-collective-event-detail.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
           <p>The site also includes Google Analytics as well as several campaign tracking and analytics libraries.</p>
           <p>Check it out at <a href="https://tastingcollective.com" target="_blank">tastingcollective.com</a>.</p>
@@ -124,9 +124,9 @@
   </div>
   <section id="contact" class="contact">
     <div class="container">
-      <h2><span>Available for contract or freelance</span>Let's work together
+      <h2><span>Available for contract, freelance or full-time</span>Let's work together
       </h2>
-      <h3><a href="mailto:hi@chriszamierowski.com">hi@chriszamierowski.com</a></h3>
+      <div class="text-center"><a href="mailto:hi@chriszamierowski.com" class="btn">Send Me An Email</a></div>
       <div class="social-links">
         <ul>
           <li><a href="https://github.com/chriszamierowski" target="_blank" class="social-github"><i class="icon-github"></i><span class="sr-only">Github</span></a></li>

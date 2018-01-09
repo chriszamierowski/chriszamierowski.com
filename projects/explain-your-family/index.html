@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en">
 <head>
   <!--
-  Oh, hey! You probably know by now that this site was built by Chris Zamierowski. If you're here, you're probably also wondering what's going on under the hood. This site uses: Jade, SCSS (Bourbon, Neat, Autoprefixer), jQuery and Gulp (amongst others) and is hosted on GitHub Pages. Check out the source at https://github.com/chriszamierowski/chriszamierowski.com. Happy snooping!
+  Oh, hey! You probably know by now that this site was built by Chris Zamierowski. If you're here, you're probably also wondering what's going on under the hood. This site uses the Yeogurt generator to produce static files using Jade, SCSS and Gulp (amongst others) and is hosted on GitHub Pages. Check out the source at https://github.com/chriszamierowski/chriszamierowski.com. Happy snooping!
   -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -67,8 +67,8 @@
     <div class="intro-image">
       <div class="intro-image-wrap"><img src="/images/projects/explain-your-family/explain-your-family-tree.jpg"></div>
     </div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="intro-content">
+      <div class="light-scheme container-sm">
         <h1>Explain Your Family</h1>
         <div class="badges">
           <div class="badge">Front End Development</div>
@@ -85,10 +85,11 @@
       </div>
     </section>
     <div class="container wide-image"><img src="/images/projects/explain-your-family/explain-your-family-ideation.jpg"></div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
           <p>I started by laying out a simple user story (my own). From there, I added features that might help with each step of the user journey, then added details about what those features might entail. I then took those features and plotted them on an impact vs. effort plot and used that to decide what I would include in an MVP version of Explain Your Family.</p>
+          <p>I realized that the major value prop for my user story would be in creating and plotting people's basic details and mapping their relationships, so I designed how I thought that could be done as simply as possible (conclusion: by sequentially adding people and managing their relationships) and built it.</p>
         </div>
       </div>
     </section>
@@ -96,22 +97,22 @@
       <div class="container">
         <div class="image-wrapper"><img src="/images/projects/explain-your-family/explain-your-family-share.jpg"></div>
         <div class="side-content-copy">
-          <p>I realized that 90% of the value for my user story would be in creating and plotting people's basic details and mapping their relationships, so I thought up how that could be done as simply as possible (by sequentially adding people and managing their relationships) and built it.</p>
           <p>One key aspect of Explain Your Family is it doesn't require signing up or logging in, as this would be a significant barrier to entry, but you can edit your tree and share it with others (without fear of them editing it).</p>
         </div>
       </div>
     </div>
-    <section>
-      <div class="container-sm light-scheme">
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
           <p>The site is comprised of a Rails 5 API and an SPA built with Vue.js, Webpack and Bulma/Buefy.</p>
           <p>I decided to roll my own vanilla JS tree-rendering algorithm after exploring some existing choices and not finding anything that quite fit the needs of the project.</p>
         </div>
       </div>
     </section>
-    <div class="container-sm"><img src="/images/projects/explain-your-family/explain-your-family-logo.svg"></div>
-    <section>
-      <div class="container-sm light-scheme">
+    <div class="img-container container-sm">
+    </div>
+    <section class="section-copy">
+      <div class="light-scheme container-sm">
         <div class="copy">
           <p>Check it out at <a href="http://explainyourfamily.com" target="_blank">explainyourfamily.com</a>.</p>
         </div>
@@ -120,9 +121,9 @@
   </div>
   <section id="contact" class="contact">
     <div class="container">
-      <h2><span>Available for contract or freelance</span>Let's work together
+      <h2><span>Available for contract, freelance or full-time</span>Let's work together
       </h2>
-      <h3><a href="mailto:hi@chriszamierowski.com">hi@chriszamierowski.com</a></h3>
+      <div class="text-center"><a href="mailto:hi@chriszamierowski.com" class="btn">Send Me An Email</a></div>
       <div class="social-links">
         <ul>
           <li><a href="https://github.com/chriszamierowski" target="_blank" class="social-github"><i class="icon-github"></i><span class="sr-only">Github</span></a></li>
