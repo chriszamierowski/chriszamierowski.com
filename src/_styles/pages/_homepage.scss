@@ -78,7 +78,7 @@ $things-i-am-margin: .2em;
     &.rotating {
       li {
         animation: showThings 20s infinite;
-        animation-delay: 2s;
+        animation-delay: 1s;
         margin-bottom: $things-i-am-margin;
       }
     }
@@ -116,8 +116,8 @@ $things-i-am-margin: .2em;
 
 @keyframes showThings {
   $numThings: 4;
-  $hold: 7;
-  $switch: 3;
+  $hold: 5;
+  $switch: 2;
   $inc: 0;
   $amount: -($things-i-am-height + $things-i-am-margin);
 

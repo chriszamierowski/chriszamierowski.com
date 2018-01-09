@@ -4,8 +4,8 @@ section#contact.contact
       if site.data.contact.availability.status
         span= site.data.contact.availability.copy
       = site.data.contact.title
-    h3: a(href='mailto:#{site.data.contact.email}')= site.data.contact.email
-    
+    div.text-center
+      a.btn(href='mailto:#{site.data.contact.email}')= site.data.contact.button
     .social-links: ul
       each s in site.data.social.links
         li

@@ -1,5 +1,6 @@
 @mixin white-link() {
   color: $white;
+  @include text-shadow()
 
   &:active,
   &:focus,
@@ -35,12 +36,22 @@
   }
 }
 
-@mixin shadow($hover: false, $y: 4px) {
-  box-shadow: 4px $y 0 2px rgba($dark-gray, .5);
+@mixin shadow($hover: false, $d: 4px) {
+  box-shadow: $d $d 0 0 rgba($dark-gray, .5);
 
   @if($hover) {
     &:focus, &:hover {
-      box-shadow: 6px 6px 0 2px rgba($dark-gray, .5);
+      box-shadow: $d*2 $d*2 0 0 rgba($dark-gray, .5);
+    }
+  }
+}
+
+@mixin text-shadow($hover: false, $d: 1px) {
+  text-shadow: $d $d 0 rgba($dark-gray, .5);
+
+  @if($hover) {
+    &:focus, &:hover {
+      text-shadow: $d*2 $d*2 0 rgba($dark-gray, .5);
     }
   }
 }

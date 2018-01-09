@@ -1,11 +1,10 @@
-$popover-trigger-size: 30px;
+$popover-trigger-size: 35px;
 $popover-trigger-start-size: 2px;
 
 .popover-trigger {
   @include size($popover-trigger-start-size);
-  background-color: rgba($dark-blue, .65);
-  //box-shadow: 0 0 0 6px $white, 0 0 0 8px $dark-blue, 2px 2px 0 9px rgba($dark-gray, .3);
-  box-shadow: 0 0 0 3px $white, 0 0 0 5px $dark-blue, 2px 2px 0 6px rgba($dark-gray, .3);
+  background-color: rgba($dark-blue, 1);
+  box-shadow: 0 0 0 3px $white, 2px 2px 0 5px rgba($dark-gray, .3);
   border-radius: 50%;
   position: absolute;
   transition: all .5s ease-in;
@@ -32,11 +31,11 @@ $popover-trigger-start-size: 2px;
 
 @keyframes popoverPulse {
   0% {
-    box-shadow: 0 0 0 3px $white, 0 0 0 5px $dark-blue, 2px 2px 0 6px rgba($dark-gray, .3);
+    box-shadow: 0 0 0 3px $white, 2px 2px 0 5px rgba($dark-gray, .3);
   }
 
   50% {
-    box-shadow: 0 0 0 1px $white, 0 0 0 2px $dark-blue, 1px 1px 0 4px rgba($dark-gray, .3);
+    box-shadow: 0 0 0 1px $white, 1px 1px 0 3px rgba($dark-gray, .3);
   }
 }
 
