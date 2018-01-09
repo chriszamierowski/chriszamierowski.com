@@ -47,6 +47,6 @@ block content
         if s.jobs
           each j in s.jobs
             ul: li
-              div <span class="resume-bold">#{j.jobtitle}</span>!{j.company ? ' - ' + (j.company.link ? '<a href=\"'+j.company.link+'\" target=\"_blank\">'+j.company.name+'</a>' : '<span>' + j.company.name + '</span>') : ''} <span>#{j.dates}</span>. <p>!{j.description}</p>
+              div <span class="resume-bold">#{j.jobtitle}</span>!{j.company ? ' ' + (j.company.link ? '<a href=\"'+j.company.link+'\" target=\"_blank\">'+j.company.name+'</a>' : '<span>' + j.company.name + '</span>') : ''} <span>#{j.dates}</span>. <p>!{j.description}</p>
 
 

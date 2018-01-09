@@ -102,6 +102,11 @@
     .resume-bold {
       color: $dark-gray;
       font-weight: $ultrabold;
+      margin-right: 3px;
+
+      & + a {
+        margin-right: 3px;
+      }
     }
   }
 
