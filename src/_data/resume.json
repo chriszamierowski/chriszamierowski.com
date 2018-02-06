@@ -42,7 +42,7 @@
     "location": "Remote / Seattle, WA",
     "availability": {
       "status": true,
-      "copy": "Available for contract, freelance or full-time"
+      "copy": "Available for full-time work"
     },
     "blurb": "I’m a multidisciplinary thinker producing (mostly) front-end web solutions. I'm looking to join, learn from and collaborate with a talented team that pushes me to create my best work, from initial concept to shipping a product."
   },
@@ -96,7 +96,7 @@
             "link": "http://chriszamierowski.com/projects/betterfly"
           },
           "dates": "Feb - Oct 2013",
-          "description": "Built and managed front-end of betterfly.com (acquired 2013), including custom online video chat tool, a simple document sharing/organization application and an internet connection speed wizard."
+          "description": "Built and managed front-end of betterfly.com (acquired 2013), including custom online video chat tool, simple document sharing/organization application and internet connection speed wizard."
         },
         {
           "jobtitle": "Web Developer",

@@ -232,7 +232,7 @@
         ]
       },
       "workflow": {
-        "image": "/images/projects/morsel/morsel-add.jpg",
+        "image": "/images/projects/morsel/morsel-big-star.jpg",
         "copy": "Some of the things I implemented in the Angular app were file uploads, routing, inline form validations (with client and server side errors) and plenty of responsive, interactive layouts. The front-end development workflow used Grunt with Handlebars templates, Sass/Compass (starting from a custom Twitter Bootstrap configuration) and deployed to Heroku."
       },
       "users": {
@@ -240,7 +240,6 @@
         "copy": "I had the opportunity to conduct both formative and summative user research (think interviewing a chef in their restaurant) and develop user personas. We used our findings to refine the <i>morsel</i> creation process, among other user flows."
       },
       "final": {
-        "image": "/images/projects/morsel/morsel-big-star.jpg",
         "copy": [
           "To track user behavior we used Mixpanel and Google Analytics and integrated Rollbar for error reporting."
         ]
