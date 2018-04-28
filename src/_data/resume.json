@@ -41,7 +41,7 @@
     },
     "location": "Remote / Seattle, WA",
     "availability": {
-      "status": true,
+      "status": false,
       "copy": "Available for full-time work"
     },
     "blurb": "I’m a multidisciplinary thinker producing (mostly) front-end web solutions. I'm looking to join, learn from and collaborate with a talented team that pushes me to create my best work, from initial concept to shipping a product."

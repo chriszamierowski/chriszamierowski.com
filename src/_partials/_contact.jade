@@ -1,9 +1,9 @@
 section#contact.contact
   .container
-    h2
-      if site.data.contact.availability.status
+    if site.data.contact.availability.status
+      h2
         span= site.data.contact.availability.copy
-      = site.data.contact.title
+        = site.data.contact.title
     div.text-center
       a.btn(href='mailto:#{site.data.contact.email}')= site.data.contact.button
     .social-links: ul

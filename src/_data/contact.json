@@ -3,7 +3,7 @@
   "email": "hi@chriszamierowski.com",
   "button": "Send Me An Email",
   "availability": {
-    "status": true,
+    "status": false,
     "copy": "Available for full-time work"
   }
 }
