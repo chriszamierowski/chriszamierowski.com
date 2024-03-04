@@ -1,6 +1,0 @@
-mixin wide-image(spec)
-  - spec = spec || {}
-  - spec.__class = spec.__class || ''
-
-  .container.wide-image(class=spec.__class)&attributes(attributes)
-    img(src=spec.image)

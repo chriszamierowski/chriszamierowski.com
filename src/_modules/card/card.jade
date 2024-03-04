@@ -1,9 +1,0 @@
-mixin card(spec)
-  - spec = spec || {}
-
-  a.card.light-scheme(href='#{spec.url}')
-    .card-image
-      img(src='#{spec.summary_image}', alt='#{spec.title}')
-    .card-header= spec.title
-    .card-copy
-      p= spec.description

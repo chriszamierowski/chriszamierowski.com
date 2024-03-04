@@ -1,7 +1,0 @@
-.container {
-  @include outer-container;
-}
-
-.container-sm {
-  @include outer-container($max-width-sm);
-}
