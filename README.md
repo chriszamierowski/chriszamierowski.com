@@ -1,19 +1,8 @@
 # [chriszamierowski.com](http://chriszamierowski.com/)
 
-Portfolio and stomping grounds of Chris Zamierowski | Web Developer, Carnivore. Remote / Seattle, WA
+Portfolio and stomping grounds of Chris Zamierowski | Product-minded engineer. Remote / Seattle, WA
 
 To develop:
 ```
-gulp serve
-```
-
-To test:
-```
-gulp test
-```
-
-To build & deploy (on master branch):
-```
-gulp build --production
-gulp deploy
+yarn start
 ```
